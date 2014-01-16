@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140574FC1885DE2F00AC7C2C /* slide.m in Sources */ = {isa = PBXBuildFile; fileRef = 140574FB1885DE2F00AC7C2C /* slide.m */; };
+		140575051885E34700AC7C2C /* slideInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575041885E34700AC7C2C /* slideInfo.m */; };
+		140575081885E35B00AC7C2C /* slideQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575071885E35B00AC7C2C /* slideQuiz.m */; };
+		1405750A1885E5F600AC7C2C /* languageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575091885E5F600AC7C2C /* languageSelectViewController.m */; };
 		1420EB811883DFCA00E19163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB801883DFCA00E19163 /* Foundation.framework */; };
 		1420EB831883DFCA00E19163 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB821883DFCA00E19163 /* CoreGraphics.framework */; };
 		1420EB851883DFCA00E19163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB841883DFCA00E19163 /* UIKit.framework */; };
@@ -14,13 +18,14 @@
 		1420EB8D1883DFCA00E19163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EB8C1883DFCA00E19163 /* main.m */; };
 		1420EB911883DFCA00E19163 /* iHealAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EB901883DFCA00E19163 /* iHealAppDelegate.m */; };
 		1420EB941883DFCA00E19163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420EB921883DFCA00E19163 /* Main.storyboard */; };
-		1420EB971883DFCA00E19163 /* iHealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EB961883DFCA00E19163 /* iHealViewController.m */; };
 		1420EB991883DFCA00E19163 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1420EB981883DFCA00E19163 /* Images.xcassets */; };
 		1420EBA01883DFCA00E19163 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB9F1883DFCA00E19163 /* XCTest.framework */; };
 		1420EBA11883DFCA00E19163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB801883DFCA00E19163 /* Foundation.framework */; };
 		1420EBA21883DFCA00E19163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB841883DFCA00E19163 /* UIKit.framework */; };
 		1420EBAA1883DFCA00E19163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1420EBA81883DFCA00E19163 /* InfoPlist.strings */; };
 		1420EBAC1883DFCA00E19163 /* iHeal_HarlemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */; };
+		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
+		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140574FA1885DE2F00AC7C2C /* slide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slide.h; sourceTree = "<group>"; };
+		140574FB1885DE2F00AC7C2C /* slide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slide.m; sourceTree = "<group>"; };
+		140575031885E34700AC7C2C /* slideInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideInfo.h; sourceTree = "<group>"; };
+		140575041885E34700AC7C2C /* slideInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideInfo.m; sourceTree = "<group>"; };
+		140575061885E35B00AC7C2C /* slideQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideQuiz.h; sourceTree = "<group>"; };
+		140575071885E35B00AC7C2C /* slideQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideQuiz.m; sourceTree = "<group>"; };
+		140575091885E5F600AC7C2C /* languageSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = languageSelectViewController.m; sourceTree = "<group>"; };
 		1420EB7D1883DFCA00E19163 /* iHeal Harlem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHeal Harlem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1420EB801883DFCA00E19163 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1420EB821883DFCA00E19163 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +57,17 @@
 		1420EB8F1883DFCA00E19163 /* iHealAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHealAppDelegate.h; sourceTree = "<group>"; };
 		1420EB901883DFCA00E19163 /* iHealAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHealAppDelegate.m; sourceTree = "<group>"; };
 		1420EB931883DFCA00E19163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1420EB951883DFCA00E19163 /* iHealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHealViewController.h; sourceTree = "<group>"; };
-		1420EB961883DFCA00E19163 /* iHealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHealViewController.m; sourceTree = "<group>"; };
 		1420EB981883DFCA00E19163 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1420EB9E1883DFCA00E19163 /* iHeal HarlemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iHeal HarlemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1420EB9F1883DFCA00E19163 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1420EBA71883DFCA00E19163 /* iHeal HarlemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHeal HarlemTests-Info.plist"; sourceTree = "<group>"; };
 		1420EBA91883DFCA00E19163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHeal_HarlemTests.m; sourceTree = "<group>"; };
+		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
+		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
+		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
+		14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionMenuTableViewController.h; sourceTree = "<group>"; };
+		14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionMenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +127,21 @@
 		1420EB861883DFCA00E19163 /* iHeal Harlem */ = {
 			isa = PBXGroup;
 			children = (
+				140575031885E34700AC7C2C /* slideInfo.h */,
+				140575061885E35B00AC7C2C /* slideQuiz.h */,
+				140575071885E35B00AC7C2C /* slideQuiz.m */,
+				140575041885E34700AC7C2C /* slideInfo.m */,
 				1420EB8F1883DFCA00E19163 /* iHealAppDelegate.h */,
 				1420EB901883DFCA00E19163 /* iHealAppDelegate.m */,
+				148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */,
+				148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */,
 				1420EB921883DFCA00E19163 /* Main.storyboard */,
-				1420EB951883DFCA00E19163 /* iHealViewController.h */,
-				1420EB961883DFCA00E19163 /* iHealViewController.m */,
+				14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */,
+				14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */,
+				14969ED41885CEC000CF79A6 /* languageSelectViewController.h */,
+				140575091885E5F600AC7C2C /* languageSelectViewController.m */,
+				140574FA1885DE2F00AC7C2C /* slide.h */,
+				140574FB1885DE2F00AC7C2C /* slide.m */,
 				1420EB981883DFCA00E19163 /* Images.xcassets */,
 				1420EB871883DFCA00E19163 /* Supporting Files */,
 			);
@@ -200,6 +225,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Harlem Hospital";
 				TargetAttributes = {
+					1420EB7C1883DFCA00E19163 = {
+						DevelopmentTeam = MSC7382Q42;
+					};
 					1420EB9D1883DFCA00E19163 = {
 						TestTargetID = 1420EB7C1883DFCA00E19163;
 					};
@@ -250,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */,
+				140575051885E34700AC7C2C /* slideInfo.m in Sources */,
 				1420EB911883DFCA00E19163 /* iHealAppDelegate.m in Sources */,
-				1420EB971883DFCA00E19163 /* iHealViewController.m in Sources */,
+				140574FC1885DE2F00AC7C2C /* slide.m in Sources */,
+				1405750A1885E5F600AC7C2C /* languageSelectViewController.m in Sources */,
+				148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */,
+				140575081885E35B00AC7C2C /* slideQuiz.m in Sources */,
 				1420EB8D1883DFCA00E19163 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHeal Harlem/iHeal Harlem-Prefix.pch";
 				INFOPLIST_FILE = "iHeal Harlem/iHeal Harlem-Info.plist";
@@ -394,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHeal Harlem/iHeal Harlem-Prefix.pch";
 				INFOPLIST_FILE = "iHeal Harlem/iHeal Harlem-Info.plist";
@@ -463,6 +498,7 @@
 				1420EBB11883DFCA00E19163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1420EBB21883DFCA00E19163 /* Build configuration list for PBXNativeTarget "iHeal HarlemTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +507,7 @@
 				1420EBB41883DFCA00E19163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

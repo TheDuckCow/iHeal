@@ -30,6 +30,15 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>conditionsArray</key>
+	<array>
+		<string>Asthma</string>
+		<string>Nutrition</string>
+		<string>Sickle Cell Anemia</string>
+		<string>Dental Hygiene</string>
+	</array>
+	<key>TEST_string</key>
+	<string>thisIsATest</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
