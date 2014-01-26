@@ -10,7 +10,5 @@
 
 @interface conditionListTableViewController : UITableViewController
 
-// public list property
-
 
 @end

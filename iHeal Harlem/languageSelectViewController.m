@@ -7,22 +7,13 @@
 //
 
 #import "languageSelectViewController.h"
+#import "getPresentationData.h"
 
 @interface languageSelectViewController ()
-
-@property NSMutableArray *languageChoices;
+@property NSArray *languageChoices;
 @end
 
 @implementation languageSelectViewController
-
-
-- (void) loadLanguageChoices {
-    
-    [self.languageChoices addObject:@"English"];
-    [self.languageChoices addObject:@"French"];
-    [self.languageChoices addObject:@"Spanish"];
-    
-}
 
 
 - (IBAction)unwindToLanguageSelect:(UIStoryboardSegue *)segue
@@ -49,7 +40,7 @@
 {
     [super viewDidLoad];
     self.languageChoices = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
-    [self loadLanguageChoices];
+    self.languageChoices = [getPresentationData dataShared].getLanguageChoices;
     
 	// Do any additional setup after loading the view.
 }

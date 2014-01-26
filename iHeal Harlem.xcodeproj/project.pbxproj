@@ -24,6 +24,8 @@
 		1420EBA21883DFCA00E19163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB841883DFCA00E19163 /* UIKit.framework */; };
 		1420EBAA1883DFCA00E19163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1420EBA81883DFCA00E19163 /* InfoPlist.strings */; };
 		1420EBAC1883DFCA00E19163 /* iHeal_HarlemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */; };
+		144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 144459CB188C2E6F00582A40 /* getPresentationData.m */; };
+		14535DE418942BA0005FB37A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 14535DE318942BA0005FB37A /* icons */; };
 		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
 		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,9 @@
 		1420EBA71883DFCA00E19163 /* iHeal HarlemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHeal HarlemTests-Info.plist"; sourceTree = "<group>"; };
 		1420EBA91883DFCA00E19163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHeal_HarlemTests.m; sourceTree = "<group>"; };
+		144459CA188C2E6F00582A40 /* getPresentationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPresentationData.h; sourceTree = "<group>"; };
+		144459CB188C2E6F00582A40 /* getPresentationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getPresentationData.m; sourceTree = "<group>"; };
+		14535DE318942BA0005FB37A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
 		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
 		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		1420EB861883DFCA00E19163 /* iHeal Harlem */ = {
 			isa = PBXGroup;
 			children = (
+				14535DE318942BA0005FB37A /* icons */,
 				140575031885E34700AC7C2C /* slideInfo.h */,
 				140575061885E35B00AC7C2C /* slideQuiz.h */,
 				140575071885E35B00AC7C2C /* slideQuiz.m */,
@@ -138,6 +144,8 @@
 				1420EB921883DFCA00E19163 /* Main.storyboard */,
 				14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */,
 				14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */,
+				144459CA188C2E6F00582A40 /* getPresentationData.h */,
+				144459CB188C2E6F00582A40 /* getPresentationData.m */,
 				14969ED41885CEC000CF79A6 /* languageSelectViewController.h */,
 				140575091885E5F600AC7C2C /* languageSelectViewController.m */,
 				140574FA1885DE2F00AC7C2C /* slide.h */,
@@ -258,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420EB991883DFCA00E19163 /* Images.xcassets in Resources */,
+				14535DE418942BA0005FB37A /* icons in Resources */,
 				1420EB8B1883DFCA00E19163 /* InfoPlist.strings in Resources */,
 				1420EB941883DFCA00E19163 /* Main.storyboard in Resources */,
 			);
@@ -286,6 +295,7 @@
 				148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */,
 				140575081885E35B00AC7C2C /* slideQuiz.m in Sources */,
 				1420EB8D1883DFCA00E19163 /* main.m in Sources */,
+				144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

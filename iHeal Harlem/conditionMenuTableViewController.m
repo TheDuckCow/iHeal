@@ -7,10 +7,10 @@
 //
 
 #import "conditionMenuTableViewController.h"
+#import "getPresentationData.h"
 
 @interface conditionMenuTableViewController ()
-@property NSMutableArray *menuTitles;
-
+@property NSArray *menuTitles;
 @end
 
 @implementation conditionMenuTableViewController
@@ -27,30 +27,6 @@
     
 }
 
-
-- (NSArray *)pastalColorArray
-{
-    UIColor *pastalOrange =     [UIColor colorWithRed:254/255.0 green:235/255.0 blue:201/255.0 alpha:1];
-    UIColor *pastalYellow =     [UIColor colorWithRed:255/255.0 green:255/255.0 blue:176/255.0 alpha:1];
-    UIColor *pastalGreen =      [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:1];
-    UIColor *pastalCyan =       [UIColor colorWithRed:179/255.0 green:226/255.0 blue:221/255.0 alpha:1];
-    UIColor *pastalBlue =       [UIColor colorWithRed:191/255.0 green:213/255.0 blue:232/255.0 alpha:1];
-    UIColor *pastalMagenta =    [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1];
-    
-    NSArray *colorArray = @[pastalOrange,pastalYellow,pastalGreen,pastalCyan,pastalBlue,pastalMagenta];
-    
-    return colorArray;
-}
-
-- (void) loadMenuTitles {
-    
-    [self.menuTitles addObject:@"Start Presentation"];
-    [self.menuTitles addObject:@"Continue Presentation"];
-    [self.menuTitles addObject:@"Jumo to slide x/x: 'title'"];
-    [self.menuTitles addObject:@"Jump to first quiz slide"];
-    
-}
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -64,8 +40,8 @@
 {
     [super viewDidLoad];
     self.menuTitles = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
-    [self loadMenuTitles];
-    
+    //self.menuTitles = self.dataObj.getMenuTitles;
+    self.self.menuTitles = [getPresentationData dataShared].getMenuTitles;
     
     //self.conditionMenuTableViewController.backgroundView = nil;
     //[self.backgroundcolor = [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1]];
@@ -117,7 +93,8 @@
     NSString *menuSelection = [self.menuTitles objectAtIndex:indexPath.row];
     cell.textLabel.text = menuSelection;
     
-    NSArray *colorArray = [self pastalColorArray];
+    // get the color array from the singleton
+    NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
     
     int modInt = indexPath.row % [colorArray count];
     cell.backgroundColor = colorArray[[colorArray count]-modInt-1];

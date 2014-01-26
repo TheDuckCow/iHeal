@@ -7,6 +7,7 @@
 //
 
 #import "conditionListTableViewController.h"
+#import "getPresentationData.h"
 
 @interface conditionListTableViewController ()
 
@@ -15,20 +16,6 @@
 @end
 
 @implementation conditionListTableViewController
-
-
-- (void) loadPresentationsArray {
-    
-    [self.conditionsList addObject:@"Asthma"];
-    [self.conditionsList addObject:@"Nutrition"];
-    [self.conditionsList addObject:@"placeHolder"];
-    [self.conditionsList addObject:@"placeHolder"];
-    [self.conditionsList addObject:@"placeHolder"];
-    [self.conditionsList addObject:@"placeHolder"];
-    
-    [self.conditionsList addObject:@"Info/Usage"];
-     
-}
 
 
 - (IBAction)unwindToConditionList:(UIStoryboardSegue *)segue
@@ -53,32 +40,20 @@
     return self;
 }
 
-- (NSArray *)pastalColorArray
-{
-    UIColor *pastalOrange =     [UIColor colorWithRed:254/255.0 green:235/255.0 blue:201/255.0 alpha:1];
-    UIColor *pastalYellow =     [UIColor colorWithRed:255/255.0 green:255/255.0 blue:176/255.0 alpha:1];
-    UIColor *pastalGreen =      [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:1];
-    UIColor *pastalCyan =       [UIColor colorWithRed:179/255.0 green:226/255.0 blue:221/255.0 alpha:1];
-    UIColor *pastalBlue =       [UIColor colorWithRed:191/255.0 green:213/255.0 blue:232/255.0 alpha:1];
-    UIColor *pastalMagenta =    [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1];
-    
-    NSArray *colorArray = @[pastalOrange,pastalYellow,pastalGreen,pastalCyan,pastalBlue,pastalMagenta];
-    
-    return colorArray;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.conditionsList = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
     
-    // Add the test label object to the view
+    // get the shared list data from the singleton
+    self.conditionsList = [getPresentationData dataShared].conditionsList;
+    
+    /*
+    // Add the TEST label object to the view
     UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 500, 50)];
     testLabel.text = @"random test label, please ignore"; // original, works
     [self.view addSubview:testLabel];
-    
-    
-    [self loadPresentationsArray];
+    */
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -86,6 +61,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -114,13 +92,20 @@
     
     // Get the name of the cell and set colors
     NSString *condition = [self.conditionsList objectAtIndex:indexPath.row];
+    
+    
+    //NSString *condition = [[getPresentationData shared].conditionsList;
     cell.textLabel.text = condition;
     
-    NSArray *colorArray = [self pastalColorArray];
-
+    
+    // get the color array from the singleton
+    NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
+    
+    // set the color of the current slide by mod function
     int modInt = indexPath.row % [colorArray count];
     cell.backgroundColor = colorArray[modInt];
     
+     
     return cell;
 }
 
