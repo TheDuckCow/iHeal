@@ -8,6 +8,7 @@
 
 #import "conditionMenuTableViewController.h"
 #import "getPresentationData.h"
+#import "slideInfoController.h"
 
 @interface conditionMenuTableViewController ()
 @property NSArray *menuTitles;
@@ -43,10 +44,15 @@
     //self.menuTitles = self.dataObj.getMenuTitles;
     self.self.menuTitles = [getPresentationData dataShared].getMenuTitles;
     
-    //self.conditionMenuTableViewController.backgroundView = nil;
-    //[self.backgroundcolor = [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1]];
-    // >> trying to find out how to set the background color...
-    // http://stackoverflow.com/questions/6724243/uitableview-background-color
+    
+    // set background image
+    UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    
+    UITableView *tableView = (UITableView*)self.view;
+    tableView.backgroundView = imageView;
+    // need to make the image NOT stretched!
+    //[tableView setContentMode:UIViewContentModeScaleAspectFit]; // does nothing..
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -78,35 +84,54 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // but I want it to change.. first cell should be startPresID, second should be cellID
+    // first cell should be startPresID, second should be cellID
     NSString *CellIdentifier = @"cellID";
     
     // special size/font for the first cell
     if (indexPath.row==0){
         CellIdentifier = @"startPresID";
+        
     }
     
     // tends to crash on this (... generated...) line.
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Get the name of the cell
+    
+    // Get the label for the cell
     NSString *menuSelection = [self.menuTitles objectAtIndex:indexPath.row];
     cell.textLabel.text = menuSelection;
     
+    // set transparent background color
+    UIColor *transparent = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.25];
+    cell.backgroundColor = transparent;
+    
+    
+    
+    // OLD code that was used to 'randomly' set the background color of the table.
+    /*
     // get the color array from the singleton
     NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
     
     int modInt = indexPath.row % [colorArray count];
     cell.backgroundColor = colorArray[[colorArray count]-modInt-1];
+     */
+    
     
     return cell;
 }
 
 
-
-
-
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // now determine which view to go to based on what you clicked..
+    // i.e. do the slides array calculations etc and then just check type to go to next
+    // and load that view controller!
+    
+    
+    slideInfoController *slideInfo =[self.storyboard instantiateViewControllerWithIdentifier:@"slideInfoID"];
+    [self.navigationController pushViewController:slideInfo animated:YES];
+    
+}
 
 
 

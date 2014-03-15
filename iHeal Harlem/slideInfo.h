@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Harlem Hospital. All rights reserved.
 //
 
-#import "slide.h"
+#import <Foundation/Foundation.h>
 
-@interface slideInfo : slide
+@interface slideInfo : NSObject
 
-@property NSString *pictureURL;
+@property NSString *image;
 @property NSString *text;
 
 // less important or can be missing

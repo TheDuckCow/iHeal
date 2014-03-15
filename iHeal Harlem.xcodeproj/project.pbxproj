@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140574FC1885DE2F00AC7C2C /* slide.m in Sources */ = {isa = PBXBuildFile; fileRef = 140574FB1885DE2F00AC7C2C /* slide.m */; };
 		140575051885E34700AC7C2C /* slideInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575041885E34700AC7C2C /* slideInfo.m */; };
 		140575081885E35B00AC7C2C /* slideQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575071885E35B00AC7C2C /* slideQuiz.m */; };
 		1405750A1885E5F600AC7C2C /* languageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140575091885E5F600AC7C2C /* languageSelectViewController.m */; };
@@ -26,8 +25,11 @@
 		1420EBAC1883DFCA00E19163 /* iHeal_HarlemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */; };
 		144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 144459CB188C2E6F00582A40 /* getPresentationData.m */; };
 		14535DE418942BA0005FB37A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 14535DE318942BA0005FB37A /* icons */; };
+		14632BDD18D2DED600F3A74C /* UI_elements in Resources */ = {isa = PBXBuildFile; fileRef = 14632BDC18D2DED600F3A74C /* UI_elements */; };
+		14632BE418D2F79500F3A74C /* slideInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14632BE318D2F79500F3A74C /* slideInfoController.m */; };
 		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
 		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
+		14A6B80518AD2B6900F36667 /* presentations in Resources */ = {isa = PBXBuildFile; fileRef = 14A6B80418AD2B6900F36667 /* presentations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		140574FA1885DE2F00AC7C2C /* slide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slide.h; sourceTree = "<group>"; };
-		140574FB1885DE2F00AC7C2C /* slide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slide.m; sourceTree = "<group>"; };
 		140575031885E34700AC7C2C /* slideInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideInfo.h; sourceTree = "<group>"; };
 		140575041885E34700AC7C2C /* slideInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideInfo.m; sourceTree = "<group>"; };
 		140575061885E35B00AC7C2C /* slideQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideQuiz.h; sourceTree = "<group>"; };
@@ -68,11 +68,15 @@
 		144459CA188C2E6F00582A40 /* getPresentationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPresentationData.h; sourceTree = "<group>"; };
 		144459CB188C2E6F00582A40 /* getPresentationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getPresentationData.m; sourceTree = "<group>"; };
 		14535DE318942BA0005FB37A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		14632BDC18D2DED600F3A74C /* UI_elements */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UI_elements; sourceTree = "<group>"; };
+		14632BE218D2F79500F3A74C /* slideInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideInfoController.h; sourceTree = "<group>"; };
+		14632BE318D2F79500F3A74C /* slideInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideInfoController.m; sourceTree = "<group>"; };
 		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
 		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
 		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
 		14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionMenuTableViewController.h; sourceTree = "<group>"; };
 		14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionMenuTableViewController.m; sourceTree = "<group>"; };
+		14A6B80418AD2B6900F36667 /* presentations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presentations; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,23 +137,25 @@
 			isa = PBXGroup;
 			children = (
 				14535DE318942BA0005FB37A /* icons */,
-				140575031885E34700AC7C2C /* slideInfo.h */,
+				14A6B80418AD2B6900F36667 /* presentations */,
 				140575061885E35B00AC7C2C /* slideQuiz.h */,
 				140575071885E35B00AC7C2C /* slideQuiz.m */,
+				140575031885E34700AC7C2C /* slideInfo.h */,
 				140575041885E34700AC7C2C /* slideInfo.m */,
 				1420EB8F1883DFCA00E19163 /* iHealAppDelegate.h */,
+				14632BDC18D2DED600F3A74C /* UI_elements */,
 				1420EB901883DFCA00E19163 /* iHealAppDelegate.m */,
 				148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */,
 				148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */,
 				1420EB921883DFCA00E19163 /* Main.storyboard */,
+				14632BE218D2F79500F3A74C /* slideInfoController.h */,
+				14632BE318D2F79500F3A74C /* slideInfoController.m */,
 				14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */,
 				14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */,
 				144459CA188C2E6F00582A40 /* getPresentationData.h */,
 				144459CB188C2E6F00582A40 /* getPresentationData.m */,
 				14969ED41885CEC000CF79A6 /* languageSelectViewController.h */,
 				140575091885E5F600AC7C2C /* languageSelectViewController.m */,
-				140574FA1885DE2F00AC7C2C /* slide.h */,
-				140574FB1885DE2F00AC7C2C /* slide.m */,
 				1420EB981883DFCA00E19163 /* Images.xcassets */,
 				1420EB871883DFCA00E19163 /* Supporting Files */,
 			);
@@ -267,8 +273,10 @@
 			files = (
 				1420EB991883DFCA00E19163 /* Images.xcassets in Resources */,
 				14535DE418942BA0005FB37A /* icons in Resources */,
+				14A6B80518AD2B6900F36667 /* presentations in Resources */,
 				1420EB8B1883DFCA00E19163 /* InfoPlist.strings in Resources */,
 				1420EB941883DFCA00E19163 /* Main.storyboard in Resources */,
+				14632BDD18D2DED600F3A74C /* UI_elements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +298,10 @@
 				14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */,
 				140575051885E34700AC7C2C /* slideInfo.m in Sources */,
 				1420EB911883DFCA00E19163 /* iHealAppDelegate.m in Sources */,
-				140574FC1885DE2F00AC7C2C /* slide.m in Sources */,
 				1405750A1885E5F600AC7C2C /* languageSelectViewController.m in Sources */,
 				148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */,
 				140575081885E35B00AC7C2C /* slideQuiz.m in Sources */,
+				14632BE418D2F79500F3A74C /* slideInfoController.m in Sources */,
 				1420EB8D1883DFCA00E19163 /* main.m in Sources */,
 				144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */,
 			);

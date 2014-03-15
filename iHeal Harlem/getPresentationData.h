@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "slideInfo.h"
 
 @interface getPresentationData : NSObject {
 }
@@ -24,6 +25,8 @@
 
 - (void) getPresentationsList;
 
++ (void) replacePresentation:(NSDictionary*) presPlist;
+
 - (NSArray *) getPastalColorArray;
 
 - (NSMutableArray *) getMenuTitles;
@@ -31,6 +34,8 @@
 - (NSMutableArray *) getLanguageChoices;
 
 - (NSMutableArray *) getSlides;
+
+- (slideInfo *) getCurrentSlideInfo;
 
 - (NSMutableArray *) getInfoSlide;
 

@@ -16,7 +16,7 @@
 
 -(void)didAnswer:(NSString *)choice{
     
-    if (choice == self.correctSolution){
+    if (choice == self.solution){
         self.didAnswerCorrect=YES;
     }
 }

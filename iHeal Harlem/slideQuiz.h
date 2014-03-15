@@ -6,14 +6,15 @@
 //  Copyright (c) 2014 Harlem Hospital. All rights reserved.
 //
 
-#import "slide.h"
+#import <Foundation/Foundation.h>
 
-@interface slideQuiz : slide
+@interface slideQuiz : NSObject
 
 @property NSString *question;
-@property NSMutableArray *solutions;
-@property NSString *correctSolution;
+@property NSMutableArray *answers;
+@property NSString *solution;
 @property NSString *explanation;
+@property NSString *title;
 @property BOOL didAnswerCorrect;
 
 -(void)didAnswer:(NSString *)choice;

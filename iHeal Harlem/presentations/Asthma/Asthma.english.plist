@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>testString</key>
+	<string>stillWorkingHERER&gt;Z&gt;??</string>
+	<key>attributes</key>
+	<dict>
+		<key>conditionName</key>
+		<string>Asthma</string>
+		<key>menuTitles</key>
+		<array>
+			<string>continue</string>
+			<string>jumpInfo</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+			<string>clearFlags</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>asthma_01.jpg</string>
+			<key>text</key>
+			<string>You have asthma? Then this is for you!</string>
+			<key>title</key>
+			<string>Asthma Intro (title opt.t)</string>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Second slide wut wut! The small brown fox jumped over a fence or something, I don&apos;t really know look it up or something. The small brown fox jumped over a fence or something, I don&apos;t really know look it up or something. The small brown fox jumped over a fence or something, I don&apos;t really know look it up or something. The small brown fox jumped over a fence or something, I don&apos;t really know look it up or something.</string>
+			<key>title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Who is your father?</string>
+			<key>answers</key>
+			<array>
+				<string>Me</string>
+				<string>You</string>
+				<string>Habib Khan</string>
+				<string>Lord Helix</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>All is true and right thanks to Lord Helix</string>
+			<key>title</key>
+			<string>First Quiz Question</string>
+		</dict>
+	</array>
+</dict>
+</plist>

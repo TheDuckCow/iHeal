@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Harlem Hospital. All rights reserved.
 //
 
-
+// This class is a SINGLETON, only one object exists in the app
+// all the presentation data is held/loaded/changed here.
 
 // data hard coded for now
 // eventually implement text parsing structure
@@ -21,6 +22,7 @@
 @synthesize menuTitles;
 @synthesize languageChoices;
 @synthesize slides;
+//@synthesize currentSlideIndex;
 
 
 
@@ -41,8 +43,10 @@
         
         shared.conditionsList = [[NSMutableArray alloc]init];
         shared.menuTitles =[[NSMutableArray alloc]init];
+        [shared.menuTitles addObject:@"Start Presentation\n"];
         shared.languageChoices = [[NSMutableArray alloc]init];
         shared.slides = [[NSMutableArray alloc]init];
+        //shared.currentSlideIndex = [[int alloc]init]; // gah I need just an int, not an object!!
         
         // now initialize the values...
         [shared getPresentationsList];
@@ -57,13 +61,39 @@
 }
 
 
+// parses the file structure to get presentation handles
 - (void) getPresentationsList {
     
+    NSLog(@"######### A");
+    
+    NSFileManager *filemgr;
+    NSString *currentpath;
+    NSArray *filelist;
+    int count;
+    int i;
+    filemgr = [NSFileManager defaultManager];
+    currentpath = [filemgr currentDirectoryPath];
+    
+    filelist = [filemgr contentsOfDirectoryAtPath: currentpath error: nil];
+    //filelist = [filemgr contentsOfDirectoryAtPath: @"/presentations" error: nil];
+    
+    count = [filelist count];
+    NSLog(@"%d",count);
+    
+    for (i = 0; i < count; i++)
+        //NSLog(@"#########");
+        NSLog (@"%@", [filelist objectAtIndex: i]);
+    
+    
+    // lists images....... .. . .  .    .       .
+    NSArray *namesArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@""];
+    for (i=0;i<namesArray.count;i++){
+        NSLog(@"%@",namesArray[i]);
+    }
     
     // everytime you call it.. it will add more.. need to REPLACE the array
     [self.conditionsList addObject:@"Asthma"];
     [self.conditionsList addObject:@"Nutrition"];
-    [self.conditionsList addObject:@"placeHolder"];
     [self.conditionsList addObject:@"placeHolder"];
     [self.conditionsList addObject:@"placeHolder"];
     [self.conditionsList addObject:@"placeHolder"];
@@ -72,12 +102,41 @@
     //self.conditionsList = @[@"Asthma",@"Nutrition",@"placeHolder",@"Info/Usage"];
     
     // debug
-    NSLog(@"dataObj: %@", self.conditionsList);
-    
+    //NSLog(@"dataObj: %@", self.conditionsList);
     
 }
 
+// this returns current slide, called assuming it is type "slideInfo"
+- (slideInfo *) getCurrentSlideInfo{
+    // later.. get it from the self.currentSlideIndex
+    
+    slideInfo *currentSlide = [[slideInfo alloc] init];
+    currentSlide.image = @"asthma_01.jpg";
+    currentSlide.text = @"static preloaded stuff repeatz?";
+    currentSlide.title = @"TITLEYO";
+    
+    return currentSlide;
+}
 
+
++ (void) replacePresentation:(NSMutableArray*) presPlist{
+    
+    // this method takes a presentation list read-in plist
+    // and replaces the currently loaded presentation with
+    // this (1 specific language, 1 condition)
+    
+    for (int i=0;i<[presPlist count];i++){
+        NSDictionary *temp = presPlist[i];
+        NSString *strTemp = temp[@"slide"];
+        NSLog(@"slide type %@", strTemp);
+    }
+    
+    //self->slides = presPlist;
+    //self.slides = &presPlist;
+}
+
+
+// this should be a hard coded array of pastel colors used for menu items and other schemes
 - (NSArray *)getPastalColorArray
 {
     UIColor *pastalOrange =     [UIColor colorWithRed:254/255.0 green:235/255.0 blue:201/255.0 alpha:1];
@@ -86,6 +145,8 @@
     UIColor *pastalCyan =       [UIColor colorWithRed:179/255.0 green:226/255.0 blue:221/255.0 alpha:1];
     UIColor *pastalBlue =       [UIColor colorWithRed:191/255.0 green:213/255.0 blue:232/255.0 alpha:1];
     UIColor *pastalMagenta =    [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1];
+    //UIColor *transparent =      [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0];
+    //UIColor *skyeBlue =    [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:1];
     
     NSArray *colorArray = @[pastalOrange,pastalYellow,pastalGreen,pastalCyan,pastalBlue,pastalMagenta];
     //NSLog(@"colorObj: %@", colorArray);
@@ -94,11 +155,27 @@
 
 
 - (NSMutableArray *) getMenuTitles {
+    // NEED TO PROGRAMATICALLY GET THE NAME, store globally?
+    // and furthermroe, should NOT do in the view controllers...
     
-    [self.menuTitles addObject:@"Start Presentation"];
-    [self.menuTitles addObject:@"Continue Presentation"];
-    [self.menuTitles addObject:@"Jumo to slide x/x: 'title'"];
-    [self.menuTitles addObject:@"Jump to first quiz slide"];
+    
+    NSString *plistName = @"Asthma.english"; // should get this/parse from indexPath.row of array.
+
+    NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    NSDictionary *attr = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSDictionary *attributes = [[NSDictionary alloc] init];
+    attributes = [attr objectForKey:@"attributes"];
+    //NSLog(@"dictionary = %@", attr);
+
+    NSMutableArray *plistMenuTitles = [attributes objectForKey:@"menuTitles"];
+
+    
+    
+    // add the menu options to the menu titles, index + 1 (start presentation ALWAYS first)
+    for (int i=0; i< [plistMenuTitles count]; i++){
+        self.menuTitles[1+i]=plistMenuTitles[i];
+    }
+
     return self.menuTitles;
     
 }
@@ -123,6 +200,11 @@
 - (NSArray *) getInfoSlide {
     NSArray *slide;
     return slide;
+}
+
+
+- (void)dealloc {
+    // Should never be called, but just here for clarity really.
 }
 
 @end

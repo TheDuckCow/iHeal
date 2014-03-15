@@ -47,13 +47,22 @@
     
     // get the shared list data from the singleton
     self.conditionsList = [getPresentationData dataShared].conditionsList;
+
     
-    /*
-    // Add the TEST label object to the view
-    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 500, 50)];
-    testLabel.text = @"random test label, please ignore"; // original, works
-    [self.view addSubview:testLabel];
-    */
+    // set background image
+    UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    
+    UITableView *tableView = (UITableView*)self.view;
+    tableView.backgroundView = imageView;
+    // need to make the image NOT stretched!
+    //[tableView setContentMode:UIViewContentModeScaleAspectFit]; // does nothing..
+    
+    UIColor *skyeBlue =    [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:1];
+    self.navigationController.navigationBar.barTintColor = skyeBlue;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    self.navigationController.navigationBar.translucent = NO;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -75,7 +84,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // one section to return.. actually, 2 sections would be good for the info stuff
+    // one section to return.. actually, 2 sections would be good for the info stuff/credits
     return 1;
 }
 
@@ -93,23 +102,50 @@
     // Get the name of the cell and set colors
     NSString *condition = [self.conditionsList objectAtIndex:indexPath.row];
     
-    
     //NSString *condition = [[getPresentationData shared].conditionsList;
     cell.textLabel.text = condition;
     
+    UIColor *transparent = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.25];
+    cell.backgroundColor = transparent;
     
+    
+    // OLD code to 'randomly' set color of the cell, no variance now.
+    /*
     // get the color array from the singleton
     NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
     
     // set the color of the current slide by mod function
     int modInt = indexPath.row % [colorArray count];
     cell.backgroundColor = colorArray[modInt];
+    */
     
-     
+    // have right-aligned stuff, need custom cell view layout to do this!
+    
     return cell;
 }
 
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //where indexPath.row is the selected cell
+    // CONVERT THIS TO BE DONE IN DATA CLASS
+    // just pass in the string here to set which one.... assume english for now?
+    
+    NSString *plistName = @"Asthma.english"; // should get this/parse from indexPath.row of array.
+    // option for combining strings:
+    //[NSString stringWithFormat:@"%@/%@/%@", three, two, one];
+    
+    
+    NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    NSDictionary *attr = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSLog(@"check key>> %@", attr[@"testString"]);
+    [getPresentationData replacePresentation:attr[@"slides"]];
+    
+    
+    
+    
+}
 
 
 /*
