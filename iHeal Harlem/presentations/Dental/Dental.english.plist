@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>conditionName</key>
+		<string>Dental Hygiene</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpInfo</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Start Presentation</string>
+			<string>Continue From Last Slide (##)</string>
+			<string>Jump to Info Slide</string>
+			<string>Jump to First Quiz Slide</string>
+			<string>Review Flagged Slides</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_01.png</string>
+			<key>text</key>
+			<string>This is Eric. Eric is 12 months old, and his baby teeth are growing in. </string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_02.png</string>
+			<key>text</key>
+			<string>Being a parent is a tough job, and it’s hard to remember to do everything- sometimes, it seems like it’s better and easier to skip brushing teeth, if it means that Eric will get more rest.  So sometimes, Eric’s gums and new baby teeth don’t get brushed.  </string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_03.png</string>
+			<key>text</key>
+			<string>Just like most babies, Eric loves drinking milk!  His mom knows that milk is great for babies, and helps them get strong.  What a lot of parents don’t realize is that milk contains natural sugars- these sugars are not bad for babies, but they can build up on babies’ gums and new teeth and cause teeth to rot.  Even teeth that haven’t come in yet!</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_04.png</string>
+			<key>text</key>
+			<string>Eric and his mom go to the dentist to check his teeth. The dentist tells Eric&apos;s mom that she must brush Eric&apos;s teeth and gums every night before bed with a soft-bristled toothbrush. Eric&apos;s mom asks how often they should see the dentist. He tells her that they should see the dentist at least once every six months, and the first time a baby should see the dentist is when their first baby tooth has grown in or by their first birthday.</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_05.png</string>
+			<key>text</key>
+			<string>Eric&apos;s mom asks why baby teeth are so important if they are going to eventually fall out. The dentist tells her that baby teeth help permanent ones grow in a healthy way and they also help babies learn to speak correctly and eat well.</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_06.png</string>
+			<key>text</key>
+			<string>&quot;What if Eric has a tooth ache?&quot;, she asks. The dentist tells her to help the pain go away, she should rinse the painful area inside his mouth with warm salt water and put a cold cloth on the side of his mouth that hurts the most. If Eric still seems to be hurting, she can give him some baby Tylenol, and of course, as soon as she knows that Eric has a toothache, she should make an appointment for him to see the dentist as soon as possible!
+</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_07.png</string>
+			<key>text</key>
+			<string>The dentist also tells Eric&apos;s mother that thumb-sucking and using a pacifier after the age of three years old can harm the growth of a child&apos;s teeth. He also says that once babies are six months and older, giving them water before bed and after brushing teeth is the best idea, since water doesn’t have the sugars in it that milk does.  (It’s not a good idea to give water to babies who are younger than 6 months.)</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_08.png</string>
+			<key>text</key>
+			<string>Babies who don&apos;t have teeth should have their gums cleaned with water and a soft infant-toothbrush or a soft cloth. Because Eric is just starting to get his baby teeth, his mother should clean them with a smear of toothpaste with flouride and a toothbrush that fits his age group. The dentist says that when Eric is older than two years old, he can use a pea-sized amount of toothpaste to clean his own teeth. </string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_09.png</string>
+			<key>text</key>
+			<string>When Eric is between the ages of two and five years, his mom can help him clean them the right way, so one day he can clean his teeth well without mom&apos;s help.  Eric’s dentist told them that children (and adults!) should always spit out and not swallow toothpaste when brushing their teeth. </string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

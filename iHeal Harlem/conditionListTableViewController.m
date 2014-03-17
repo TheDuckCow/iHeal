@@ -23,10 +23,6 @@
     // ie unwinded from the add item view controller
     //XYZAddToDoItemViewController *source = [segue sourceViewController];
     
-    //Retrieve the controller’s presentation array...
-    
-    // set the continue presentation array...
-    
 }
 
 
@@ -43,11 +39,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // for setting white color for status bar [do one or the other of the below]
+    
     self.conditionsList = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
     
     // get the shared list data from the singleton
     self.conditionsList = [getPresentationData dataShared].conditionsList;
-
     
     // set background image
     UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
@@ -109,17 +106,8 @@
     cell.backgroundColor = transparent;
     
     
-    // OLD code to 'randomly' set color of the cell, no variance now.
-    /*
-    // get the color array from the singleton
-    NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
-    
-    // set the color of the current slide by mod function
-    int modInt = indexPath.row % [colorArray count];
-    cell.backgroundColor = colorArray[modInt];
-    */
-    
     // have right-aligned stuff, need custom cell view layout to do this!
+    //
     
     return cell;
 }
@@ -131,6 +119,8 @@
     // CONVERT THIS TO BE DONE IN DATA CLASS
     // just pass in the string here to set which one.... assume english for now?
     
+    
+    /*
     NSString *plistName = @"Asthma.english"; // should get this/parse from indexPath.row of array.
     // option for combining strings:
     //[NSString stringWithFormat:@"%@/%@/%@", three, two, one];
@@ -139,11 +129,8 @@
     NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
     NSDictionary *attr = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    NSLog(@"check key>> %@", attr[@"testString"]);
-    [getPresentationData replacePresentation:attr[@"slides"]];
     
-    
-    
+    */
     
 }
 

@@ -23,13 +23,35 @@
 		1420EBA21883DFCA00E19163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420EB841883DFCA00E19163 /* UIKit.framework */; };
 		1420EBAA1883DFCA00E19163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1420EBA81883DFCA00E19163 /* InfoPlist.strings */; };
 		1420EBAC1883DFCA00E19163 /* iHeal_HarlemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */; };
+		14319D9A18D63AA400BE1838 /* slideQuizController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14319D9918D63AA400BE1838 /* slideQuizController.m */; };
 		144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 144459CB188C2E6F00582A40 /* getPresentationData.m */; };
 		14535DE418942BA0005FB37A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 14535DE318942BA0005FB37A /* icons */; };
-		14632BDD18D2DED600F3A74C /* UI_elements in Resources */ = {isa = PBXBuildFile; fileRef = 14632BDC18D2DED600F3A74C /* UI_elements */; };
 		14632BE418D2F79500F3A74C /* slideInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14632BE318D2F79500F3A74C /* slideInfoController.m */; };
+		146AD1AA18D617460019DE39 /* asthma_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD19E18D617460019DE39 /* asthma_02.jpg */; };
+		146AD1AB18D617460019DE39 /* asthma_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD19F18D617460019DE39 /* asthma_03.jpg */; };
+		146AD1AC18D617460019DE39 /* asthma_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A018D617460019DE39 /* asthma_04.jpg */; };
+		146AD1AD18D617460019DE39 /* asthma_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A118D617460019DE39 /* asthma_05.jpg */; };
+		146AD1AE18D617460019DE39 /* asthma_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A218D617460019DE39 /* asthma_06.jpg */; };
+		146AD1AF18D617460019DE39 /* asthma_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A318D617460019DE39 /* asthma_07.jpg */; };
+		146AD1B018D617460019DE39 /* asthma_08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A418D617460019DE39 /* asthma_08.jpg */; };
+		146AD1B118D617460019DE39 /* asthma_09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A518D617460019DE39 /* asthma_09.jpg */; };
+		146AD1B218D617460019DE39 /* asthma_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A618D617460019DE39 /* asthma_10.jpg */; };
+		146AD1B318D617460019DE39 /* asthma_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A718D617460019DE39 /* asthma_11.jpg */; };
+		146AD1B418D617460019DE39 /* asthma_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1A818D617460019DE39 /* asthma_12.jpg */; };
+		146AD1BA18D618710019DE39 /* Asthma.english.plist in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1B918D618710019DE39 /* Asthma.english.plist */; };
+		1473C30E18D4F558004BC9BC /* background_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1473C30D18D4F558004BC9BC /* background_1.jpg */; };
+		1473C31B18D4FA06004BC9BC /* UI_checkCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31318D4FA06004BC9BC /* UI_checkCircle.png */; };
+		1473C31C18D4FA06004BC9BC /* UI_flagClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31418D4FA06004BC9BC /* UI_flagClear.png */; };
+		1473C31D18D4FA06004BC9BC /* UI_flagSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31518D4FA06004BC9BC /* UI_flagSet.png */; };
+		1473C31E18D4FA06004BC9BC /* UI_gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31618D4FA06004BC9BC /* UI_gear.png */; };
+		1473C31F18D4FA06004BC9BC /* UI_infoCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31718D4FA06004BC9BC /* UI_infoCircle.png */; };
+		1473C32018D4FA06004BC9BC /* UI_return.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31818D4FA06004BC9BC /* UI_return.png */; };
+		1473C32118D4FA06004BC9BC /* UI_world.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31918D4FA06004BC9BC /* UI_world.png */; };
+		1473C32218D4FA06004BC9BC /* UI_xCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473C31A18D4FA06004BC9BC /* UI_xCircle.png */; };
 		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
 		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
-		14A6B80518AD2B6900F36667 /* presentations in Resources */ = {isa = PBXBuildFile; fileRef = 14A6B80418AD2B6900F36667 /* presentations */; };
+		14F0219E18D62FF1008A20BB /* Asthma.french.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14F0219C18D62FF1008A20BB /* Asthma.french.plist */; };
+		14F0219F18D62FF1008A20BB /* Asthma.spanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14F0219D18D62FF1008A20BB /* Asthma.spanish.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,18 +87,41 @@
 		1420EBA71883DFCA00E19163 /* iHeal HarlemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHeal HarlemTests-Info.plist"; sourceTree = "<group>"; };
 		1420EBA91883DFCA00E19163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1420EBAB1883DFCA00E19163 /* iHeal_HarlemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHeal_HarlemTests.m; sourceTree = "<group>"; };
+		14319D9818D63AA400BE1838 /* slideQuizController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideQuizController.h; sourceTree = "<group>"; };
+		14319D9918D63AA400BE1838 /* slideQuizController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideQuizController.m; sourceTree = "<group>"; };
 		144459CA188C2E6F00582A40 /* getPresentationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPresentationData.h; sourceTree = "<group>"; };
 		144459CB188C2E6F00582A40 /* getPresentationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getPresentationData.m; sourceTree = "<group>"; };
 		14535DE318942BA0005FB37A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
-		14632BDC18D2DED600F3A74C /* UI_elements */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UI_elements; sourceTree = "<group>"; };
 		14632BE218D2F79500F3A74C /* slideInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideInfoController.h; sourceTree = "<group>"; };
 		14632BE318D2F79500F3A74C /* slideInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideInfoController.m; sourceTree = "<group>"; };
+		146AD19E18D617460019DE39 /* asthma_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_02.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_02.jpg"; sourceTree = "<group>"; };
+		146AD19F18D617460019DE39 /* asthma_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_03.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_03.jpg"; sourceTree = "<group>"; };
+		146AD1A018D617460019DE39 /* asthma_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_04.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_04.jpg"; sourceTree = "<group>"; };
+		146AD1A118D617460019DE39 /* asthma_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_05.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_05.jpg"; sourceTree = "<group>"; };
+		146AD1A218D617460019DE39 /* asthma_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_06.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_06.jpg"; sourceTree = "<group>"; };
+		146AD1A318D617460019DE39 /* asthma_07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_07.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_07.jpg"; sourceTree = "<group>"; };
+		146AD1A418D617460019DE39 /* asthma_08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_08.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_08.jpg"; sourceTree = "<group>"; };
+		146AD1A518D617460019DE39 /* asthma_09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_09.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_09.jpg"; sourceTree = "<group>"; };
+		146AD1A618D617460019DE39 /* asthma_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_10.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_10.jpg"; sourceTree = "<group>"; };
+		146AD1A718D617460019DE39 /* asthma_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_11.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_11.jpg"; sourceTree = "<group>"; };
+		146AD1A818D617460019DE39 /* asthma_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = asthma_12.jpg; path = "iHeal Harlem/presentations/Asthma/IMG/asthma_12.jpg"; sourceTree = "<group>"; };
+		146AD1B918D618710019DE39 /* Asthma.english.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Asthma.english.plist; path = "iHeal Harlem/presentations/Asthma/Asthma.english.plist"; sourceTree = "<group>"; };
+		1473C30D18D4F558004BC9BC /* background_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background_1.jpg; path = "iHeal Harlem/UI_elements/background_1.jpg"; sourceTree = "<group>"; };
+		1473C31318D4FA06004BC9BC /* UI_checkCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_checkCircle.png; path = "iHeal Harlem/UI_elements/UI_checkCircle.png"; sourceTree = "<group>"; };
+		1473C31418D4FA06004BC9BC /* UI_flagClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_flagClear.png; path = "iHeal Harlem/UI_elements/UI_flagClear.png"; sourceTree = "<group>"; };
+		1473C31518D4FA06004BC9BC /* UI_flagSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_flagSet.png; path = "iHeal Harlem/UI_elements/UI_flagSet.png"; sourceTree = "<group>"; };
+		1473C31618D4FA06004BC9BC /* UI_gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_gear.png; path = "iHeal Harlem/UI_elements/UI_gear.png"; sourceTree = "<group>"; };
+		1473C31718D4FA06004BC9BC /* UI_infoCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_infoCircle.png; path = "iHeal Harlem/UI_elements/UI_infoCircle.png"; sourceTree = "<group>"; };
+		1473C31818D4FA06004BC9BC /* UI_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_return.png; path = "iHeal Harlem/UI_elements/UI_return.png"; sourceTree = "<group>"; };
+		1473C31918D4FA06004BC9BC /* UI_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_world.png; path = "iHeal Harlem/UI_elements/UI_world.png"; sourceTree = "<group>"; };
+		1473C31A18D4FA06004BC9BC /* UI_xCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UI_xCircle.png; path = "iHeal Harlem/UI_elements/UI_xCircle.png"; sourceTree = "<group>"; };
 		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
 		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
 		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
 		14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionMenuTableViewController.h; sourceTree = "<group>"; };
 		14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionMenuTableViewController.m; sourceTree = "<group>"; };
-		14A6B80418AD2B6900F36667 /* presentations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presentations; sourceTree = "<group>"; };
+		14F0219C18D62FF1008A20BB /* Asthma.french.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Asthma.french.plist; path = "iHeal Harlem/presentations/Asthma/Asthma.french.plist"; sourceTree = "<group>"; };
+		14F0219D18D62FF1008A20BB /* Asthma.spanish.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Asthma.spanish.plist; path = "iHeal Harlem/presentations/Asthma/Asthma.spanish.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +151,7 @@
 		1420EB741883DFCA00E19163 = {
 			isa = PBXGroup;
 			children = (
+				1473C30F18D4F5C8004BC9BC /* Presentation Data */,
 				1420EB861883DFCA00E19163 /* iHeal Harlem */,
 				1420EBA51883DFCA00E19163 /* iHeal HarlemTests */,
 				1420EB7F1883DFCA00E19163 /* Frameworks */,
@@ -137,19 +183,19 @@
 			isa = PBXGroup;
 			children = (
 				14535DE318942BA0005FB37A /* icons */,
-				14A6B80418AD2B6900F36667 /* presentations */,
 				140575061885E35B00AC7C2C /* slideQuiz.h */,
 				140575071885E35B00AC7C2C /* slideQuiz.m */,
 				140575031885E34700AC7C2C /* slideInfo.h */,
 				140575041885E34700AC7C2C /* slideInfo.m */,
 				1420EB8F1883DFCA00E19163 /* iHealAppDelegate.h */,
-				14632BDC18D2DED600F3A74C /* UI_elements */,
 				1420EB901883DFCA00E19163 /* iHealAppDelegate.m */,
 				148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */,
 				148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */,
 				1420EB921883DFCA00E19163 /* Main.storyboard */,
 				14632BE218D2F79500F3A74C /* slideInfoController.h */,
 				14632BE318D2F79500F3A74C /* slideInfoController.m */,
+				14319D9818D63AA400BE1838 /* slideQuizController.h */,
+				14319D9918D63AA400BE1838 /* slideQuizController.m */,
 				14969ED71885D09500CF79A6 /* conditionMenuTableViewController.h */,
 				14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */,
 				144459CA188C2E6F00582A40 /* getPresentationData.h */,
@@ -189,6 +235,52 @@
 				1420EBA81883DFCA00E19163 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		146AD1B518D6174D0019DE39 /* Asthma */ = {
+			isa = PBXGroup;
+			children = (
+				14F0219C18D62FF1008A20BB /* Asthma.french.plist */,
+				14F0219D18D62FF1008A20BB /* Asthma.spanish.plist */,
+				146AD1B918D618710019DE39 /* Asthma.english.plist */,
+				146AD19E18D617460019DE39 /* asthma_02.jpg */,
+				146AD19F18D617460019DE39 /* asthma_03.jpg */,
+				146AD1A018D617460019DE39 /* asthma_04.jpg */,
+				146AD1A118D617460019DE39 /* asthma_05.jpg */,
+				146AD1A218D617460019DE39 /* asthma_06.jpg */,
+				146AD1A318D617460019DE39 /* asthma_07.jpg */,
+				146AD1A418D617460019DE39 /* asthma_08.jpg */,
+				146AD1A518D617460019DE39 /* asthma_09.jpg */,
+				146AD1A618D617460019DE39 /* asthma_10.jpg */,
+				146AD1A718D617460019DE39 /* asthma_11.jpg */,
+				146AD1A818D617460019DE39 /* asthma_12.jpg */,
+			);
+			name = Asthma;
+			sourceTree = "<group>";
+		};
+		146AD1B618D6175B0019DE39 /* UI_selements */ = {
+			isa = PBXGroup;
+			children = (
+				1473C31318D4FA06004BC9BC /* UI_checkCircle.png */,
+				1473C31418D4FA06004BC9BC /* UI_flagClear.png */,
+				1473C31518D4FA06004BC9BC /* UI_flagSet.png */,
+				1473C31618D4FA06004BC9BC /* UI_gear.png */,
+				1473C31718D4FA06004BC9BC /* UI_infoCircle.png */,
+				1473C31818D4FA06004BC9BC /* UI_return.png */,
+				1473C31918D4FA06004BC9BC /* UI_world.png */,
+				1473C31A18D4FA06004BC9BC /* UI_xCircle.png */,
+				1473C30D18D4F558004BC9BC /* background_1.jpg */,
+			);
+			name = UI_selements;
+			sourceTree = "<group>";
+		};
+		1473C30F18D4F5C8004BC9BC /* Presentation Data */ = {
+			isa = PBXGroup;
+			children = (
+				146AD1B618D6175B0019DE39 /* UI_selements */,
+				146AD1B518D6174D0019DE39 /* Asthma */,
+			);
+			name = "Presentation Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +364,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420EB991883DFCA00E19163 /* Images.xcassets in Resources */,
+				146AD1AA18D617460019DE39 /* asthma_02.jpg in Resources */,
+				146AD1AB18D617460019DE39 /* asthma_03.jpg in Resources */,
+				146AD1AC18D617460019DE39 /* asthma_04.jpg in Resources */,
+				146AD1AD18D617460019DE39 /* asthma_05.jpg in Resources */,
+				146AD1AE18D617460019DE39 /* asthma_06.jpg in Resources */,
+				146AD1AF18D617460019DE39 /* asthma_07.jpg in Resources */,
+				146AD1B018D617460019DE39 /* asthma_08.jpg in Resources */,
+				146AD1B118D617460019DE39 /* asthma_09.jpg in Resources */,
+				146AD1B218D617460019DE39 /* asthma_10.jpg in Resources */,
+				146AD1B318D617460019DE39 /* asthma_11.jpg in Resources */,
+				146AD1B418D617460019DE39 /* asthma_12.jpg in Resources */,
+				14F0219E18D62FF1008A20BB /* Asthma.french.plist in Resources */,
+				14F0219F18D62FF1008A20BB /* Asthma.spanish.plist in Resources */,
+				146AD1BA18D618710019DE39 /* Asthma.english.plist in Resources */,
 				14535DE418942BA0005FB37A /* icons in Resources */,
-				14A6B80518AD2B6900F36667 /* presentations in Resources */,
+				1473C31B18D4FA06004BC9BC /* UI_checkCircle.png in Resources */,
+				1473C31C18D4FA06004BC9BC /* UI_flagClear.png in Resources */,
+				1473C31D18D4FA06004BC9BC /* UI_flagSet.png in Resources */,
+				1473C31E18D4FA06004BC9BC /* UI_gear.png in Resources */,
+				1473C31F18D4FA06004BC9BC /* UI_infoCircle.png in Resources */,
+				1473C32018D4FA06004BC9BC /* UI_return.png in Resources */,
+				1473C32118D4FA06004BC9BC /* UI_world.png in Resources */,
+				1473C32218D4FA06004BC9BC /* UI_xCircle.png in Resources */,
 				1420EB8B1883DFCA00E19163 /* InfoPlist.strings in Resources */,
 				1420EB941883DFCA00E19163 /* Main.storyboard in Resources */,
-				14632BDD18D2DED600F3A74C /* UI_elements in Resources */,
+				1473C30E18D4F558004BC9BC /* background_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +416,7 @@
 				140575081885E35B00AC7C2C /* slideQuiz.m in Sources */,
 				14632BE418D2F79500F3A74C /* slideInfoController.m in Sources */,
 				1420EB8D1883DFCA00E19163 /* main.m in Sources */,
+				14319D9A18D63AA400BE1838 /* slideQuizController.m in Sources */,
 				144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,15 +8,22 @@
 
 #import <Foundation/Foundation.h>
 #import "slideInfo.h"
+#import "slideQuiz.h"
 
 @interface getPresentationData : NSObject {
+    
+    int currentSlideIndex;
 }
 
-
+// wait... these.. these should not be in the interface...
 @property (nonatomic, strong) NSMutableArray *conditionsList;
 @property (nonatomic, strong) NSMutableArray *menuTitles;
+@property (nonatomic, strong) NSMutableArray *menuKeys;
 @property (nonatomic, strong) NSMutableArray *languageChoices;
 @property (nonatomic, strong) NSMutableArray *slides;
+@property (nonatomic, strong) NSMutableArray *slidesType;
+@property (nonatomic, strong) NSString *activePlist;
+//@property int *currentSlideIndex;
 
 
 + (getPresentationData *) dataShared;
@@ -25,11 +32,12 @@
 
 - (void) getPresentationsList;
 
-+ (void) replacePresentation:(NSDictionary*) presPlist;
+- (void) replacePresentation:(NSString*) plist;
+//- (void) repl racePresentation:(NSMutableArray*) presPlist;
 
 - (NSArray *) getPastalColorArray;
 
-- (NSMutableArray *) getMenuTitles;
+- (NSDictionary *) getMenuTitles;
 
 - (NSMutableArray *) getLanguageChoices;
 
@@ -38,6 +46,17 @@
 - (slideInfo *) getCurrentSlideInfo;
 
 - (NSMutableArray *) getInfoSlide;
+
+- (BOOL) toggleCurrentSlideFlag;
+
+- (BOOL) getCurrentSlideFlag;
+
+- (int) setNextSlide;
+- (int) setPreviousSlide;
+
+- (NSString *) getSlideType;
+
+- (void) setPresentationSlide: (int) slide;
 
 
 @end

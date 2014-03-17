@@ -12,6 +12,7 @@
 
 @property NSString *image;
 @property NSString *text;
+@property BOOL flagSet;
 
 // less important or can be missing
 @property NSString *title;

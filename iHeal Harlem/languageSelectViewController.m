@@ -10,6 +10,7 @@
 #import "getPresentationData.h"
 
 @interface languageSelectViewController ()
+- (IBAction)BYPASSBUTTON:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UITableView *tableOfLangs;
 @property NSArray *languageChoices;
 @end
@@ -83,15 +84,6 @@
     //NSString *condition = [[getPresentationData shared].conditionsList;
     cell.textLabel.text = lang;
     
-    // don't really want colored languages..
-    /*
-    // get the color array from the singleton
-    NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
-    
-    // set the color of the current slide by mod function
-    int modInt = indexPath.row % [colorArray count];
-    cell.backgroundColor = colorArray[modInt];
-     */
     
     
     return cell;
@@ -115,4 +107,17 @@
 }
 
 
+- (IBAction)BYPASSBUTTON:(UIButton *)sender {
+    //techncially the contents of this is what each
+    //row of languages would do, but for
+    // the according selected langauge.
+    
+    
+    // #### CAN't seem to figure out how to call the singlton function here..
+    // this may be the thing where it needs to be a + instead of -.. but screws everything up!
+    //[[getPresentationData dataShared].replacePresentation @"Asthma.english.plist"];
+    //[getPresentationData.replacePresentation: @"Asthma.english.plist"];
+    
+    
+}
 @end

@@ -10,8 +10,7 @@
 // all the presentation data is held/loaded/changed here.
 
 // data hard coded for now
-// eventually implement text parsing structure
-// just return single arrays
+// eventually read from plist, one per presentation
 
 #import "getPresentationData.h"
 
@@ -20,10 +19,11 @@
 
 @synthesize conditionsList;
 @synthesize menuTitles;
+@synthesize menuKeys;
 @synthesize languageChoices;
 @synthesize slides;
-//@synthesize currentSlideIndex;
-
+@synthesize slidesType;
+@synthesize activePlist;
 
 
 - (void) test {
@@ -43,17 +43,25 @@
         
         shared.conditionsList = [[NSMutableArray alloc]init];
         shared.menuTitles =[[NSMutableArray alloc]init];
-        [shared.menuTitles addObject:@"Start Presentation\n"];
+        shared.menuKeys = [[NSMutableArray alloc]init];
         shared.languageChoices = [[NSMutableArray alloc]init];
+        shared.activePlist = [[NSString alloc]init];
+        
+        // together, the slides/slide-type array make up all info of a presentation
         shared.slides = [[NSMutableArray alloc]init];
-        //shared.currentSlideIndex = [[int alloc]init]; // gah I need just an int, not an object!!
+        shared.slidesType = [[NSMutableArray alloc]init];
+        
         
         // now initialize the values...
         [shared getPresentationsList];
         [shared getLanguageChoices];
-        //shared.getPresentationsList;
-        //shared.getLanguageChoices;
         
+        ///////////////////////////////////////////////////////////////////////////////////
+        // technically should NOT INITIALIZE THIS, only set once presentation selected...
+        shared.activePlist = @"Asthma.english";
+        
+        [shared replacePresentation: shared.activePlist];
+        shared->currentSlideIndex = 0;
         
     });
         
@@ -61,40 +69,36 @@
 }
 
 
-// parses the file structure to get presentation handles
+//  the file structure to get presentation handles
 - (void) getPresentationsList {
     
-    NSLog(@"######### A");
-    
+    /*
     NSFileManager *filemgr;
     NSString *currentpath;
     NSArray *filelist;
-    int count;
+    NSUInteger count;
     int i;
     filemgr = [NSFileManager defaultManager];
     currentpath = [filemgr currentDirectoryPath];
-    
-    filelist = [filemgr contentsOfDirectoryAtPath: currentpath error: nil];
-    //filelist = [filemgr contentsOfDirectoryAtPath: @"/presentations" error: nil];
-    
-    count = [filelist count];
-    NSLog(@"%d",count);
-    
-    for (i = 0; i < count; i++)
-        //NSLog(@"#########");
-        NSLog (@"%@", [filelist objectAtIndex: i]);
-    
-    
-    // lists images....... .. . .  .    .       .
-    NSArray *namesArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@""];
+    */
+     
+    //filelist = [filemgr contentsOfDirectoryAtPath: currentpath error: nil];
+
+    /*
+    // GET the list of actual presentations this way! Possibly... or at least languages
+    NSArray *namesArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"plist" inDirectory:@""];
     for (i=0;i<namesArray.count;i++){
-        NSLog(@"%@",namesArray[i]);
+        NSLog(@"from getPresData:\n%@",namesArray[i]);
     }
+     */
     
-    // everytime you call it.. it will add more.. need to REPLACE the array
+     
+    
+    // Will delete contents of array and then populate based on read-in plists.. maybe
+    [self.conditionsList removeAllObjects];
+    // hard coding them for now...
     [self.conditionsList addObject:@"Asthma"];
     [self.conditionsList addObject:@"Nutrition"];
-    [self.conditionsList addObject:@"placeHolder"];
     [self.conditionsList addObject:@"placeHolder"];
     [self.conditionsList addObject:@"placeHolder"];
     
@@ -107,32 +111,73 @@
 }
 
 // this returns current slide, called assuming it is type "slideInfo"
+// need to creat one method of this style for EACH type of return,
+// this is ONLy called within the slide of the according type itself
 - (slideInfo *) getCurrentSlideInfo{
-    // later.. get it from the self.currentSlideIndex
     
     slideInfo *currentSlide = [[slideInfo alloc] init];
-    currentSlide.image = @"asthma_01.jpg";
-    currentSlide.text = @"static preloaded stuff repeatz?";
-    currentSlide.title = @"TITLEYO";
-    
+    currentSlide = self.slides[self->currentSlideIndex];
+    //NSLog(@"printing slide index: %i",self->currentSlideIndex);
     return currentSlide;
 }
 
 
-+ (void) replacePresentation:(NSMutableArray*) presPlist{
+- (void) replacePresentation:(NSString*) plist{
     
     // this method takes a presentation list read-in plist
     // and replaces the currently loaded presentation with
     // this (1 specific language, 1 condition)
     
-    for (int i=0;i<[presPlist count];i++){
-        NSDictionary *temp = presPlist[i];
+    // this is done when the language is selected in the
+    // main intro screen, or if the language is dynamically changed
+    
+    
+    NSString* path = [[NSBundle mainBundle] pathForResource:plist ofType:@"plist"];
+    NSDictionary *presPlist = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSMutableArray *presArray = [[NSMutableArray alloc] init];
+    presArray = [presPlist objectForKey:@"slides"];
+    
+    // first remove all entries of previous presentation
+    [self.slides removeAllObjects];
+    
+    
+    // now populate it with new entries
+    // must check each time for what kind of object to construct!
+    // >> make in parallel the string "typeslide" array *to be done
+    for (int i=0;i<[presArray count];i++){
+        NSDictionary *temp = presArray[i]; //presPlist[i];
         NSString *strTemp = temp[@"slide"];
-        NSLog(@"slide type %@", strTemp);
+        //NSLog(@"slide type %@", strTemp);
+        
+        if ([strTemp isEqual:@"info"]){
+            //NSLog(@"info type: INFO");
+            slideInfo *tempSlideInfo = [[slideInfo alloc]init];
+            tempSlideInfo.text = temp[@"text"];
+            tempSlideInfo.image = temp[@"image"];
+            tempSlideInfo.title = temp[@"title"];
+            
+            
+            //HACK fix.. cuz it was reading ANY bool value in plist as a 1
+            // "25760592" == YES, "25760600" == NO, for some reason..
+            int t = temp[@"flagSet"]; // #ignore warning?
+            if (t==25760592){
+                tempSlideInfo.flagSet = YES;
+            }
+            else{
+                tempSlideInfo.flagSet = NO;
+            }
+            //NSLog(@"getPresDat: read flag %i, %i",t,tempSlideInfo.flagSet);
+            [self.slides addObject:tempSlideInfo];
+            [self.slidesType addObject:@"info"];
+        }
+        else if([strTemp isEqual:@"quiz"]){
+            //NSLog(@"info type: QUIZ");
+            NSLog(@"DO THE QUIZ THING");
+            
+            //[self.slidesType addObject:@"quiz"];
+        }
     }
     
-    //self->slides = presPlist;
-    //self.slides = &presPlist;
 }
 
 
@@ -154,34 +199,40 @@
 }
 
 
-- (NSMutableArray *) getMenuTitles {
+- (NSDictionary *) getMenuTitles {
+    
+    ////////////////////////////////////////////////////////////////////////
     // NEED TO PROGRAMATICALLY GET THE NAME, store globally?
-    // and furthermroe, should NOT do in the view controllers...
+    // should get this/parse from indexPath.row of array.
     
+    //NSString *plistName = @"Asthma.english";
+    NSString *plistName = self.activePlist;
     
-    NSString *plistName = @"Asthma.english"; // should get this/parse from indexPath.row of array.
-
     NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
     NSDictionary *attr = [NSDictionary dictionaryWithContentsOfFile:path];
     NSDictionary *attributes = [[NSDictionary alloc] init];
     attributes = [attr objectForKey:@"attributes"];
-    //NSLog(@"dictionary = %@", attr);
 
-    NSMutableArray *plistMenuTitles = [attributes objectForKey:@"menuTitles"];
-
-    
+    NSMutableArray *plistMenuTitles = [attributes objectForKey:@"menuLocalized"];
+    NSMutableArray *plistMenuKeys = [attributes objectForKey:@"menuTitles"];
     
     // add the menu options to the menu titles, index + 1 (start presentation ALWAYS first)
     for (int i=0; i< [plistMenuTitles count]; i++){
-        self.menuTitles[1+i]=plistMenuTitles[i];
+        self.menuTitles[i]=plistMenuTitles[i];
+        self.menuKeys[i]=plistMenuKeys[i];
     }
-
-    return self.menuTitles;
+    NSDictionary *menuDict = [[NSDictionary alloc]initWithObjectsAndKeys: self.menuTitles, @"titles", self.menuKeys, @"keys", nil];
+    
+    return menuDict;
     
 }
 
 - (NSMutableArray *) getLanguageChoices {
     
+    // here do some fancy file parsing to get list of plists/lanugaes from plist listing matching
+    // first part of name of {conditionname, e.g. Asthma}
+    
+    // for now, placeholders
     [self.languageChoices addObject:@"English"];
     [self.languageChoices addObject:@"French"];
     [self.languageChoices addObject:@"Spanish"];
@@ -202,6 +253,61 @@
     return slide;
 }
 
+- (BOOL) toggleCurrentSlideFlag{
+    // will toggle the CURRENT slide's flag state.
+    //
+    
+    slideInfo *cslide = self.slides[self->currentSlideIndex];
+    
+    if(cslide.flagSet){
+        cslide.flagSet = NO;
+    }
+    else{
+        cslide.flagSet = YES;
+    }
+    
+    self.slides[self->currentSlideIndex] = cslide;
+    return cslide.flagSet;
+}
+
+- (BOOL) getCurrentSlideFlag{
+    // here would check parallel array for typedef
+    slideInfo *cslide = self.slides[self->currentSlideIndex];
+    bool tmp = cslide.flagSet;
+    return tmp;
+}
+
+- (int) setNextSlide{
+    //NSLog(@"number of slides: %i",[self.slides count]);
+    if (self->currentSlideIndex+1 == [self.slides count]){
+        // condition met for last slide,
+        self->currentSlideIndex=0;
+        return 1;
+    }
+    self->currentSlideIndex+=1;
+    
+    return 0;
+}
+
+- (int) setPreviousSlide{
+    if (self->currentSlideIndex-1 < 0){
+        // condition met for first slide,
+        self->currentSlideIndex=0;
+        return -1;
+    }
+    self->currentSlideIndex-=1;
+    return 0;
+}
+
+
+- (NSString *)getSlideType{
+    
+    return slidesType[self->currentSlideIndex];
+}
+
+- (void) setPresentationSlide: (int) slide{
+    self->currentSlideIndex=slide;
+}
 
 - (void)dealloc {
     // Should never be called, but just here for clarity really.

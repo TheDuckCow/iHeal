@@ -9,9 +9,11 @@
 #import "conditionMenuTableViewController.h"
 #import "getPresentationData.h"
 #import "slideInfoController.h"
+//#import "slideQuizController.h"
 
 @interface conditionMenuTableViewController ()
 @property NSArray *menuTitles;
+@property NSArray *menuKeys;
 @end
 
 @implementation conditionMenuTableViewController
@@ -40,10 +42,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.menuTitles = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
-    //self.menuTitles = self.dataObj.getMenuTitles;
-    self.self.menuTitles = [getPresentationData dataShared].getMenuTitles;
     
+    // get the menu titles, from according plist
+    self.menuTitles = [[NSMutableArray alloc] init];
+    self.menuKeys = [[NSMutableArray alloc]init];
+    NSDictionary *menuDict = [getPresentationData dataShared].getMenuTitles;
+    //self.self.menuTitles = [getPresentationData dataShared].getMenuTitles;
+    
+    self.self.menuTitles = [menuDict objectForKey:@"titles"];
+    self.self.menuKeys = [menuDict objectForKey:@"keys"];
     
     // set background image
     UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
@@ -93,7 +100,7 @@
         
     }
     
-    // tends to crash on this (... generated...) line.
+    // generated lines
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     
@@ -105,18 +112,6 @@
     UIColor *transparent = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.25];
     cell.backgroundColor = transparent;
     
-    
-    
-    // OLD code that was used to 'randomly' set the background color of the table.
-    /*
-    // get the color array from the singleton
-    NSArray *colorArray = [getPresentationData dataShared].getPastalColorArray;
-    
-    int modInt = indexPath.row % [colorArray count];
-    cell.backgroundColor = colorArray[[colorArray count]-modInt-1];
-     */
-    
-    
     return cell;
 }
 
@@ -127,10 +122,41 @@
     // i.e. do the slides array calculations etc and then just check type to go to next
     // and load that view controller!
     
+    // determine which option was selected
     
-    slideInfoController *slideInfo =[self.storyboard instantiateViewControllerWithIdentifier:@"slideInfoID"];
-    [self.navigationController pushViewController:slideInfo animated:YES];
+    // since "Start Presentation" is first element of table, but not represented in the plist
+    // first entry in plist typically "continue", which will be index 0
+    int usableIndex =indexPath.row;
     
+    NSString *menuSelection = [self.menuKeys objectAtIndex:usableIndex];
+    if ([menuSelection  isEqual: @"startPresentation"]){
+        // special case, if it is "Start Presentation", always first entry
+        [[getPresentationData dataShared] setPresentationSlide:0];
+    }
+    else if ([menuSelection  isEqual: @"continue"]){
+        // do nothing, the correct slide should already be set! > unless later to read from menu.../save
+        NSLog(@"");
+    }
+    else if ([menuSelection  isEqual: @"jumpInfo"]){
+        NSLog(@"jumpInfo");
+    }
+    
+    
+    // ## determine here which is the next slide type to start....
+    // can be quiz type, e.g.
+    
+    NSString *slideType = [getPresentationData dataShared].getSlideType;
+    if ([slideType isEqual:@"info"]){
+        slideInfoController *slideInfo =[self.storyboard instantiateViewControllerWithIdentifier:@"slideInfoID"];
+        [self.navigationController pushViewController:slideInfo animated:YES];
+    }
+    // for quiz/other types of slides...
+    /*
+    else if([slideType isEqual:@"quiz"]){
+        slideQuizController *quizInfo =[self.storyboard instantiateViewControllerWithIdentifier:@"slideQuizID"];
+        [self.navigationController pushViewController:quizInfo animated:YES];
+    }
+    */
 }
 
 

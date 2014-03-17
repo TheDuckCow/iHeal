@@ -1,18 +1,21 @@
 //
-//  slideInfoController.m
+//  slideQuizController.m
 //  iHeal Harlem
 //
-//  Created by Patrick W. Crawford on 3/14/14.
+//  Created by Patrick W. Crawford on 3/16/14.
 //  Copyright (c) 2014 Harlem Hospital. All rights reserved.
 //
 
-#import "slideInfoController.h"
+#import "slideQuizController.h"
 #import "getPresentationData.h"
-#import "slideInfo.h"
+#import "slideInfoController.h"
+#import "slideQuiz.h"
 
-@interface slideInfoController ()
-@property (strong, nonatomic) IBOutlet UITextView *infoTextField;
-@property (strong, nonatomic) IBOutlet UIImageView *slideImage;
+@interface slideQuizController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *questionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UITableView *answersTable;
 @property (strong, nonatomic) IBOutlet UIButton *flagButton;
 
 - (IBAction)previousSlide:(UIButton *)sender;
@@ -24,7 +27,7 @@
 
 @end
 
-@implementation slideInfoController
+@implementation slideQuizController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,35 +42,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    // we KNOW the type is an info slide, so get info based on that.
-    // ... but must make a SPECIFIC public method in shared data to return a slideInfo type...
-    slideInfo *currentSlide = [getPresentationData dataShared].getCurrentSlideInfo;
-    
-    //NSLog(@"stuffzz? %@\n",currentSlide.text);
-    
-    self.slideImage.image = [UIImage imageNamed:currentSlide.image];
-    self.infoTextField.text = currentSlide.text;
-    // self.navbar.title.text = currentSlide.title;
-    
-    
-    // now set the flag properly:
-    bool flagState = [getPresentationData dataShared].getCurrentSlideFlag;
-    //NSLog(@"currentFlag: %i",flagState);  // SOME ISSUES STILL, but toggle works fine..
-    if (flagState){
-        [self.flagButton setBackgroundImage:[UIImage imageNamed:@"UI_flagSet.png"] forState:UIControlStateNormal];
-    }
-    else{
-        [self.flagButton setBackgroundImage:[UIImage imageNamed:@"UI_flagClear.png"] forState:UIControlStateNormal];
-    }
+}
 
-    
-    
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 
 - (IBAction)previousSlide:(UIButton *)sender {
-    
-    
     
     // NEED to verify the TYPES of the next slide.. perhaps that should be equiv return type,
     // or next time call current slide type function
@@ -115,12 +99,6 @@
     else{
         [self.flagButton setBackgroundImage:[UIImage imageNamed:@"UI_flagClear.png"] forState:UIControlStateNormal];
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
