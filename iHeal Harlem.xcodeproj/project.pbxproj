@@ -33,13 +33,11 @@
 		1441BBD7190469610044B61A /* Sickle.spanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1441BBD5190469610044B61A /* Sickle.spanish.plist */; };
 		144459CC188C2E6F00582A40 /* getPresentationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 144459CB188C2E6F00582A40 /* getPresentationData.m */; };
 		144E878718ECF3CA004935FD /* Sickle.english.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144E878618ECF3CA004935FD /* Sickle.english.plist */; };
-		14535DE418942BA0005FB37A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 14535DE318942BA0005FB37A /* icons */; };
 		146AD1BA18D618710019DE39 /* Asthma.english.plist in Resources */ = {isa = PBXBuildFile; fileRef = 146AD1B918D618710019DE39 /* Asthma.english.plist */; };
 		14706EF618E3B0D3008D5A17 /* IHHReviewSlidesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14706EF518E3B0D3008D5A17 /* IHHReviewSlidesTableViewController.m */; };
 		14706EF818E69DAB008D5A17 /* Nutrition.english.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EF718E69DAB008D5A17 /* Nutrition.english.plist */; };
 		14706EFB18E69EBF008D5A17 /* Dental.french.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EF918E69EBF008D5A17 /* Dental.french.plist */; };
 		14706EFC18E69EBF008D5A17 /* Dental.spanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EFA18E69EBF008D5A17 /* Dental.spanish.plist */; };
-		1473C30E18D4F558004BC9BC /* background_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1473C30D18D4F558004BC9BC /* background_1.jpg */; };
 		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
 		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
 		14D94F5118E713D20062D7AC /* Nutrition.french.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D94F4F18E713D20062D7AC /* Nutrition.french.plist */; };
@@ -95,14 +93,12 @@
 		144459CA188C2E6F00582A40 /* getPresentationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPresentationData.h; sourceTree = "<group>"; };
 		144459CB188C2E6F00582A40 /* getPresentationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getPresentationData.m; sourceTree = "<group>"; };
 		144E878618ECF3CA004935FD /* Sickle.english.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Sickle.english.plist; path = "iHeal Harlem/presentations/Sickle Cell Anemia/Sickle.english.plist"; sourceTree = "<group>"; };
-		14535DE318942BA0005FB37A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		146AD1B918D618710019DE39 /* Asthma.english.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Asthma.english.plist; path = "iHeal Harlem/presentations/Asthma/Asthma.english.plist"; sourceTree = "<group>"; };
 		14706EF418E3B0D3008D5A17 /* IHHReviewSlidesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHHReviewSlidesTableViewController.h; sourceTree = "<group>"; };
 		14706EF518E3B0D3008D5A17 /* IHHReviewSlidesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHHReviewSlidesTableViewController.m; sourceTree = "<group>"; };
 		14706EF718E69DAB008D5A17 /* Nutrition.english.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Nutrition.english.plist; path = "iHeal Harlem/presentations/Nutrition/Nutrition.english.plist"; sourceTree = "<group>"; };
 		14706EF918E69EBF008D5A17 /* Dental.french.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Dental.french.plist; path = "iHeal Harlem/presentations/Dental/Dental.french.plist"; sourceTree = "<group>"; };
 		14706EFA18E69EBF008D5A17 /* Dental.spanish.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Dental.spanish.plist; path = "iHeal Harlem/presentations/Dental/Dental.spanish.plist"; sourceTree = "<group>"; };
-		1473C30D18D4F558004BC9BC /* background_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background_1.jpg; path = "iHeal Harlem/UI_elements/background_1.jpg"; sourceTree = "<group>"; };
 		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
 		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
 		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
@@ -179,7 +175,6 @@
 				1403305E18DD139500CC9FEC /* slideInfoView.xib */,
 				1403306018DD156800CC9FEC /* slideQuizView.xib */,
 				1439EE0218FC3B0800203BE0 /* slideIntroView.xib */,
-				14535DE318942BA0005FB37A /* icons */,
 				140575061885E35B00AC7C2C /* slideQuiz.h */,
 				140575071885E35B00AC7C2C /* slideQuiz.m */,
 				140575031885E34700AC7C2C /* slideInfo.h */,
@@ -239,7 +234,6 @@
 		1473C30F18D4F5C8004BC9BC /* Presentation Data */ = {
 			isa = PBXGroup;
 			children = (
-				1473C30D18D4F558004BC9BC /* background_1.jpg */,
 				144E878618ECF3CA004935FD /* Sickle.english.plist */,
 				1441BBD4190469610044B61A /* Sickle.french.plist */,
 				1441BBD5190469610044B61A /* Sickle.spanish.plist */,
@@ -342,7 +336,6 @@
 				1441BBD6190469610044B61A /* Sickle.french.plist in Resources */,
 				14F0219F18D62FF1008A20BB /* Asthma.spanish.plist in Resources */,
 				146AD1BA18D618710019DE39 /* Asthma.english.plist in Resources */,
-				14535DE418942BA0005FB37A /* icons in Resources */,
 				1408E65B18E1C803001FFD3E /* Dental.english.plist in Resources */,
 				14706EFB18E69EBF008D5A17 /* Dental.french.plist in Resources */,
 				14706EFC18E69EBF008D5A17 /* Dental.spanish.plist in Resources */,
@@ -354,7 +347,6 @@
 				1420EB8B1883DFCA00E19163 /* InfoPlist.strings in Resources */,
 				1420EB941883DFCA00E19163 /* Main.storyboard in Resources */,
 				1403305F18DD139500CC9FEC /* slideInfoView.xib in Resources */,
-				1473C30E18D4F558004BC9BC /* background_1.jpg in Resources */,
 				1403306118DD156800CC9FEC /* slideQuizView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
