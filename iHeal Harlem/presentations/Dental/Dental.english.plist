@@ -4,21 +4,21 @@
 <dict>
 	<key>attributes</key>
 	<dict>
+		<key>languageLocalized</key>
+		<string>English</string>
 		<key>conditionName</key>
 		<string>Dental Hygiene</string>
 		<key>menuTitles</key>
 		<array>
 			<string>startPresentation</string>
 			<string>continue</string>
-			<string>jumpInfo</string>
 			<string>jumpQuiz</string>
 			<string>reviewFlags</string>
 		</array>
 		<key>menuLocalized</key>
 		<array>
-			<string>Start Presentation</string>
-			<string>Continue From Last Slide (##)</string>
-			<string>Jump to Info Slide</string>
+			<string>Tap to Start Presentation</string>
+			<string>Continue From Last Slide</string>
 			<string>Jump to First Quiz Slide</string>
 			<string>Review Flagged Slides</string>
 		</array>
@@ -131,6 +131,133 @@
 			<string>When Eric is between the ages of two and five years, his mom can help him clean them the right way, so one day he can clean his teeth well without mom&apos;s help.  Eric’s dentist told them that children (and adults!) should always spit out and not swallow toothpaste when brushing their teeth. </string>
 			<key>title</key>
 			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>What kind of toothpaste should you use if your child is over two years old?</string>
+			<key>answers</key>
+			<array>
+				<string>Don&apos;t use toothpaste</string>
+				<string>Toothpaste with fluoride</string>
+				<string>Plain toothpaste</string>
+				<string>Toothpaste with calcium carbonate</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>Fluoride is very important in protecting your child’s mouth from cavities. Fluoride strengthens and protects teeth. So with all the different foods we ear and drinks we have, fluoride can protect the enamel from being damaged.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>How often should you brush your teeth?</string>
+			<key>answers</key>
+			<array>
+				<string>Once per week</string>
+				<string>Every other day</string>
+				<string>Once a day</string>
+				<string>At least twice a day</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Brushing at least twice a day makes sure that bacteria don’t have a chance to damage your child’s teeth.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Why would you go to an Orthodontist?</string>
+			<key>answers</key>
+			<array>
+				<string>For a physical</string>
+				<string>If your child has a cold</string>
+				<string>To get glasses</string>
+				<string>To check how your child&apos;s teeth are growing</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>An orthodontist is a tooth doctor who will make sure your child has good dental hygiene.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Why should you teach your child how to practice good dental hygiene?</string>
+			<key>answers</key>
+			<array>
+				<string>It will eliminate problems like tooth aches and bad breath.</string>
+				<string>It will keep your child&apos;s teeth clean and shiny</string>
+				<string>It will help prevent your child from losing their teeth in the future.</string>
+				<string>All of the above.</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>All of the answers are correct. Practicing good dental hygiene is important to have a healthy mouth.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Why is flossing important?</string>
+			<key>answers</key>
+			<array>
+				<string>It straightens your teeth</string>
+				<string>It eliminates food stuck between teeth and prevents cavities</string>
+				<string>It kills germs with fluoride</string>
+				<string>All the above</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>Flossing helps you get at food that you can&apos;t reach with a toothbrush.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>That completes this presentation on dental hygiene! You may go review the slides you had trouble with or talk to the doctor when ready.</string>
+			<key>title</key>
+			<string></string>
 			<key>flagSet</key>
 			<false/>
 		</dict>

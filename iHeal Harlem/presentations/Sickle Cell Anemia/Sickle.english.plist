@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>English</string>
+		<key>conditionName</key>
+		<string>Sickle Cell Anemia</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Tap to Start Presentation</string>
+			<string>Continue From Last Slide</string>
+			<string>Jump to First Quiz Slide</string>
+			<string>Review Flagged Slides</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_01.png</string>
+			<key>text</key>
+			<string>This is Julie. Julie is seven years old, and lives in New York City, near the East River with her family and her dog Murphy.
+
+Julie has a little brother, a mom and a dad, and a bookcase with all of her favorite books. 
+
+Julie loves to watch the boats on the river with Murphy, and to play basketball with her friends. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_02.png</string>
+			<key>text</key>
+			<string>Julie is like most kids, but there are a few things that make her feel different. Julie has a birthmark that looks like a butterfly, she thinks bananas are totally gross, and she has Sickle Cell Disease.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_03.png</string>
+			<key>text</key>
+			<string>Having sickle cell disease is what makes Julie feel very different from her friends.  At first, she tried to hide it from everyone, but one day, her mom said, “Julie, everyone has something that makes them feel different.  Do you remember last winter, when we did the 100-piece jigsaw puzzle?  Every single piece was shaped differently, but each piece had beautiful colors, and when they were all put together, they made a bright and lovely picture.  That’s how people are too- everyone is shaped a little differently, but we’re all made up of bright colors and we can work together to make the world a beautiful place.”</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_04.png</string>
+			<key>text</key>
+			<string>Julie felt a little better after talking with her mom, and she decided to tell her two best friends, Anna and Alex, about her sickle cell disease. Julie told them about it just the way her doctor had explained it to her:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_05.png</string>
+			<key>text</key>
+			<string>Everyone’s body has blood in their body that is made up of different cells that carry around oxygen and other important things that the body needs. Julie explained that the red blood cells are usually round and smooth, and look a little like a Frisbee.  In Julie’s body, though, some of her red blood cells are “sickled,” which means that they look like the letter “C” and are sticky and pointy.   </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_06.png</string>
+			<key>text</key>
+			<string>Blood travels through the body through tubes called blood vessels. Julie explains to her friends that blood vessels are the roads and the red blood cells are the cars traveling on the roads.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_07.png</string>
+			<key>text</key>
+			<string>Julie explains that the blood vessels are made to fit the smooth red blood cells and that on a regular day the red blood cells are able to travel without hitting any traffic jams. She explains that sometimes her sickled red blood cells can get stuck to one another and cause a blockage or traffic jam in her blood vessels. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_08.png</string>
+			<key>text</key>
+			<string>When this happens inside her body, Julie told her friends that it’s called a “crisis,” and it hurts a lot. Julie said that for her it hurts more than when she stubbed her toe on the bathtub and more than when she scraped her knees falling off the swings.  </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_09.png</string>
+			<key>text</key>
+			<string>To stop the terrible hurting, Julie explains that her mom gives her medicine and lots of water to drink at home. Julie tells her friends that she only goes to the hospital if the medicines at home don’t work or that she gets a fever higher than 101○ F and her body feels hot. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_10.png</string>
+			<key>text</key>
+			<string>The hospital can be very scary but Julie says it helps to have her mom and favorite teddy bear with her. Julie doesn’t like to be in the hospital, but her doctor, Katie, is very nice and gentle.  Julie gets strong medicine to stop her body from hurting through an IV line (a tiny tube in her arm) for fluids, medicine, and sometimes, for a blood transfusion.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_11.png</string>
+			<key>text</key>
+			<string>Julie sometimes has to get blood transfusions. For Julie, blood transfusions are a way to try to stop crises from happening.  Lots of people around the world donate blood, packed with round blood cells, for Julie and lots of other sick people. This blood is given to Julie through her IV line, and when it’s inside her body, it mixes with Julie’s blood.  Then there are more round blood cells that can move easily around Julie’s body.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_12.png</string>
+			<key>text</key>
+			<string>Anna and Alex listened carefully to Julie- it’s hard to understand exactly what it feels like to have sickle cell disease, but they know that the most important thing that they can do for Julie is to be her friend, and help her when she is in pain. They can ask Julie’s mom or dad, if they have more questions about how to help, and they can talk to their parent or a grown-up that they trust about any questions or thoughts they have.  Anna and Alex know that there is no way to catch sickle cell disease from Julie- it’s not like a cold or the flu or the chicken pox.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_13.png</string>
+			<key>text</key>
+			<string>It’s hard for Julie’s family as well- her mom and dad hate to see Julie hurting, and her little brother Mike doesn’t understand what’s going on when Julie is hurting or goes away to the hospital.  </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_14.png</string>
+			<key>text</key>
+			<string>Last month, Julie had a crisis- in the morning, her stomach hurt, so her mother gave her lots of water with a splash of juice in it to drink.  Drinking lots of water and other healthy fluids is one way to try to stop crises from happening.  It didn’t work this time, though, and the pain got worse, so Julie’s mom brought her to the emergency room.  </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_15.png</string>
+			<key>text</key>
+			<string>The doctors put in an IV line, and gave Julie medicine and more fluids.  After a few days, she felt better and was able to go home.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_16.png</string>
+			<key>text</key>
+			<string>Having sickle cell disease is not easy, but Julie knows that she has lots of love and support from her family and friends, and her doctor Katie says that this is the most important treatment for any patient!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Sickle Cell Disease</string>
+			<key>text</key>
+			<string>abbreviated as SCD; is a group of inherited disorders of the blood, characterized by the sickle, or crescent, shape of some blood cells in affected people. People with SCD have red blood cells that become hard and sticky and look like a C-shaped farm tool called a “sickle”. The sickle cells die early, which causing a constant shortage of red blood cells, anemia. Also, when sickled cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems such infection, acute chest syndrome and stroke. Ask your health care professional for more information about SCD and where you can get support.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Blood Transfusion</string>
+			<key>text</key>
+			<string>Blood transfusions are a procedure in which blood is given to a person in need through and intravenous (IV) line. Transfusions are given to people with sickle cell disease when their body’s blood supply is in need of support due to illness or having a high sickle cell count.  </string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Acute Chest Syndrome (ACS)</string>
+			<key>text</key>
+			<string>People with SCD can experience a blockage of blood flow to the lungs that causes Acute Chest Syndrome. ACS is similar to pneumonia and can be life threatening so it should be treated in a hospital. Symptoms of ACS include chest pain, coughing, difficulty breathing, and fever.  </string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Stroke</string>
+			<key>text</key>
+			<string>Sickle Cells can create blockages anywhere in the body. When they block blood flow to the brain they can cause what is known as a Stroke. A stroke can result in life long disabilities or even death and should be treated in a hospital as soon as possible. Signs of a stroke can be slurred speech, numbness or weakness on one side of the body or face, headache and trouble with coordination or vision. </string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Hand- Foot Syndrome</string>
+			<key>text</key>
+			<string>Swelling of the hands and feet, sometimes accompanied by fever, that is a result of sickle cells getting stuck in the blood vessels and blocking blood flow to the hands and feet. </string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Strong medicine</string>
+			<key>text</key>
+			<string>Patients in sickle cell crisis can be in enormous amounts of pain which often requires the use of strong pain killers. It is often hard to imagine this kind of pain, and patients can be mistaken as overreacting. Sickle cell pain is very real, though, and it is not OK to ignore it. Some people often worry that use of these strong pain killers can become addictive for children and adults with SCD. However, studies show us that addiction to painkillers is not common in patients with SCD. It is important to treat sickle cell pain with compassion, understanding, and the correct amount of medicine to stop the pain.</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>IV line</string>
+			<key>text</key>
+			<string>IV stands for “intravenous,” or “in your vein.”  An IV line is placed with the help of a very small needle, which guides the tiny tube into a vein.  The needle is taken out, and the tiny tube is connected to another tube that can deliver medicine and fluids, right into the patient’s blood.  This is the fastest way for doctors and nurses to get treatment into a patient’s body.  A lot of people really don’t like getting needles, and this is totally normal. Your doctor can use a cream called “EMLA” or “LMX,” which numbs the skin in 20-40 minutes, so that there will be less pain.  Distraction, like looking at pictures of a fun birthday party, reading a story, or singing a song, can also help keep kids calm when getting a needle.</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Donating blood</string>
+			<key>text</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string>http://www.redcross.org</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>That completes this presentation on sIckle cell anemia! You may go review the slides you had trouble with or talk to the doctor when ready.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

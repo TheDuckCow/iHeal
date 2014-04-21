@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface languageSelectViewController : UIViewController
+@interface languageSelectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

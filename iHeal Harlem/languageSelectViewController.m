@@ -8,9 +8,9 @@
 
 #import "languageSelectViewController.h"
 #import "getPresentationData.h"
+#import "conditionMenuTableViewController.h"
 
 @interface languageSelectViewController ()
-- (IBAction)BYPASSBUTTON:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UITableView *tableOfLangs;
 @property NSArray *languageChoices;
 @end
@@ -22,11 +22,6 @@
 {
     // ie unwinded from the add item view controller
     //XYZAddToDoItemViewController *source = [segue sourceViewController];
-    
-    //Retrieve the controller’s presentation array...
-    
-    // set the continue presentation array...
-    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,27 +38,20 @@
 {
     [super viewDidLoad];
     self.languageChoices = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
+    [[getPresentationData dataShared] setLanguageNames];
+    
     self.languageChoices = [getPresentationData dataShared].getLanguageChoices;
     
-    
-    self.languageChoices = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
-    
-    // get the shared list data from the singleton
-    self.languageChoices = [getPresentationData dataShared].conditionsList;
-    
-    // call the table setup method, which gets languages etc
-    //[self tableSetup:tableOfLangs];
-    
-    //[self tableSetup:(UITableView *) cellForRowAtIndexPath:<#(NSIndexPath *)#>];
-    //self.tableSetup(* );
-    
+    NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+    self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
+
     
 }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // one section to return.. actually, 2 sections would be good for the info stuff
+    // one section to return
     return 1;
 }
 
@@ -73,30 +61,54 @@
     return [self.languageChoices count];
 }
 
-- (UITableViewCell *)tableSetup:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView :(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ListPrototypeCell";
+    static NSString *CellIdentifier = @"languageCellStyle";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Get the name of the cell and set colors
-    NSString *lang = [self.languageChoices objectAtIndex:indexPath.row];
-    
-    //NSString *condition = [[getPresentationData shared].conditionsList;
-    cell.textLabel.text = lang;
+    NSMutableArray *languageChoices = [getPresentationData dataShared].getLanguageUINames;
     
     
+    // perhaps add some exception handling?? if invalid number of languages returned e.g...
+    UILabel *langName = (UILabel *)[cell viewWithTag:42];
+    NSString *temp = languageChoices[indexPath.row];
+    langName.text = temp;
+    
+    // make background transparent
+    cell.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.0];
     
     return cell;
 }
 
 
 
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    //[segue conditionMenuTableViewController]
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //NSLog(@" yo %i",indexPath.row);
+    NSMutableArray *choices = [getPresentationData dataShared].getLanguageChoices;
+    NSString *PresentationKeyname = [getPresentationData dataShared].getPresentationKeyname;
+    //NSString *conditionPlist = [[self.menuTitles objectAtIndex:indexPath.row]
+                               //stringByAppendingFormat:@" (#%d)", currentIndex+1];
+    
+    NSString *conditionPlist = [NSString stringWithFormat:@"%@.%@", PresentationKeyname,choices[indexPath.row]];
+    //NSLog(@"PLIST: %@",conditionPlist);
+    if (![[[getPresentationData dataShared] activePlist] isEqual: conditionPlist]){
+        [[getPresentationData dataShared] replacePresentation: conditionPlist];
+    }
+    
+    // immediately set the new language title of slide in nav bar
+    NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+    self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
+
+
+}
+
+
+
+// everytime the view shows up (e.g. after a navbar stack pop), reload the table cells!
+// necessary to keep the string in "continue" slide up to date
+- (void) viewDidAppear:(BOOL)animated{
+    [self.tableOfLangs reloadData];
 }
 
 
@@ -107,17 +119,5 @@
 }
 
 
-- (IBAction)BYPASSBUTTON:(UIButton *)sender {
-    //techncially the contents of this is what each
-    //row of languages would do, but for
-    // the according selected langauge.
-    
-    
-    // #### CAN't seem to figure out how to call the singlton function here..
-    // this may be the thing where it needs to be a + instead of -.. but screws everything up!
-    //[[getPresentationData dataShared].replacePresentation @"Asthma.english.plist"];
-    //[getPresentationData.replacePresentation: @"Asthma.english.plist"];
-    
-    
-}
+
 @end

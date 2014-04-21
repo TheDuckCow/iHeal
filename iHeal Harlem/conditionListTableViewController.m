@@ -18,14 +18,6 @@
 @implementation conditionListTableViewController
 
 
-- (IBAction)unwindToConditionList:(UIStoryboardSegue *)segue
-{
-    // ie unwinded from the add item view controller
-    //XYZAddToDoItemViewController *source = [segue sourceViewController];
-    
-}
-
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,26 +32,25 @@
 {
     [super viewDidLoad];
     // for setting white color for status bar [do one or the other of the below]
-    
     self.conditionsList = [[NSMutableArray alloc] init]; // need to allocate memory for the array itself!!
     
     // get the shared list data from the singleton
     self.conditionsList = [getPresentationData dataShared].conditionsList;
-    
+     
     // set background image
     UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
     UITableView *tableView = (UITableView*)self.view;
     tableView.backgroundView = imageView;
-    // need to make the image NOT stretched!
-    //[tableView setContentMode:UIViewContentModeScaleAspectFit]; // does nothing..
     
     UIColor *skyeBlue =    [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:1];
     self.navigationController.navigationBar.barTintColor = skyeBlue;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.translucent = NO;
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -77,7 +68,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -95,19 +85,19 @@
 {
     static NSString *CellIdentifier = @"ListPrototypeCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
+    NSString *conditionKey = [self.conditionsList objectAtIndex:indexPath.row];
     
-    // Get the name of the cell and set colors
-    NSString *condition = [self.conditionsList objectAtIndex:indexPath.row];
+    if ( [conditionKey isEqual: @"aboutPageTitle"]){
+        // last case, is the about page
+        cell.textLabel.text = [[getPresentationData dataShared] getLocalName: @"english" forKey: conditionKey];
+    }
+    else{
+        // normal get condition proper name (not just programming key name)
+        cell.textLabel.text = [[getPresentationData dataShared] getTitleForPresentationKey:conditionKey];
+    }
     
-    //NSString *condition = [[getPresentationData shared].conditionsList;
-    cell.textLabel.text = condition;
-    
-    UIColor *transparent = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.25];
-    cell.backgroundColor = transparent;
-    
-    
-    // have right-aligned stuff, need custom cell view layout to do this!
-    //
+    cell.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.25];
     
     return cell;
 }
@@ -115,23 +105,37 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //where indexPath.row is the selected cell
-    // CONVERT THIS TO BE DONE IN DATA CLASS
-    // just pass in the string here to set which one.... assume english for now?
     
-    
-    /*
-    NSString *plistName = @"Asthma.english"; // should get this/parse from indexPath.row of array.
-    // option for combining strings:
-    //[NSString stringWithFormat:@"%@/%@/%@", three, two, one];
-    
-    
-    NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
-    NSDictionary *attr = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    
-    */
-    
+    if (indexPath.row == [self.conditionsList count]-1){
+
+        [[getPresentationData dataShared] setActiveLanguage: @"asthma.english"];
+        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"appInfoPageID"];
+        [self.navigationController pushViewController:nextView animated:YES];
+    }
+    else{
+        // load the according languages
+        self.conditionsList = [getPresentationData dataShared].getPresentationsList;
+        // Load the presentation with an according language
+        NSString *presentation = self.conditionsList[indexPath.row];
+        
+        // reload the presentaiton based on this
+        NSLog(@"CondListContr> hard coded assuming english pres exists..  need to use existing plist at first!");
+        [[getPresentationData dataShared] replacePresentation:[NSString stringWithFormat:@"%@.english",presentation]];
+        
+        [getPresentationData dataShared].activeConditionName = self.conditionsList[indexPath.row];
+        
+        // go to the next view
+        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"languageSelectID"];
+        [self.navigationController pushViewController:nextView animated:YES];
+    }
+}
+
+
+
+- (IBAction)unwindToConditionList:(UIStoryboardSegue *)segue
+{
+    // ie unwinded from the add item view controller
+    //XYZAddToDoItemViewController *source = [segue sourceViewController];
 }
 
 

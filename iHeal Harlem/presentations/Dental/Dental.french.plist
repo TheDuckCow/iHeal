@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Français</string>
+		<key>conditionName</key>
+		<string>Hygiène dentaire</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Appuyez sur Lancer Présentation</string>
+			<string>Continuer De Dernière diapositive</string>
+			<string>Première Quiz diaporama</string>
+			<string>Revoir signalées Diapositives</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_01.png</string>
+			<key>text</key>
+			<string>Il s&apos;agit d&apos; Eric . Eric est âgé de 12 mois, et ses dents de lait sont de plus en plus po</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_02.png</string>
+			<key>text</key>
+			<string>Être parent, c&apos;est un travail difficile , et il est difficile de se rappeler de tout faire , parfois , il semble que c&apos;est mieux et plus facile de sauter le brossage des dents , si cela signifie que Eric va se reposer davantage . Alors, parfois , les gencives de Eric et de nouvelles dents de lait ne soient pas balayés.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_03.png</string>
+			<key>text</key>
+			<string>Tout comme la plupart des bébés , Eric aime boire du lait ! Sa mère sait que le lait est excellent pour les bébés , et les aide à obtenir forte. Ce que beaucoup de parents ne réalisent pas est que le lait contient des sucres naturels - ces sucres ne sont pas mauvais pour les bébés , mais ils peuvent s&apos;accumuler sur les gencives des bébés et de nouvelles dents et causer des dents à pourrir. Même les dents qui n&apos;ont pas encore y entrer!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_04.png</string>
+			<key>text</key>
+			<string>Eric et sa maman vont chez le dentiste pour vérifier ses dents. Le dentiste dit la mère d&apos;Eric qu&apos;elle doit brosser les dents et les gencives de Eric tous les soirs avant de se coucher avec une brosse à dents à poils souples . La mère d&apos;Eric demande à quelle fréquence ils devraient voir le dentiste. Il lui dit qu&apos;ils devraient voir le dentiste au moins une fois tous les six mois , et la première fois qu&apos;un bébé devrait voir le dentiste , c&apos;est quand leur première dent de bébé a grandi dans ou par leur premier anniversaire.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_05.png</string>
+			<key>text</key>
+			<string>La mère d&apos;Eric se demande pourquoi les dents de bébé sont si importants s&apos;ils vont finalement tomber. Le dentiste lui dit que les dents de lait aident les permanents se développent d&apos;une manière saine et ils aident aussi les bébés apprennent à parler correctement et à bien manger .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_06.png</string>
+			<key>text</key>
+			<string>«Et si Eric a un mal de dent ? &quot; , Elle demande . Le dentiste lui dit d&apos;aider disparaître la douleur , elle devrait rincer la zone douloureuse à l&apos;intérieur de la bouche avec de l&apos;eau chaude salée et mettre un linge froid sur le côté de sa bouche qui fait le plus mal . Si Eric semble encore mal, elle peut lui donner un peu bébé Tylenol , et bien sûr, dès qu&apos;elle sait que Eric a mal aux dents , elle doit prendre rendez-vous pour lui de voir le dentiste dès que possible!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_07.png</string>
+			<key>text</key>
+			<string>Le dentiste indique également la mère d&apos;Eric que la succion du pouce et de l&apos;utilisation d&apos;une tétine après l&apos;âge de trois ans peut nuire à la croissance des dents d&apos;un enfant . Il dit aussi qu&apos;une fois que les bébés ya six mois et plus , leur donner de l&apos;eau avant le coucher et après le brossage des dents est la meilleure idée, car l&apos;eau n&apos;a pas les sucres dans ce que le lait fait . ( Ce n&apos;est pas une bonne idée de donner de l&apos;eau aux bébés âgés de moins de 6 mois. )</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_08.png</string>
+			<key>text</key>
+			<string>Les bébés qui n&apos;ont pas de dents devraient avoir leurs gencives nettoyés avec de l&apos;eau et un bébé - brosse à dents souple ou un chiffon doux. Parce que Eric commence à peine à obtenir ses dents de bébé , sa mère doit les nettoyer avec une trace de dentifrice avec fluorure et une brosse à dents qui correspond à son groupe d&apos;âge . Le dentiste dit que quand Eric est âgé de deux ans, il peut utiliser une noisette de dentifrice pour nettoyer ses dents. Quand Eric est entre les âges de deux et cinq ans , sa mère peut l&apos;aider à les nettoyer le droit chemin, si un jour, il peut nettoyer ses dents bien sans l&apos;aide de maman. Le dentiste Eric leur a dit que les enfants (et les adultes !) Doivent toujours cracher et de ne pas avaler le dentifrice lors du brossage des dents.
+</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_09.png</string>
+			<key>text</key>
+			<string>Être parent, c&apos;est un travail difficile , et il est difficile de savoir exactement ce qu&apos;il faut faire tout le temps. Prendre l&apos;habitude de se brosser les gencives des bébés , se brosser les dents de bébé , et la soie dentaire des dents lorsque les enfants vieillissent aidera vos enfants grandissent avec la bouche en bonne santé et de bonnes habitudes de brossage pour la vie. Si vous avez des questions, votre médecin et votre dentiste sont toujours heureux de parler avec vous !</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Quel genre de dentifrice si vous utilisez si votre enfant a plus de deux ans?</string>
+			<key>answers</key>
+			<array>
+				<string>Ne pas utiliser de dentifrice</string>
+				<string>Dentifrice fluoré</string>
+				<string>Dentifrice ordinaire</string>
+				<string>Dentifrice avec du carbonate de calcium</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>Le fluor est très important dans la protection de la bouche de votre enfant de cavités. Le fluor renforce et protège les dents. Donc, avec tout le aliments différents, nous l&apos;oreille et les boissons que nous avons, le fluorure peut protéger l&apos;émail d&apos;être endommagé.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Combien de fois faut-il se brosser les dents?</string>
+			<key>answers</key>
+			<array>
+				<string>Une fois par semaine</string>
+				<string>Tous les deux jours</string>
+				<string>Une fois par jour</string>
+				<string>Au moins deux fois par jour</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Brossage au moins deux fois par jour permet de s&apos;assurer que les bactéries n&apos;ont pas la chance d&apos;endommager les dents de votre enfant.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Pourquoi voudriez-vous aller à un orthodontiste?</string>
+			<key>answers</key>
+			<array>
+				<string>Pour un physique</string>
+				<string>Si votre enfant a un rhume</string>
+				<string>Pour obtenir des lunettes</string>
+				<string>Pour vérifier comment les dents de votre enfant sont de plus en plus</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Un orthodontiste est un médecin de la dent qui fera que votre enfant a une bonne hygiène dentaire.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Pourquoi devriez-vous apprendre à votre enfant à pratiquer une bonne hygiène dentaire?</string>
+			<key>answers</key>
+			<array>
+				<string>Il permettra d&apos;éliminer des problèmes tels que maux de dents et la mauvaise haleine.</string>
+				<string>Elle permet de conserver les dents de votre enfant propre et brillant</string>
+				<string>Il aidera à prévenir votre enfant de perdre leurs dents à l&apos;avenir.</string>
+				<string>Tout ce qui précède.</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Toutes les réponses sont correctes. Pratiquer une bonne hygiène dentaire est important d&apos;avoir une bouche saine.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Pourquoi la soie dentaire important?</string>
+			<key>answers</key>
+			<array>
+				<string>Il se redresse vos dents</string>
+				<string>Il élimine la nourriture coincé entre les dents et prévient les caries</string>
+				<string>Il tue les germes avec du fluorure</string>
+				<string>Tout ce qui précède</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>La soie dentaire vous permet d&apos;obtenir à la nourriture que vous ne pouvez pas atteindre avec une brosse à dents.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Voilà qui termine cette présentation sur l&apos;hygiène dentaire! Vous pouvez aller revoir les diapositives que vous aviez des problèmes avec ou parler au médecin lorsque vous êtes prêt.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>English</string>
+		<key>conditionName</key>
+		<string>Nutrition</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Tap to Start Presentation</string>
+			<string>Continue From Last Slide</string>
+			<string>Jump to First Quiz Slide</string>
+			<string>Review Flagged Slides</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 1.png</string>
+			<key>text</key>
+			<string>Nutrition means eating the right foods to make your body work properly. It is important for everyone, but especially for kids like me who are still growing! My doctor says if I eat healthy, I may be less likely to catch a cold or develop more serious diseases like heart disease when I am grow up. Eating healthy also helps my brain develop properly. I can concentrate in school which helps me learn and do well on tests.  Let me tell you more about my diet and the type of foods my parents make sure I eat every day. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 2.png</string>
+			<key>text</key>
+			<string>Before I go to school, I always have breakfast. It gives me the energy I need to start my day and learn in school. My doctor says that foods like whole grains, beans, fruits, and vegetables will give my body good energy. Other foods like white bread and bagels, white rice, and sugary cereals will give me an energy crash and make me feel very hungry later during the day. For breakfast, I either have oatmeal, bran cereal, or a whole-wheat bagel, which are all great for me! I love when my mom cuts up some fruits in my oatmeal too!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 3.png</string>
+			<key>text</key>
+			<string>Throughout the day, I eat foods from the major food groups: fruits, meat and beans, dairy, vegetables, grains, and oils. I usually have 3 meals a day. When I skip a meal, my stomach hurts later in the day. My mom helped me with a project in school about healthy foods- here’s what we learned:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 4.png</string>
+			<key>text</key>
+			<string>Fruits are very important and they help prevent many diseases. My favorite foods are watermelon, bananas, apples, and pineapple. My friend Kacey loves cherries. It doesn’t matter which fruits you eat, or if they are frozen or dried, as long you eat enough of them! I usually have a fruit as a snack instead of a meal. During lunch, I drink fruit juice mixed with water.  My mom and I learned that fruit juices have a lot of sugar, even juices that are 100 percent juice!  Now, I add a little juice to a big glass of water, so it tastes yummy, but doesn’t have much sugar.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 5.png</string>
+			<key>text</key>
+			<string>Protein and iron build healthy muscles. They also give you energy for the whole day. But too much meat can be bad for you. During dinner, I usually have some fish, beans, lentils, or lean meat such as chicken breast, turkey or lean beef. Soybean or black bean burgers are also healthy sources of protein, and I love black bean burgers with ketchup! </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 6.png</string>
+			<key>text</key>
+			<string>Dairy foods make my teeth and bones strong because they have calcium. Vitamin D helps the body absorb calcium, so it is important to get both Vitamin D and calcium in the foods I eat. Many dairy foods have both of these, such as milk and egg yolks. My mom and I learned that one of the best ways to get Vitamin D is from about 10 minutes in the sun!  I eat dairy products such as yogurt and cheese and drink low-fat milk. But my mom is lactose intolerant- this means that she gets sick if she eats ice cream or yogurt or other dairy foods.  So for her to get calcium, she eats tofu! </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 7.png</string>
+			<key>text</key>
+			<string>There are many vegetable options, such as cucumbers, broccoli, onions, peas, peppers, yams, and carrots. My doctor says eating vegetables lowers the risk of heart disease, obesity, and diabetes. I like when my mom makes me a salad because I can try many vegetables at once. Some low fat salad dressing and croutons make them taste really good too. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 8.png</string>
+			<key>text</key>
+			<string>Grains are very important, especially brown or whole grains. White grains like white pasta, white bread or white rice do not have many vitamins because the flour used to make them has had all the healthy stuff processed out. Whole grains still have the healthy stuff, called bran and wheat germ, which give you fiber and protein. The bread my parents buy always says “whole grain” or “whole wheat.” My doctor says foods like whole wheat bread, oatmeal, popcorn, or brown rice give you a more constant source of energy.  </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 9.png</string>
+			<key>text</key>
+			<string>Some oils are good for you but only if you have a little of it. They can be healthy because they have fatty acids, which are good for my heart, and vitamin E. But my doctor told me to be careful of oils because there are good oils and bad oils. Good oils, like olive oil and oily fish, are liquid at room temperature. Bad oils, like butter and lard, are solid at room temperature. At my age, I’m should eat between 4 and 6 teaspoons of good oils a day, but most people get enough oil in their diet without even trying. My favorite oils are vegetable and nut oils which are in olives, nuts, avocados, and seafood. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 10.png</string>
+			<key>text</key>
+			<string>Some things my parents do to help me eat healthier are broiling, grilling or steaming foods instead of frying them. They buy low-fat dairy products. They also buy water instead of soda or other sugary drinks. They make sure to look at the nutrition labels on foods before buying them. Did you know that the ingredients on food labels are listed in order of how much of that ingredient is used? So if the first ingredient is a high fructose corn syrup, it is probably not a healthy food. At a fast food restaurant, we order grilled chicken or salads with low fat dressings instead of a hamburger. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 11.png</string>
+			<key>text</key>
+			<string>Many parents do not have time to cook meals at home. Or some kids are picky and refuse to eat certain foods. They may also be vegetarian or be allergic to certain foods. Even under those circumstances, it is important that kids get enough proteins and vitamins because they are still growing. For example, if your child doesn’t eat meat, your doctor may say that he or she may need to take an iron supplement. </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 12.png</string>
+			<key>text</key>
+			<string>I know that it’s hard to be a parent- my mom and dad said that it’s the hardest job they’ve ever had!  I know that they try so hard to make sure that I am happy and healthy- one of the ways that they do this is by making sure that I eat the best foods for my body.  </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>That completes this presentation on Nutrition! You may go review the slides you had trouble with or talk to the doctor when ready.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

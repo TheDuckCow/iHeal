@@ -4,23 +4,23 @@
 <dict>
 	<key>attributes</key>
 	<dict>
+		<key>languageLocalized</key>
+		<string>Français</string>
 		<key>conditionName</key>
 		<string>L&apos;asthme</string>
 		<key>menuTitles</key>
 		<array>
 			<string>startPresentation</string>
 			<string>continue</string>
-			<string>jumpInfo</string>
 			<string>jumpQuiz</string>
 			<string>reviewFlags</string>
 		</array>
 		<key>menuLocalized</key>
 		<array>
-			<string>Présentation</string>
-			<string>continua***</string>
-			<string>jumpInfo***</string>
-			<string>jumpQuiz***</string>
-			<string>reviewFlags***</string>
+			<string>Appuyez sur Lancer Présentation</string>
+			<string>Continuer De Dernière diapositive</string>
+			<string>Première Quiz diaporama</string>
+			<string>Revoir signalées Diapositives</string>
 		</array>
 	</dict>
 	<key>slides</key>
@@ -29,7 +29,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_01.jpg</string>
+			<string>asthma_01.png</string>
 			<key>text</key>
 			<string>Salut! Je suis Jon et je suis ici pour vous parier de l&apos;asthme</string>
 			<key>title</key>
@@ -41,9 +41,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_02.jpg</string>
+			<string>asthma_02.png</string>
 			<key>text</key>
-			<string>Sometimes I can&apos;t breathe. This happens because I have an illness called asthma.  When things around me trigger my asthma, I have an asthma attack. When an attack happens, I cough, wheeze, and have trouble breathing. An attack causes my airways to swell up and fill with mucus, which makes it hard for air to get through. People with asthma do not all have the same kind of triggers.  I wonder what my triggers are...</string>
+			<string>Parfois, je ne peux pas respirer . Cela arrive parce que j&apos;ai une maladie appelée asthme. Quand les choses autour de moi déclenchent mon asthme , j&apos;ai une crise d&apos;asthme. Quand une attaque se produit, je toux, respiration sifflante et la difficulté à respirer . Une attaque provoque mon Airways à gonfler et remplir avec du mucus , ce qui rend difficile pour l&apos;air de passer à travers . Les personnes souffrant d&apos;asthme n&apos;ont pas tous le même genre de déclencheurs. Je me demande ce que mes déclencheurs sont ...</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -53,9 +53,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_03.jpg</string>
+			<string>asthma_03.png</string>
 			<key>text</key>
-			<string>I love to play with my dog everyday, but I have started to notice that I cough a lot around Sparky. The doctor told my mom and me that this is because pets with long hair or fur can trigger an asthma attack for some people. My dad says that we will build a doghouse outside for Sparky so I can breathe better and we can still keep him.</string>
+			<string>J&apos;aime jouer avec mon chien tous les jours, mais j&apos;ai commencé à remarquer que je tousse beaucoup autour de Sparky . Le médecin a dit à ma mère et moi que c&apos;est parce que les animaux avec de longs cheveux ou la fourrure peuvent déclencher une crise d&apos;asthme chez certaines personnes. Mon père dit que nous allons construire une niche à l&apos;extérieur de Sparky afin que je puisse mieux respirer et nous pouvons encore garder.</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -65,9 +65,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_04.jpg</string>
+			<string>asthma_04.png</string>
 			<key>text</key>
-			<string>My parents clean our house a lot so that Sparky&apos;s hair is not on the furniture or carpet anymore. Vacuuming and wiping off dusty surfaces also help to get rid of the small particles that can trigger an attack! Dust mites, pollen, and smoke really make it hard for me to breathe. We change my bed sheets every week so that I am not surrounded by these things when I sleep.</string>
+			<string>Mes parents nettoyer notre maison beaucoup de sorte que les cheveux de Sparky n&apos;est pas sur les meubles ou tapis plus. Passer l&apos;aspirateur et essuyer les surfaces poussiéreuses aussi aider à se débarrasser des petites particules qui peuvent déclencher une crise ! Acariens de la poussière, le pollen et la fumée font vraiment dur pour moi de respirer. Nous changeons mes draps chaque semaine, alors que je ne suis pas entouré de ces choses quand je dors .</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -77,9 +77,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_05.jpg</string>
+			<string>asthma_05.png</string>
 			<key>text</key>
-			<string>Mold is another trigger. It is a type of fungus that may grow in wet places, like around the bathroom sink or tub. If my parents find mold growing, they clean the area with soap and a scrubbing brush right away. Then they let it dry completely so no more mold will grow there. Mold can also grow on food that has become rotten. My mom always checks that the bread, fruit, and other foods in the kitchen have not become moldy. If she finds moldy food, she makes sure to throw it away.  </string>
+			<string>La moisissure est un autre déclencheur . Il est un type de champignon qui peut pousser dans des endroits humides , comme autour de l&apos;évier de la salle de bains ou douche. Si mes parents à trouver la moisissure , ils nettoient la zone avec une brosse et du savon tout de suite . Puis ils ont laissé sécher complètement donc pas plus moule va croître là. La moisissure peut également se développer sur la nourriture qui est devenu pourri. Ma mère vérifie toujours que le pain , les fruits et autres aliments dans la cuisine n&apos;ont pas moisir . Si elle trouve de la nourriture moisie , elle fait en sorte de le jeter.</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -89,9 +89,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_06.jpg</string>
+			<string>asthma_06.png</string>
 			<key>text</key>
-			<string>My parents don&apos;t let anyone smoke cigarettes inside the house. Even candles and incense can make it hard to breathe. Anyone who smokes goes outside to do it. One time, we stayed at a hotel during summer vacation and our hotel smelled so strongly of cigarettes that I had to go to the hospital. Now my parents and I makes sure that the places we stay at are clean and asthma-friendly.</string>
+			<string>Mes parents ne laissent pas de fumer des cigarettes de quelqu&apos;un à l&apos;intérieur de la maison. Même les bougies et d&apos;encens , il peut être difficile de respirer . Toute personne qui fume va à l&apos;extérieur pour le faire. Une fois, nous avons séjourné à l&apos;hôtel pendant les vacances d&apos; été et notre hôtel dégageait une forte odeur de cigarettes que je devais aller à l&apos;hôpital . Maintenant, mes parents et moi fait en sorte que les endroits que nous restons à l&apos;asthme sont propres et conviviale .</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -101,9 +101,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_07.jpg</string>
+			<string>asthma_07.png</string>
 			<key>text</key>
-			<string>When I want to play outside, my parents take me to clean parks. If there is a lot of air pollution from cars, my parents won&apos;t take me to that area. The seasons also affect my asthma. Pollen season causes me to have more asthma attacks. I try not to go outdoors so much during this time. During the winter, my parents make sure I am kept very warm. Wearing a scarf around my neck and close to my mouth &amp; nose help me breathe more easily. I always bring my inhaler with me where ever I go just in case I have an attack.</string>
+			<string>Quand je veux jouer à l&apos;extérieur , mes parents me prennent pour nettoyer les parcs . S&apos;il ya beaucoup de pollution de l&apos;air par les voitures , mes parents ne me prendra pas à ce domaine. Les saisons influencent aussi mon asthme . Saison de pollen me fait d&apos;avoir plus de crises d&apos;asthme. J&apos;essaie de ne pas aller à l&apos;extérieur tellement pendant cette période. Pendant l&apos;hiver, mes parents m&apos;assurer que je n&apos;arrêtais pas très chaud. Portant une écharpe autour de mon cou et à proximité de la bouche et le nez m&apos;aider à respirer plus facilement. J&apos;apporte toujours mon inhalateur avec moi partout où je vais juste au cas où j&apos;ai une attaque.</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -113,9 +113,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_08.jpg</string>
+			<string>asthma_08.png</string>
 			<key>text</key>
-			<string>I love to play sports! I used to think that I couldn&apos;t run and play with all the other kids because of my asthma but now I know some tricks to fix this! When I know I am going to be exercising a lot during the day, I make sure to do exactly what my doctor told me to do- I take my prescription medicine at the nurse&apos;s office at school before recess. I also make sure I slowly warm up before I start playing a game.</string>
+			<string>J&apos;aime faire du sport ! J&apos;avais l&apos;habitude de penser que je ne pouvais pas courir et jouer avec les autres enfants à cause de mon asthme, mais maintenant je sais quelques trucs pour corriger cela! Quand je sais que je vais être un exercice beaucoup pendant la journée , je m&apos;assure de faire exactement ce que mon médecin m&apos;a dit de faire , je prends mon médicament d&apos;ordonnance au bureau de l&apos;infirmière à l&apos;école avant les vacances . Je m&apos;assure aussi je réchauffe lentement avant que je commence à jouer un match.</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -125,9 +125,9 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_09.jpg</string>
+			<string>asthma_09.png</string>
 			<key>text</key>
-			<string>My doctor says the best way to prevent an asthma attack is to make sure it never happens. Knowing what my triggers are helps me know what to stay away from. Taking my medicine regularly also helps to prevent my asthma from getting out of control. Everyone&apos;s body is different and the doctor helps me decide how much medicine to take according to how bad my asthma is.  My doctor sees other kids with asthma too, and he may tell them to do things differently- just like every kid is different, everyone’s asthma can be different.  The most important thing for anyone with asthma is to follow the asthma plan that the doctor gave!</string>
+			<string>Mon médecin m&apos;a dit que la meilleure façon de prévenir une crise d&apos;asthme est de s&apos;assurer que cela n&apos;arrive jamais . Sachant que mes déclencheurs sont m&apos;aide sais quoi rester loin de . Prendre ce médicament régulièrement aide également à prévenir mon asthme de sortir de contrôle. Le corps de chacun est différent et le médecin m&apos;aide à décider combien de médicament à prendre en fonction de la gravité de mon asthme est . Mon médecin voit d&apos;autres enfants souffrant d&apos;asthme aussi, et il peut leur dire de faire les choses différemment , tout comme chaque enfant est différent, l&apos;asthme de chacun peut être différent . La chose la plus importante pour toute personne souffrant d&apos;asthme est de suivre le plan de l&apos;asthme que le médecin a donné !</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -137,15 +137,15 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_10.jpg</string>
+			<string>asthma_10.png</string>
 			<key>text</key>
-			<string>An asthma attack can happen suddenly, or I can be completely fine- asthma has different symptoms at different times.  There is no cure for asthma, so it’s important that my parents and I keep track of how I am feeling.  We pretend that asthma is like a traffic light: green means go!  Yellow means slow down and be careful.  Red means stop!
+			<string>Une crise d&apos;asthme peut se produire soudainement , ou je peux être complètement fine asthme a des symptômes différents à des moments différents. Il n&apos;existe aucun remède pour l&apos;asthme, il est donc important que mes parents et je garde une trace de ce que je ressens . Nous prétendons que l&apos;asthme est comme un feu tricolore: vert signifie aller ! Jaune signifie ralentir et être prudent. Le rouge signifie s&apos;arrêter!
 
-When I am breathing well, I’m in the Green Zone, and I can go do things normally, just taking my preventative medicine every day like my doctor told me to.
+Quand je respire bien, je suis dans la zone verte , et je peux aller les choses faites normalement , tout en prenant ce médicament préventif tous les jours comme mon médecin me l&apos;a dit.
 
-In the Yellow Zone, I have to be more careful. I have been exposed to one of my usual triggers and I have signs of a cold. I cough and I might wheeze.  Sometimes, my chest feels tight. When this happens, my parents give me quick-relief medicine.
+Dans la zone jaune , je dois être plus prudent. J&apos;ai été exposé à un de mes déclencheurs habituels et j&apos;ai signes d&apos;un rhume . Je tousse et je pourrais respiration sifflante . Parfois , ma poitrine se sent serré . Lorsque cela arrive, mes parents me donnent des médicaments de soulagement rapide .
 
-In the Red Zone, my medicine does not seem to help me and my breathing is hard and fast. My nose opens wide when I try to breathe, my ribs show, and I can&apos;t talk. My parents immediately give me my fast-acting rescue medication. This usually helps me to breathe more easily. But sometimes this doesn&apos;t work and she has to take me to the hospital emergency room. We always bring all the medications my parents gave me that day.</string>
+Dans la zone rouge , ce médicament ne semble pas m&apos;aider et ma respiration est difficile et rapide. Mon nez s&apos;ouvre en grand quand j&apos;essaie de respirer, mes côtes montrer , et je ne peux pas parler. Mes parents me donnent immédiatement mon médicament de secours à action rapide . Cela permet généralement moi de respirer plus facilement. Mais parfois cela ne fonctionne pas et elle doit me conduire à la salle d&apos;urgence de l&apos;hôpital. Nous apportons toujours tous les médicaments que mes parents m&apos;ont donné ce jour-là .</string>
 			<key>title</key>
 			<string>####### special</string>
 			<key>flagSet</key>
@@ -155,9 +155,9 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_11.jpg</string>
+			<string>asthma_11.png</string>
 			<key>text</key>
-			<string>When I have an attack, my mom...</string>
+			<string>Quand j&apos;ai une crise, ma maman me donne des médicaments à action rapide &quot;de sauvetage&quot;. Cela contribue à détendre les muscles de ma gorge et je peux respirer facilement. Mais parfois cela ne fonctionne pas et elle doit me conduire à la salle d&apos;urgence de l&apos;hôpital. Nous apportons toujours tous les médicaments que mes parents m&apos;ont donné ce jour-là.</string>
 			<key>title</key>
 			<string>####### missing text</string>
 			<key>flagSet</key>
@@ -167,9 +167,9 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_12.jpg</string>
+			<string>asthma_12.png</string>
 			<key>text</key>
-			<string>I hope that someday, there will be a cure for asthma.  Until that happens, my parents help me take care of myself so that asthma doesn’t get in the way of my life!  I have too much growing and playing and learning to do!</string>
+			<string>J&apos;espère qu&apos;un jour , il y aura un remède pour l&apos;asthme . Jusque-là , mes parents m&apos;aident à prendre soin de moi-même afin que l&apos;asthme ne pénètre pas dans le chemin de ma vie ! J&apos;ai trop de croissance et de jouer et d&apos;apprendre à le faire !</string>
 			<key>title</key>
 			<string>Présentation l&apos;asthme</string>
 			<key>flagSet</key>
@@ -179,20 +179,195 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Who is your father?</string>
+			<string>Comment pouvez-vous prévenir le déclenchement d&apos;une crise d&apos;asthme de votre enfant?</string>
 			<key>answers</key>
 			<array>
-				<string>Me</string>
-				<string>You</string>
-				<string>Habib Khan</string>
-				<string>Lord Helix</string>
+				<string>Tapis à vide et meubles Seulement quand votre enfant n&apos;est pas là.</string>
+				<string>Demandez à votre enfant d&apos;utiliser sa / son inhalateur pour l&apos;asthme régulièrement quand le temps est très froid ou très chaud.</string>
+				<string>Gardez votre enfant loin de déclencheurs qui peuvent provoquer une attaque.</string>
+				<string>Tout ce qui précède</string>
 			</array>
 			<key>solution</key>
 			<integer>3</integer>
 			<key>explanation</key>
-			<string>All is true and right thanks to Lord Helix</string>
+			<string>Tous les choix sont de bons moyens de prévenir les crises d&apos;asthme pour votre enfant. L&apos;idée principale est de garder votre enfant loin de déclencheurs, ou des choses qui peuvent causer une attaque.</string>
 			<key>title</key>
-			<string>First Quiz Question</string>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Quels sont les signes d&apos;un asthme?</string>
+			<key>answers</key>
+			<array>
+				<string>Essoufflement, sensation d&apos;oppression dans la poitrine, les yeux qui piquent</string>
+				<string>Hyperactiveness, cris</string>
+				<string>La aim</string>
+				<string>Le calme</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>Une crise d&apos;asthme se produit lorsque les muscles de la gorge de votre enfant serrer, ce qui rend votre enfant asthmatique et une respiration plus de mal. Ainsi, votre enfant ne serait pas calme ou crier parce qu&apos;ils seraient incapables de respirer.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Quelle est la première mesure à prendre lorsque votre enfant connaît une crise d&apos;asthme?</string>
+			<key>answers</key>
+			<array>
+				<string>Appelez le 911 pour une ambulance</string>
+				<string>Demandez-leur essayer de respirer profondément et de mettre leur tête entre leurs jambes</string>
+				<string>Donnez à votre enfant de leur action rapide &quot;sauvetage&quot; des médicaments pour détendre leurs muscles afin qu&apos;ils puissent respirer et regarder pour s&apos;assurer que leur attaque a cessé</string>
+				<string>Donnez-leur de l&apos;eau et épongez-les sur le dos</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>Lorsque votre enfant a une crise, il devrait rapidement être traitée avec la médecine. Vous devez ensuite regarder votre enfant pour s&apos;assurer que l&apos;attaque s&apos;en va. Si l&apos;attaque se détériore et votre enfant ne peut pas respirer ou de parler, vous devez appeler le 911.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Quelles mesures votre enfant doit prendre avant d&apos;exercer?</string>
+			<key>answers</key>
+			<array>
+				<string>Ne pas exercer à tout.</string>
+				<string>Il suffit d&apos;aller directement dans le plein exercice</string>
+				<string>Echauffez-vous lentement à l&apos;exercice et prendre des médicaments préventifs prescrits avant de commencer.</string>
+				<string>Aucune de ces réponses</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>Bien que l&apos;asthme peut affecter la respiration de votre enfant, ils peuvent encore exercer et s&apos;amuser avec leurs amis s&apos;ils préparer. Vous devez également limiter la durée de l&apos;exercice de votre enfant par temps très chaud ou très froid, car il peut déclencher une attaque plus rapide.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Lequel des énoncés suivants sont des déclencheurs courants pour les crises d&apos;asthme?</string>
+			<key>answers</key>
+			<array>
+				<string>Sucre, les aliments contenant de grandes quantités de sucre</string>
+				<string>Autres personnes souffrant d&apos;asthme</string>
+				<string>Le soleil</string>
+				<string>La poussière, les animaux, les produits d&apos;entretien ménager</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>La poussière, les animaux et les produits d&apos;entretien ménager sont des déclencheurs communs de crises d&apos;asthme. Vous pouvez garder votre enfant loin de déclencheurs en gardant votre maison exempt de poussière et de garder les animaux et les produits d&apos;entretien loin de votre enfant. Chaque enfant est différent, donc si vous remarquez quelque chose de pas sur la liste qui déclenche une attaque, vous devez garder votre enfant loin de lui et de parler à votre médecin à ce sujet. L&apos;asthme peut également pas être pris par d&apos;autres personnes.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Quand faut-il appeler le 911 pour votre enfant?</string>
+			<key>answers</key>
+			<array>
+				<string>Lorsque votre enfant est asthmatique, la toux, et se sent étanchéité dans son / sa poitrine</string>
+				<string>Lorsque votre enfant ne peut pas parler, respire très rapidement, et la prise de médicaments n&apos;a pas mieux fait de lui / elle</string>
+				<string>Quand ils ont un nez qui coule</string>
+				<string>Lorsque vous avez besoin de renouveler votre ordonnance pour la médecine</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>Vous devez appeler le 911 en cas d&apos;urgence ou lorsque vous avez besoin d&apos;un médecin à la fois. Si votre enfant montre des premiers signes d&apos;une crise d&apos;asthme (comme dans le choix A), il / elle doit prendre leurs médicaments de «sauvetage». Si vous allez chez le médecin pour un check up, vous devez appeler le bureau du médecin pour le mettre en place. Si vous avez besoin de remplir yourprescription, vous devez aller à la pharmacie.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Comment devez-vous éviter que la poussière, le pollen et autres allergènes de déclencher une crise d&apos;asthme?</string>
+			<key>answers</key>
+			<array>
+				<string>Utilisez plumeaux à poussière de votre maison.</string>
+				<string>Gardez les surfaces libres de poussière à l&apos;aide d&apos;un chiffon humide.</string>
+				<string>Laver les draps et la literie une fois par semaine dans l&apos;eau chaude.</string>
+				<string>B et C</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Vous pouvez limiter le contact de votre enfant avec des allergènes en gardant votre maison et les meubles sans eux. Vous ne devriez pas utiliser plumeaux parce qu&apos;ils se déplacent et se propagent poussière autour de la place de l&apos;enlever.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Utilisation du plan d&apos;action de l&apos;asthme, qui zone que votre enfant tombe dans s&apos;ils respire bien, ne sont pas la toux, ou sifflante, et peut accueillir facilement?</string>
+			<key>answers</key>
+			<array>
+				<string>Aller (vert)</string>
+				<string>Attention (jaune)</string>
+				<string>Danger (rouge)</string>
+				<string>A et B</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>Si votre enfant ne montre aucun signe de toute difficulté à respirer, ils sont dans la zone Go et la seule action nécessaire est un traitement préventif et de la médecine.</string>
+			<key>title</key>
+			<string>SPECIAL</string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Voilà qui termine cette présentation sur l&apos;hygiène dentaire! Vous pouvez aller revoir les diapositives que vous aviez des problèmes avec ou parler au médecin lorsque vous êtes prêt.</string>
+			<key>title</key>
+			<string></string>
 			<key>flagSet</key>
 			<false/>
 		</dict>

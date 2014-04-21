@@ -14,12 +14,4 @@
 
 
 
--(void)didAnswer:(NSString *)choice{
-    
-    if (choice == self.solution){
-        self.didAnswerCorrect=YES;
-    }
-}
-
-
 @end

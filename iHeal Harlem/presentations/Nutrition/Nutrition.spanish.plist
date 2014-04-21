@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Español</string>
+		<key>conditionName</key>
+		<string>Nutrición</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Toque para Empiece presentación</string>
+			<string>Continuar desde la última diapositiva</string>
+			<string>Ir al Cuestionario</string>
+			<string>Verifique las banderas</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 1.png</string>
+			<key>text</key>
+			<string>Nutrición significa comer los alimentos correctos para que su cuerpo funcione correctamente . Es importante para todos, pero especialmente para los niños como yo que todavía están creciendo ! Mi médico dice que si yo como sano , puedo ser menos propensos a contraer un resfriado o desarrollar enfermedades más graves, como las enfermedades del corazón cuando estoy crecer. Comer saludable también ayuda a mi cerebro a desarrollarse adecuadamente. Puedo concentrarme en la escuela , que me ayuda a aprender y hacer bien en los exámenes . Déjeme decirle más sobre mi dieta y el tipo de alimentos que mis padres se aseguran que comer todos los días.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 2.png</string>
+			<key>text</key>
+			<string>Antes de ir a la escuela , siempre tengo el desayuno. Me da la energía que necesito para comenzar mi día y aprender en la escuela. Mi médico dice que alimentos como los granos enteros, frijoles , frutas y verduras le entregase mi cuerpo buena energía. Otros alimentos como el pan blanco y rosquillas , arroz blanco y cereales azucarados me darán un accidente de energía y me hace sentir mucha hambre más tarde durante el día. Para el desayuno , yo tampoco tengo avena, cereal de salvado , o un bagel de trigo integral , que están muy bien para mí ! Me encanta cuando mi mamá corta hasta algunas frutas en mi avena también!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 3.png</string>
+			<key>text</key>
+			<string>A lo largo del día , comer alimentos de los principales grupos de alimentos: frutas , carne y frijoles , productos lácteos , verduras , granos y aceites. Por lo general tienen 3 comidas al día . Cuando me salto una comida, me duele el estómago más tarde en el día . Mi mamá me ayudó con un proyecto en la escuela sobre alimentos saludables , esto es lo que hemos aprendido:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 4.png</string>
+			<key>text</key>
+			<string>Las frutas son muy importantes y ayudan a prevenir muchas enfermedades. Mis platos favoritos son la sandía, plátanos , manzanas y piña. Mi amigo ama Kacey cerezas. No importa que las frutas que usted come, o si están congeladas o secas , mientras que usted come lo suficiente de ellos ! Por lo general tienen una fruta como bocadillo en vez de una comida. Durante el almuerzo, tomo jugo de frutas mezclado con agua. Mi mamá y me enteré de que los jugos de frutas tienen una gran cantidad de azúcar , incluso jugos que son jugos 100 por ciento! Ahora, puedo añadir un poco de jugo a un gran vaso de agua , por lo que su sabor es delicioso, pero no tiene mucho azúcar.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 5.png</string>
+			<key>text</key>
+			<string>Las proteínas y hierro construir músculos sanos . También te dan energía para todo el día . Pero demasiada carne puede ser malo para usted. Durante la cena, por lo general tienen un poco de pescado , frijoles, lentejas , o carne magra como pechuga de pollo, pavo o carne magra. Soya o hamburguesas de frijol negro también son fuentes saludables de proteínas , y me encantan las hamburguesas de frijol negro con salsa de tomate!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 6.png</string>
+			<key>text</key>
+			<string>Los productos lácteos que mis dientes y huesos fuertes porque tienen calcio. La vitamina D ayuda al cuerpo a absorber el calcio , por lo que es importante obtener tanto de vitamina D y calcio en los alimentos que como . Muchos alimentos lácteos tienen ambos , como la leche y las yemas de huevo. Mi madre y yo aprendí que una de las mejores maneras de obtener vitamina D es de aproximadamente 10 minutos en el sol ! Yo como los productos lácteos , como el yogur y el queso y beber leche baja en grasa. Pero mi mamá es intolerante a la lactosa , lo que significa que se enferma si come helado o yogur u otros productos lácteos. Así que para que ella consiga calcio , come tofu!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 7.png</string>
+			<key>text</key>
+			<string>Hay muchas opciones de verduras, como los pepinos , brócoli , cebollas , guisantes, pimientos , batatas y zanahorias . Mi médico dice que comer verduras reduce el riesgo de enfermedades del corazón , obesidad y diabetes. Me gusta cuando mi mamá me hace una ensalada porque puedo probar muchas verduras a la vez. Algunos aderezos para ensaladas bajo en grasa y crutones hacen saben muy bien también.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 8.png</string>
+			<key>text</key>
+			<string>Los granos son granos muy importantes , sobre todo de color marrón o conjunto. Granos blancos como la pasta blanca, pan blanco o arroz blanco no tienen muchas vitaminas porque la harina utilizados en su fabricación ha tenido todas las cosas saludables procesados ​​fuera . Los granos enteros tienen todavía las cosas saludables , llamado el salvado y el germen de trigo, que le dan fibra y proteína. El pan de mis padres compran siempre dice &quot;grano entero &quot; o &quot; trigo entero. &quot; Mi médico dice que alimentos como el pan de trigo integral , avena , palomitas de maíz o arroz integral le dan una fuente más constante de energía.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 9.png</string>
+			<key>text</key>
+			<string>Algunos aceites son buenos para usted, pero si usted tiene un poco de él . Ellos pueden ser saludables porque tienen ácidos grasos, que son buenos para el corazón, y la vitamina E. Sin embargo, mi doctor me dijo que tuviera cuidado de los aceites , porque hay buenos y malos aceites aceites. Los aceites , como el aceite de oliva y el aceite de pescado , son líquidos a temperatura ambiente. Aceites Bad , como la mantequilla y manteca de cerdo , son sólidos a temperatura ambiente . A mi edad , me debería comer entre 4 y 6 cucharillas de buenos aceites al día, pero la mayoría de las personas obtienen suficiente aceite en su dieta sin siquiera intentarlo. Mis aceites preferidos son los aceites vegetales y frutos secos que se encuentran en las aceitunas , nueces , aguacates , pescados y mariscos.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 10.png</string>
+			<key>text</key>
+			<string>Algunas cosas que mis padres hacen para ayudarme a comer sano se asar, asar a la parrilla o al vapor los alimentos en lugar de freírlos . Ellos compran los productos lácteos bajos en grasa. También compran el agua en lugar de refrescos u otras bebidas azucaradas. Se aseguran de que mirar las etiquetas de nutrición en los alimentos antes de comprarlos. ¿Sabía usted que los ingredientes en las etiquetas de los alimentos están listados en orden de la cantidad de ese ingrediente se utiliza? Así que si el primer ingrediente es un jarabe de maíz de alta fructosa, que probablemente no es un alimento saludable. En un restaurante de comida rápida , pedimos pollo a la parrilla o ensaladas con aderezos bajos en grasa en vez de una hamburguesa.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 11.png</string>
+			<key>text</key>
+			<string>Muchos padres no tienen tiempo para cocinar comidas en casa. O algunos niños son muy exigentes y se niegan a comer ciertos alimentos. También pueden ser vegetariana o ser alérgico a ciertos alimentos . Incluso en esas circunstancias , es importante que los niños reciben suficientes proteínas y vitaminas , ya que todavía están creciendo. Por ejemplo , si su hijo no come carne , el médico puede decir que él o ella puede tener que tomar un suplemento de hierro.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 12.png</string>
+			<key>text</key>
+			<string>Sé que es difícil ser un padre , mi mamá y mi papá dijo que es el trabajo más difícil que he tenido ! Sé que tratan tan duro para asegurarse de que estoy feliz y saludable - una de las formas en que hacen esto es asegurándose de que comer los mejores alimentos para mi cuerpo.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Esto completa esta presentación sobre la nutrición! Usted puede ir revisar las diapositivas que tenía problemas con o hablar con el médico cuando esté listo.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

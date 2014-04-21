@@ -4,23 +4,23 @@
 <dict>
 	<key>attributes</key>
 	<dict>
+		<key>languageLocalized</key>
+		<string>Español</string>
 		<key>conditionName</key>
 		<string>Asma</string>
 		<key>menuTitles</key>
 		<array>
 			<string>startPresentation</string>
 			<string>continue</string>
-			<string>jumpInfo</string>
 			<string>jumpQuiz</string>
 			<string>reviewFlags</string>
 		</array>
 		<key>menuLocalized</key>
 		<array>
-			<string>Start Prez*</string>
-			<string>Continua*</string>
-			<string>jumpInfo*</string>
-			<string>jumpQuiz</string>
-			<string>reviewFlags</string>
+			<string>Toque para Empiece presentación</string>
+			<string>Continuar desde la última diapositiva</string>
+			<string>Ir al Cuestionario</string>
+			<string>Verifique las banderas</string>
 		</array>
 	</dict>
 	<key>slides</key>
@@ -29,7 +29,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_01.jpg</string>
+			<string>asthma_01.png</string>
 			<key>text</key>
 			<string>!Hola! Soy Jon y yo estoy aquí hablar con tu sobre el asma.</string>
 			<key>title</key>
@@ -41,7 +41,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_02.jpg</string>
+			<string>asthma_02.png</string>
 			<key>text</key>
 			<string>A veces no puedo respirar. Esto sucede porque tengo una enfermedad llamada asma. Cuando las cosas a mi alrededor desencadenan el asma , tengo un ataque de asma . Cuando se produce un ataque, tos, sibilancias y dificultad para respirar . Un ataque provoca mis vías respiratorias se hinchen y se llenan de mucosidad , lo que dificulta que el aire pasar. Las personas con asma no tienen el mismo tipo de factores desencadenantes. Me pregunto lo que mis disparadores son ...</string>
 			<key>title</key>
@@ -53,7 +53,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_03.jpg</string>
+			<string>asthma_03.png</string>
 			<key>text</key>
 			<string>Me encanta jugar con mi perro todos los días , pero he empezado a notar que toso mucho por Sparky . El médico le dijo a mi madre ya mí que esto se debe a las mascotas con pelo largo o pelo pueden desencadenar un ataque de asma en algunas personas. Mi papá dice que vamos a construir una caseta de perro fuera de Sparky para que pueda respirar mejor y todavía lo puedo seguir .</string>
 			<key>title</key>
@@ -65,7 +65,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_04.jpg</string>
+			<string>asthma_04.png</string>
 			<key>text</key>
 			<string>Mis padres limpiar nuestra casa mucho, así que el pelo de Sparky no está en los muebles o la alfombra más. Pasar la aspiradora y limpiar las superficies polvorientas también ayudan a deshacerse de las partículas pequeñas que pueden desencadenar un ataque ! Los ácaros del polvo , polen y humo realmente hacen que sea difícil para mí respirar . Cambiamos mis sábanas cada semana, así que no estoy rodeado de estas cosas cuando duermo .</string>
 			<key>title</key>
@@ -77,7 +77,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_05.jpg</string>
+			<string>asthma_05.png</string>
 			<key>text</key>
 			<string>El moho es otro factor desencadenante . Es un tipo de hongo que puede crecer en lugares húmedos , como en el lavabo o la tina de baño. Si mis padres se encuentran el moho que crece , se limpia el área con jabón y un cepillo de inmediato. Luego deje que se sequen para que nadie más moho crecerá allí. El moho también puede crecer en la comida que se ha podrido. Mi mamá siempre se comprueba que el pan , frutas y otros alimentos en la cocina no se han vuelto a moho. Si se encuentra con alimentos con moho , ella se asegura de tirarlo a la basura .</string>
 			<key>title</key>
@@ -89,7 +89,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_06.jpg</string>
+			<string>asthma_06.png</string>
 			<key>text</key>
 			<string>Mis padres no dejan que nadie fuma cigarrillos dentro de la casa . Incluso las velas y el incienso puede hacer que sea difícil respirar . Cualquier persona que fuma sale a la calle para hacerlo. Una vez, nos alojamos en un hotel durante las vacaciones de verano y el hotel olía muy fuerte a tabaco que tenía que ir al hospital. Ahora mis padres y yo se asegura de que los lugares en los que alojarse en son limpias y el asma de usar.</string>
 			<key>title</key>
@@ -101,7 +101,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_07.jpg</string>
+			<string>asthma_07.png</string>
 			<key>text</key>
 			<string>Cuando quiero jugar afuera , mis padres me llevan a limpiar parques. Si hay una gran cantidad de contaminación del aire de los automóviles , mis padres no me llevan a esa área. Las estaciones también afectan el asma . Temporada de polen me hace tener más ataques de asma . Trato de no salir al aire libre tanto durante este tiempo. Durante el invierno , mis padres se aseguren que voy a estar bastante caliente. El uso de una bufanda alrededor de mi cuello y cerca de la boca y la nariz ayuda a respirar con más facilidad. Siempre llevo mi inhalador conmigo a donde quiera que vaya por si acaso tengo un ataque.</string>
 			<key>title</key>
@@ -113,7 +113,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_08.jpg</string>
+			<string>asthma_08.png</string>
 			<key>text</key>
 			<string>Me encanta hacer deporte ! Yo solía pensar que no podía correr y jugar con los otros niños debido a mi asma, pero ahora sé algunos trucos para arreglar esto! Cuando sé que voy a estar mucho ejercicio durante el día , me aseguro de hacer exactamente lo que mi doctor me dijo que lo hiciera - Yo tomo mis medicamentos con receta en la oficina de la enfermera de la escuela antes del receso . También me aseguro de que poco a poco en calor antes de empezar a jugar un juego.</string>
 			<key>title</key>
@@ -125,7 +125,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_09.jpg</string>
+			<string>asthma_09.png</string>
 			<key>text</key>
 			<string>Mi médico dice que la mejor manera de prevenir un ataque de asma es para asegurarse de que nunca sucede. Saber cuáles son mis disparadores me ayuda a saber lo que debe evitar. Tomando mi medicamento de manera regular también ayuda a prevenir el asma se salga de control. El cuerpo de cada persona es diferente , y el médico me ayuda a decidir la cantidad de medicina que debe tomar de acuerdo a la gravedad es mi asma . Mi médico ve a otros niños con asma también, y él puede decirles que hacer las cosas de manera diferente , igual que cada niño es diferente, el asma de todo el mundo puede ser diferente . Lo más importante para cualquier persona con asma es seguir el plan de asma que el médico le dio !</string>
 			<key>title</key>
@@ -137,7 +137,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_10.jpg</string>
+			<string>asthma_10.png</string>
 			<key>text</key>
 			<string>Un ataque de asma puede ocurrir repentinamente , o puede ser completamente bien el asma tiene diferentes síntomas en diferentes momentos. No existe cura para el asma, por lo que es importante que mis padres y yo hacer un seguimiento de cómo me siento . Se pretende que el asma es como un semáforo : verde significa ir! Amarillo significa reducir la velocidad y tener cuidado . El rojo significa parar!
 
@@ -145,7 +145,7 @@ Cuando estoy respirando bien , estoy en la Zona Verde, y puedo ir a las cosas qu
 
 En la Zona Amarilla , tengo que tener más cuidado. He estado expuesto a uno de mis desencadenantes habituales y tengo síntomas de resfriado . Toso y podría respirar con dificultad . A veces , mi pecho se siente apretado. Cuando esto sucede , mis padres me dan medicamento de alivio rápido .
 
-En la zona roja , mi medicamento no parece ayudarme y mi respiración es difícil y rápida. Mi nariz se abre por completo al intentar respirar , mis costillas mostrar , y no puedo hablar. Mis padres inmediatamente me dan mi medicación de rescate de acción rápida. </string>
+En la zona roja , mi medicamento no parece ayudarme y mi respiración es difícil y rápida. Mi nariz se abre por completo al intentar respirar , mis costillas mostrar , y no puedo hablar. Mis padres inmediatamente me dan mi medicación de rescate de acción rápida. Por lo general, me ayuda a respirar con más facilidad. Pero a veces esto no funciona y tiene que llevarme a la sala de emergencias de un hospital . Siempre nos trae todos los medicamentos que mis padres me dieron ese día.</string>
 			<key>title</key>
 			<string>####### special</string>
 			<key>flagSet</key>
@@ -155,9 +155,9 @@ En la zona roja , mi medicamento no parece ayudarme y mi respiración es difíci
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_11.jpg</string>
+			<string>asthma_11.png</string>
 			<key>text</key>
-			<string>Por lo general, me ayuda a respirar con más facilidad. Pero a veces esto no funciona y tiene que llevarme a la sala de emergencias de un hospital . Siempre nos trae todos los medicamentos que mis padres me dieron ese día.</string>
+			<string>Espero que algún día, habrá una cura para el asma . Hasta que eso ocurra , mis padres me ayudan a cuidar de mí mismo para que el asma no se interpone en el camino de mi vida! Tengo demasiado creciendo y jugando y aprendiendo a hacer!</string>
 			<key>title</key>
 			<string>####### missing text not missing?</string>
 			<key>flagSet</key>
@@ -167,7 +167,7 @@ En la zona roja , mi medicamento no parece ayudarme y mi respiración es difíci
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_12.jpg</string>
+			<string>asthma_12.png</string>
 			<key>text</key>
 			<string>Espero que algún día, habrá una cura para el asma . Hasta que eso ocurra , mis padres me ayudan a cuidar de mí mismo para que el asma no se interpone en el camino de mi vida! Tengo demasiado creciendo y jugando y aprendiendo a hacer!</string>
 			<key>title</key>
@@ -179,20 +179,195 @@ En la zona roja , mi medicamento no parece ayudarme y mi respiración es difíci
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Who is your father?</string>
+			<string>¿Cómo se puede prevenir la activación de un ataque de asma para su hijo?</string>
 			<key>answers</key>
 			<array>
-				<string>Me</string>
-				<string>You</string>
-				<string>Habib Khan</string>
-				<string>Lord Helix</string>
+				<string>Alfombras y muebles de vacío sólo cuando su hijo no está.</string>
+				<string>Haga que su hijo use su inhalador para el asma con regularidad cuando el clima es muy frío o muy caliente.</string>
+				<string>Mantenga a su hijo alejado de los desencadenantes que pueden causar un ataque.</string>
+				<string>Todo lo anterior</string>
 			</array>
 			<key>solution</key>
 			<integer>3</integer>
 			<key>explanation</key>
-			<string>All is true and right thanks to Lord Helix</string>
+			<string>Todas las opciones son buenas maneras de prevenir los ataques de asma de su hijo. La idea principal es mantener a su hijo alejado de los desencadenantes, o cosas que pueden causar un ataque.</string>
 			<key>title</key>
-			<string>First Quiz Question</string>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Cuáles son los signos de un ataque de asma?</string>
+			<key>answers</key>
+			<array>
+				<string>Dificultad para respirar, opresión en el pecho, picazón en los ojos</string>
+				<string>Hyperactiveness, gritando</string>
+				<string>La hambre</string>
+				<string>La calma</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>Un ataque de asma ocurre cuando los músculos de la garganta del niño apriete, lo que hace que su hijo asmático y tener una respiración más difícil. Así, su hijo no iba a estar tranquilo o gritar, ya que sería incapaz de respirar.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Cuál es el primer paso a tomar cuando su hijo está experimentando un ataque de asma?</string>
+			<key>answers</key>
+			<array>
+				<string>Llame al 911 para pedir una ambulancia</string>
+				<string>Pídales que traten de respirar profundamente y puso la cabeza entre las piernas</string>
+				<string>Déle a su niño su medicamento de acción rápida &quot;de rescate&quot; para relajar sus músculos para que puedan respirar y ver cómo asegurarse de que su ataque se ha detenido.</string>
+				<string>Déle a beber agua y la palmadita en la espalda</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>Cuando su hijo está teniendo un ataque, rápidamente debe ser tratada con la medicina. A continuación, debería ver a su hijo para asegurarse de que el ataque se va. Si el ataque se empeora y su hijo no puede respirar ni hablar, debe llamar al 911.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Qué medidas debe tomar su hijo antes de hacer ejercicio?</string>
+			<key>answers</key>
+			<array>
+				<string>No haga ejercicio en absoluto.</string>
+				<string>Sólo tienes que ir directamente al pleno ejercicio</string>
+				<string>Calentar lentamente el ejercicio y tomar la medicina preventiva prescrita antes de comenzar.</string>
+				<string>Ninguna de las anteriores</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>Aunque el asma puede afectar a la respiración de su hijo, aún pueden ejercitar y divertirse con sus amigos, si se preparan para ello. También debe limitar el tiempo de ejercicio de su hijo cuando hace mucho calor o mucho frío, ya que puede desencadenar un ataque rápido.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Cuál de los siguientes son los desencadenantes más comunes para los ataques de asma?</string>
+			<key>answers</key>
+			<array>
+				<string>Azúcar, alimentos con altas cantidades de azúcar</string>
+				<string>Otras personas con asma</string>
+				<string>Luz del sol</string>
+				<string>El polvo, mascotas, productos de limpieza del hogar</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>El polvo, los animales domésticos, y productos de limpieza del hogar son los desencadenantes más comunes de ataques de asma. Usted puede mantener a su hijo alejado de los desencadenantes por mantener su casa libre de polvo y mantener los animales domésticos y productos de limpieza lejos de su hijo. Cada niño es diferente, así que si usted nota algo que no en la lista que se desencadena un ataque, usted debe mantener a su hijo lejos de ella y hablar con su médico al respecto. El asma también no puede ser capturado de otras personas.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Cuándo se debe llamar al 911 para su hijo?</string>
+			<key>answers</key>
+			<array>
+				<string>Cuando su hijo es sibilante, tos y siente opresión en su / su pecho</string>
+				<string>Cuando su hijo no puede hablar, está respirando muy rápido, y tomar la medicina no ha hecho él / ella mejor.</string>
+				<string>Cuando tienen una nariz que moquea</string>
+				<string>Cuando usted necesita para volver a llenar su receta para la medicina</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>Usted debe llamar al 911 en caso de emergencia o cuando necesite un médico de inmediato. Si su hijo está mostrando los primeros signos de un ataque de asma (como en la opción A), él / ella debe tomar sus medicamentos de &quot;rescate&quot;. Si usted va al médico para un chequeo, debe llamar a la oficina del médico para configurarlo. Si tiene que volver a llenar yourprescription, hay que ir a la farmacia.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Cómo se debe evitar que el polvo, polen y otros alergenos de desencadenar un ataque de asma?</string>
+			<key>answers</key>
+			<array>
+				<string>Utilice plumeros para el polvo de su casa.</string>
+				<string>Mantenga libre de polvo las superficies con un paño húmedo.</string>
+				<string>Lave las sábanas y la ropa de cama una vez por semana en agua caliente.</string>
+				<string>B y C</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Puede limitar el contacto de su hijo con alérgenos por mantener su hogar y muebles libre de ellos. Usted no debe usar plumeros porque se mueven y se extendió polvo alrededor en vez de eliminarla.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Usando el Plan de acción para el asma, que la zona tiene su hijo cayera en si están respirando con facilidad, no son tos o dificultad respiratoria, y puede alojar fácilmente?</string>
+			<key>answers</key>
+			<array>
+				<string>Ir (verde)</string>
+				<string>precaución (amarillo)</string>
+				<string>Peligro (rojo)</string>
+				<string>A y B</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>Si su hijo no está mostrando signos de cualquier dificultad para respirar, se encuentran en la zona de Go y la única acción necesaria es el tratamiento preventivo y la medicina.</string>
+			<key>title</key>
+			<string>SPECIAL</string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Esto completa esta presentación sobre la higiene dental! Usted puede ir revisar las diapositivas que tenía problemas con o hablar con el médico cuando esté listo.</string>
+			<key>title</key>
+			<string></string>
 			<key>flagSet</key>
 			<false/>
 		</dict>

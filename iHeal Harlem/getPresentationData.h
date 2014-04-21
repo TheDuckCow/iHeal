@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "slideInfo.h"
 #import "slideQuiz.h"
+#import "slideIntro.h"
 
 @interface getPresentationData : NSObject {
     
@@ -16,24 +17,28 @@
 }
 
 // wait... these.. these should not be in the interface...
+// I access as least one of the variables directly at some point
 @property (nonatomic, strong) NSMutableArray *conditionsList;
 @property (nonatomic, strong) NSMutableArray *menuTitles;
 @property (nonatomic, strong) NSMutableArray *menuKeys;
 @property (nonatomic, strong) NSMutableArray *languageChoices;
+@property (nonatomic, strong) NSMutableArray *languageUINames;
 @property (nonatomic, strong) NSMutableArray *slides;
 @property (nonatomic, strong) NSMutableArray *slidesType;
 @property (nonatomic, strong) NSString *activePlist;
-//@property int *currentSlideIndex;
+@property (nonatomic, strong) NSString *activeConditionName;
+@property (nonatomic, strong) NSString *activeConditionUIName;
+// FlowModes: "linear", "flagCheck",
+@property (nonatomic, strong) NSString *presentationFlowMode;
 
 
 + (getPresentationData *) dataShared;
 
 - (void) test;
 
-- (void) getPresentationsList;
+- (NSMutableArray *) getPresentationsList;
 
 - (void) replacePresentation:(NSString*) plist;
-//- (void) repl racePresentation:(NSMutableArray*) presPlist;
 
 - (NSArray *) getPastalColorArray;
 
@@ -41,22 +46,48 @@
 
 - (NSMutableArray *) getLanguageChoices;
 
+- (NSMutableArray *) getLanguageUINames;
+
 - (NSMutableArray *) getSlides;
 
 - (slideInfo *) getCurrentSlideInfo;
+- (slideQuiz *) getCurrentSlideQuiz;
+- (slideIntro *) getCurrentSlideIntro;
 
-- (NSMutableArray *) getInfoSlide;
 
 - (BOOL) toggleCurrentSlideFlag;
+- (BOOL) setCurrentSlideFlag:(bool)state;
 
 - (BOOL) getCurrentSlideFlag;
 
 - (int) setNextSlide;
+
 - (int) setPreviousSlide;
 
 - (NSString *) getSlideType;
 
 - (void) setPresentationSlide: (int) slide;
 
+- (int) jumpToFirstQuizSlide;
 
+- (int) getCurrentSlideIndex;
+
+- (NSString *) getPresentationKeyname;
+
+- (NSString *) getSlideTitle;
+
+- (void) setLanguageNames;
+- (bool) quizDidAnswerCorrect;
+
+- (NSMutableArray *) getFlagedSlides;
+- (void) clearFlaggedSlides;
+
+- (int) getNumberOfSLides;
+
+- (NSString *) getLocalName: (NSString *) language forKey:(NSString *) key;
+
+- (NSString *) getCurrentLanguage;
+
+- (void) setActiveLanguage:(NSString *) plist;
+- (NSString *) getTitleForPresentationKey: (NSString *) conditionKey;
 @end

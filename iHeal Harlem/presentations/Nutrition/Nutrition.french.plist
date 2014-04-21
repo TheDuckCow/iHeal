@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Français</string>
+		<key>conditionName</key>
+		<string>Nutrition</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Appuyez sur Lancer Présentation</string>
+			<string>Continuer De Dernière diapositive</string>
+			<string>Première Quiz diaporama</string>
+			<string>Revoir signalées Diapositives</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 1.png</string>
+			<key>text</key>
+			<string>Nutrition signifie manger les bons aliments pour faire de votre corps fonctionne correctement . Il est important pour tout le monde , mais surtout pour les enfants comme moi qui sont encore en croissance ! Mon médecin m&apos;a dit que si je mange sain , je peux être moins susceptibles d&apos;attraper un rhume ou développer des maladies plus graves comme les maladies cardiaques , quand je suis grandir. Manger sain contribue également mon cerveau à se développer correctement . Je peux me concentrer à l&apos;école qui m&apos;aide à apprendre et à faire bien sur les tests . Permettez-moi de vous en dire plus au sujet de mon alimentation et le type d&apos;aliments que mes parents font en sorte que je mange tous les jours.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 2.png</string>
+			<key>text</key>
+			<string>Avant d&apos;aller à l&apos;école , j&apos;ai toujours le petit déjeuner . Il me donne l&apos; énergie dont j&apos;ai besoin pour commencer ma journée et apprendre à l&apos;école . Mon médecin dit que les aliments comme les grains entiers, les haricots , les fruits et légumes vont donner mon corps bonne énergie. D&apos;autres aliments comme le pain blanc et les bagels , le riz blanc et les céréales sucrées me donneront un accident d&apos; énergie et de me faire sentir très faim plus tard dans la journée . Pour le petit déjeuner , je n&apos;ai ni l&apos;avoine , les céréales de son , ou un bagel de blé entier, qui sont tous très bien pour moi ! J&apos;aime quand ma mère coupe jusqu&apos;à quelques fruits dans mon gruau trop !</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 3.png</string>
+			<key>text</key>
+			<string>Tout au long de la journée , je mange des aliments provenant des principaux groupes d&apos;aliments : fruits , la viande et les haricots , les produits laitiers , les légumes , les céréales et les huiles . J&apos;ai l&apos;habitude de 3 repas par jour . Quand je saute un repas, j&apos;ai mal au ventre tard dans la journée . Ma mère m&apos;a aidé avec un projet à l&apos;école sur des aliments sains , voici ce que nous avons appris:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 4.png</string>
+			<key>text</key>
+			<string>Les fruits sont très importants et ils aident à prévenir de nombreuses maladies . Mes plats préférés sont la pastèque, bananes , pommes et ananas. Mon ami aime Kacey cerises. Il n&apos;est pas question que les fruits que vous mangez, ou si elles sont congelées ou séchées, aussi longtemps que vous mangez assez d&apos;eux ! J&apos;ai habituellement un fruit comme collation au lieu d&apos;un repas. Pendant le déjeuner , je bois du jus de fruit mélangé avec de l&apos;eau . Ma mère et j&apos;ai appris que les jus de fruits ont beaucoup de sucre , même les jus qui sont à 100 pour cent de jus ! Maintenant , j&apos;ajoute un peu de jus à un grand verre d&apos; eau, donc il a un goût délicieux, mais n&apos;a pas beaucoup de sucre.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 5.png</string>
+			<key>text</key>
+			<string>Protéines et de fer à renforcer les muscles sains. Ils vous donnent aussi de l&apos;énergie pour toute la journée . Mais trop de viande peut être mauvais pour vous . Pendant le dîner , j&apos;ai habituellement un peu de poisson , les haricots , les lentilles, ou de viande maigre comme la poitrine de poulet , de dinde ou de bœuf maigre . Soja ou hamburgers aux haricots noirs sont également des sources saines de protéines, et je les aime burgers aux haricots noirs avec du ketchup!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 6.png</string>
+			<key>text</key>
+			<string>Les produits laitiers faire mes dents et des os forts parce qu&apos;ils ont calcium. La vitamine D aide le corps à absorber le calcium , il est donc important d&apos;obtenir la vitamine D et de calcium dans les aliments que je mange . Beaucoup de produits laitiers ont tous deux d&apos;entre eux, tels que le lait et les jaunes d&apos;œufs . Ma mère et moi avons appris que l&apos;une des meilleures façons d&apos;obtenir la vitamine D est d&apos;environ 10 minutes au soleil ! Je mange des produits laitiers tels que le yaourt et le fromage et boire du lait faible en gras. Mais ma mère est intolérant au lactose , ce qui signifie qu&apos;elle est malade si elle mange de la crème glacée ou du yogourt ou d&apos;autres produits laitiers . Donc pour elle d&apos;obtenir le calcium , elle mange du tofu!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 7.png</string>
+			<key>text</key>
+			<string>Il existe de nombreuses options de légumes, tels que les concombres , brocolis , oignons, pois, poivrons, patates douces et les carottes. Mon médecin m&apos;a dit de manger des légumes réduit le risque de maladies cardiaques , l&apos;obésité et le diabète. J&apos;aime quand ma mère m&apos;a fait une salade parce que je peux essayer beaucoup de légumes à la fois. Certains faible vinaigrette gras et croûtons faire goûter vraiment bien.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 8.png</string>
+			<key>text</key>
+			<string>Les grains sont des grains très important, surtout brunes ou ensemble. Grains blancs comme les pâtes blanc, pain blanc ou de riz blanc n&apos;ont pas beaucoup de vitamines parce que la farine utilisée pour fabriquer eux a eu tous les trucs sains traités out. Les grains entiers sont toujours les aliments sains , a appelé son et le germe de blé , qui vous donnent fibres et de protéines . Le pain mes parents achètent dit toujours «grain entier» ou «blé entier ». Mon médecin dit aliments comme le pain de blé entier , avoine, maïs , riz brun ou vous donnent une meilleure source d&apos;énergie constante.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 9.png</string>
+			<key>text</key>
+			<string>Certaines huiles sont bonnes pour vous, mais seulement si vous avez un peu de lui . Ils peuvent être en bonne santé parce qu&apos;ils ont des acides gras, qui sont bon pour mon cœur, et de la vitamine E. Mais mon médecin m&apos;a dit de faire attention d&apos;huiles , car il ya de bonnes et de mauvaises huiles huiles. Bonnes huiles , comme l&apos;huile d&apos; olive et les poissons gras , sont liquides à température ambiante. Huiles mauvais, comme le beurre et le saindoux , sont solides à température ambiante. A mon âge , je devrais manger entre 4 et 6 cuillères à café de bonnes huiles par jour, mais la plupart des gens obtenir assez d&apos;huile dans leur régime alimentaire sans même essayer. Mes huiles préférées sont les huiles végétales et les noix qui sont dans les olives , les noix , les avocats et fruits de mer.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 10.png</string>
+			<key>text</key>
+			<string>Certaines choses que mes parents pour m&apos;aider à manger sain sont au gril , griller ou à la vapeur des aliments au lieu de les faire frire . Ils achètent les produits laitiers faibles en gras. Ils achètent aussi de l&apos;eau au lieu de soude ou d&apos;autres boissons sucrées . Ils s&apos;assurent de regarder les étiquettes nutritionnelles sur les aliments avant de les acheter . Saviez-vous que les ingrédients sur les étiquettes des aliments sont classés par ordre de combien de cet ingrédient est utilisé? Donc, si le premier ingrédient est un sirop de maïs riche en fructose, ce n&apos;est probablement pas un aliment sain. Dans un restaurant de fast-food , nous commandons du poulet grillé ou des salades avec de faibles pansements gras au lieu d&apos;un hamburger.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 11.png</string>
+			<key>text</key>
+			<string>Beaucoup de parents n&apos;ont pas le temps de cuisiner des repas à la maison. Or certains enfants sont pointilleux et refusent de manger certains aliments. Ils peuvent également être végétarien ou être allergique à certains aliments. Même dans ces circonstances , il est important que les enfants reçoivent suffisamment de protéines et de vitamines , car ils sont encore en croissance . Par exemple, si votre enfant ne mange pas de viande , votre médecin peut vous dire qu&apos;il ou elle peut avoir besoin de prendre un supplément de fer .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>nutr 12.png</string>
+			<key>text</key>
+			<string>Je sais que c&apos;est difficile d&apos;être un parent , ma mère et mon père m&apos;a dit que c&apos;est le travail le plus difficile qu&apos;ils aient jamais eu ! Je sais qu&apos;ils essaient très dur pour s&apos;assurer que je suis heureux et en bonne santé , l&apos;une des façons qu&apos;ils font c&apos;est de faire en sorte que je mange les meilleurs aliments pour mon corps .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Voilà qui termine cette présentation sur la nutrition! Vous pouvez aller revoir les diapositives que vous aviez des problèmes avec ou parler au médecin lorsque vous êtes prêt.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

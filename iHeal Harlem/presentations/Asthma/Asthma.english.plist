@@ -4,21 +4,21 @@
 <dict>
 	<key>attributes</key>
 	<dict>
+		<key>languageLocalized</key>
+		<string>English</string>
 		<key>conditionName</key>
 		<string>Asthma</string>
 		<key>menuTitles</key>
 		<array>
 			<string>startPresentation</string>
 			<string>continue</string>
-			<string>jumpInfo</string>
 			<string>jumpQuiz</string>
 			<string>reviewFlags</string>
 		</array>
 		<key>menuLocalized</key>
 		<array>
-			<string>Start Presentation</string>
-			<string>Continue From Last Slide (##)</string>
-			<string>Jump to Info Slide</string>
+			<string>Tap to Start Presentation</string>
+			<string>Continue From Last Slide</string>
 			<string>Jump to First Quiz Slide</string>
 			<string>Review Flagged Slides</string>
 		</array>
@@ -29,7 +29,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_01.jpg</string>
+			<string>asthma_01.png</string>
 			<key>text</key>
 			<string>Hi! I&apos;m Jon, and I&apos;m here to talk to you about Asthma.</string>
 			<key>title</key>
@@ -41,7 +41,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_02.jpg</string>
+			<string>asthma_02.png</string>
 			<key>text</key>
 			<string>Sometimes I can&apos;t breathe. This happens because I have an illness called asthma.  When things around me trigger my asthma, I have an asthma attack. When an attack happens, I cough, wheeze, and have trouble breathing. An attack causes my airways to swell up and fill with mucus, which makes it hard for air to get through. People with asthma do not all have the same kind of triggers.  I wonder what my triggers are...</string>
 			<key>title</key>
@@ -53,7 +53,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_03.jpg</string>
+			<string>asthma_03.png</string>
 			<key>text</key>
 			<string>I love to play with my dog everyday, but I have started to notice that I cough a lot around Sparky. The doctor told my mom and me that this is because pets with long hair or fur can trigger an asthma attack for some people. My dad says that we will build a doghouse outside for Sparky so I can breathe better and we can still keep him.</string>
 			<key>title</key>
@@ -65,7 +65,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_04.jpg</string>
+			<string>asthma_04.png</string>
 			<key>text</key>
 			<string>My parents clean our house a lot so that Sparky&apos;s hair is not on the furniture or carpet anymore. Vacuuming and wiping off dusty surfaces also help to get rid of the small particles that can trigger an attack! Dust mites, pollen, and smoke really make it hard for me to breathe. We change my bed sheets every week so that I am not surrounded by these things when I sleep.</string>
 			<key>title</key>
@@ -77,7 +77,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_05.jpg</string>
+			<string>asthma_05.png</string>
 			<key>text</key>
 			<string>Mold is another trigger. It is a type of fungus that may grow in wet places, like around the bathroom sink or tub. If my parents find mold growing, they clean the area with soap and a scrubbing brush right away. Then they let it dry completely so no more mold will grow there. Mold can also grow on food that has become rotten. My mom always checks that the bread, fruit, and other foods in the kitchen have not become moldy. If she finds moldy food, she makes sure to throw it away.  </string>
 			<key>title</key>
@@ -89,7 +89,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_06.jpg</string>
+			<string>asthma_06.png</string>
 			<key>text</key>
 			<string>My parents don&apos;t let anyone smoke cigarettes inside the house. Even candles and incense can make it hard to breathe. Anyone who smokes goes outside to do it. One time, we stayed at a hotel during summer vacation and our hotel smelled so strongly of cigarettes that I had to go to the hospital. Now my parents and I makes sure that the places we stay at are clean and asthma-friendly.</string>
 			<key>title</key>
@@ -101,7 +101,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_07.jpg</string>
+			<string>asthma_07.png</string>
 			<key>text</key>
 			<string>When I want to play outside, my parents take me to clean parks. If there is a lot of air pollution from cars, my parents won&apos;t take me to that area. The seasons also affect my asthma. Pollen season causes me to have more asthma attacks. I try not to go outdoors so much during this time. During the winter, my parents make sure I am kept very warm. Wearing a scarf around my neck and close to my mouth &amp; nose help me breathe more easily. I always bring my inhaler with me where ever I go just in case I have an attack.</string>
 			<key>title</key>
@@ -113,7 +113,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_08.jpg</string>
+			<string>asthma_08.png</string>
 			<key>text</key>
 			<string>I love to play sports! I used to think that I couldn&apos;t run and play with all the other kids because of my asthma but now I know some tricks to fix this! When I know I am going to be exercising a lot during the day, I make sure to do exactly what my doctor told me to do- I take my prescription medicine at the nurse&apos;s office at school before recess. I also make sure I slowly warm up before I start playing a game.</string>
 			<key>title</key>
@@ -125,7 +125,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_09.jpg</string>
+			<string>asthma_09.png</string>
 			<key>text</key>
 			<string>My doctor says the best way to prevent an asthma attack is to make sure it never happens. Knowing what my triggers are helps me know what to stay away from. Taking my medicine regularly also helps to prevent my asthma from getting out of control. Everyone&apos;s body is different and the doctor helps me decide how much medicine to take according to how bad my asthma is.  My doctor sees other kids with asthma too, and he may tell them to do things differently- just like every kid is different, everyone’s asthma can be different.  The most important thing for anyone with asthma is to follow the asthma plan that the doctor gave!</string>
 			<key>title</key>
@@ -137,7 +137,7 @@
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_10.jpg</string>
+			<string>asthma_10.png</string>
 			<key>text</key>
 			<string>An asthma attack can happen suddenly, or I can be completely fine- asthma has different symptoms at different times.  There is no cure for asthma, so it’s important that my parents and I keep track of how I am feeling.  We pretend that asthma is like a traffic light: green means go!  Yellow means slow down and be careful.  Red means stop!
 
@@ -155,9 +155,9 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_11.jpg</string>
+			<string>asthma_11.png</string>
 			<key>text</key>
-			<string>When I have an attack, my mom...</string>
+			<string>When I have an attack, my mom gives me fast-acting &quot;rescue&quot; medication. This helps to relax the muscles in my throat and then I can breathe easily. But sometimes this doesn&apos;t work and she has to drive me to the hospital emergency room. We always bring all the medications my parents gave me that day.</string>
 			<key>title</key>
 			<string>####### missing text</string>
 			<key>flagSet</key>
@@ -167,7 +167,7 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
-			<string>asthma_12.jpg</string>
+			<string>asthma_12.png</string>
 			<key>text</key>
 			<string>I hope that someday, there will be a cure for asthma.  Until that happens, my parents help me take care of myself so that asthma doesn’t get in the way of my life!  I have too much growing and playing and learning to do!</string>
 			<key>title</key>
@@ -179,20 +179,195 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Who is your father?</string>
+			<string>How can you prevent triggering an asthma attack for your child?</string>
 			<key>answers</key>
 			<array>
-				<string>Me</string>
-				<string>You</string>
-				<string>Habib Khan</string>
-				<string>Lord Helix</string>
+				<string>Vacuum rugs and furniture only when your child is not around.</string>
+				<string>Have your child use his/her asthma inhaler regularly when the weather is very cold or very hot.</string>
+				<string>Keep your child away from triggers that may cause an attack.</string>
+				<string>All of the above</string>
 			</array>
 			<key>solution</key>
 			<integer>3</integer>
 			<key>explanation</key>
-			<string>All is true and right thanks to Lord Helix</string>
+			<string>All the choices are good ways of preventing asthma attacks for your child. The main idea is to keep your child away from triggers, or things that may cause an attack.</string>
 			<key>title</key>
-			<string>First Quiz Question</string>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>What are signs of an asthma?</string>
+			<key>answers</key>
+			<array>
+				<string>Shortness of breath, tightness in chest, itchy eyes</string>
+				<string>Hyperactiveness, shouting</string>
+				<string>Hunger</string>
+				<string>Calmness</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>An asthma attack occurs when the muscles in your child&apos;s throat tighten, making your child wheezy and have a harder time breathing. So, your child would not be calm or shouting because they would be unable to breathe.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>What is the first step to take when your child is experiencing an asthma attack?</string>
+			<key>answers</key>
+			<array>
+				<string>Call 911 for an ambulance</string>
+				<string>Have them try to breathe deeply and put their head between their legs</string>
+				<string>Give your child their fast acting &quot;rescue&quot; medicine to relax their muscles so that they can breathe and watch them to make sure their attack has stopped</string>
+				<string>Give them water and pat them on the back</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>When your child is having an attack, it should quickly be treated with medicine. You should then watch your child to make sure the attack goes away. If the attack worsens and your child cannot breathe or talk, you should call 911.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>What steps should your child take before exercising?</string>
+			<key>answers</key>
+			<array>
+				<string>Don&apos;t exercise at all.</string>
+				<string>Just go straight into full exercise</string>
+				<string>Warm up slowly to exercise and take prescribed preventative medicine before starting.</string>
+				<string>None of the above</string>
+			</array>
+			<key>solution</key>
+			<integer>2</integer>
+			<key>explanation</key>
+			<string>Although asthma may affect your child&apos;s breathing, they can still exercise and have fun with their friends if they prepare for it. You should also limit your child&apos;s exercise time in very hot or very cold weather because it may trigger an attack faster.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Which of the following are common triggers for asthma attacks?</string>
+			<key>answers</key>
+			<array>
+				<string>Sugar, Foods with high amounts of sugar</string>
+				<string>Other people with asthma</string>
+				<string>Sunlight</string>
+				<string>Dust, pets, household cleaning products</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Dust, pets, and household cleaning products are common triggers of asthma attacks. You can keep your child away from triggers by keeping your home free of dust and keeping pets and cleaning products away from your child. Every child is different though, so if you notice something not on the list that triggers an attack, you should keep your child away from it and speak to your doctor about it. Asthma also cannot be caught from other people.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>When should you call 911 for your child?</string>
+			<key>answers</key>
+			<array>
+				<string>When your child is wheezy, coughing, and feels tightness in his/her chest</string>
+				<string>When your child can&apos;t speak, is breathing very quickly, and taking medicine has not made him/her better</string>
+				<string>When they have a runny nose</string>
+				<string>When you need to refill your prescription for medicine</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>You should call 911 for an emergency or when you need a doctor at once. If your child is showing first signs of an asthma attack (like in choice A), he/she should take their &quot;rescue&quot; medicine. If you are going to the doctor for a check up, you should call the doctor&apos;s office to set it up. If you need to refill yourprescription, you should go to the pharmacist.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>How should you prevent dust, pollen, and other allergens from triggering an asthma attack?</string>
+			<key>answers</key>
+			<array>
+				<string>Use feather dusters to dust your home.</string>
+				<string>Keep surfaces free of dust using a damp cloth.</string>
+				<string>Wash sheets and bedding once a week in hot water.</string>
+				<string>B and C</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>You can limit your child&apos;s contact with allergens by keeping your home and furniture free of them. You should not use feather dusters because they move and spread dust around instead of removing it.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Using the Asthma Action Plan, which zone does your child fall into if they are breathing easily, aren&apos;t coughing, or wheezy, and can sleep easily?</string>
+			<key>answers</key>
+			<array>
+				<string>Go (green)</string>
+				<string>Caution (yellow)</string>
+				<string>Danger (red)</string>
+				<string>A and B</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>If your child is not showing signs of any trouble breathing, they are in the Go zone and the only action needed is preventative treatment and medicine.</string>
+			<key>title</key>
+			<string>SPECIAL</string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>That completes this presentation on Asthma! You may go review the slides you had trouble with or talk to the doctor when ready.</string>
+			<key>title</key>
+			<string></string>
 			<key>flagSet</key>
 			<false/>
 		</dict>

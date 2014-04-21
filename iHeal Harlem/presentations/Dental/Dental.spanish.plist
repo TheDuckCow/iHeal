@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Español</string>
+		<key>conditionName</key>
+		<string>Higiene Dental</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Toque para Empiece presentación</string>
+			<string>Continuar desde la última diapositiva</string>
+			<string>Ir al Cuestionario</string>
+			<string>Verifique las banderas</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_01.png</string>
+			<key>text</key>
+			<string>Este es Eric . Eric tiene 12 meses de edad, y sus dientes de leche están creciendo pulg</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_02.png</string>
+			<key>text</key>
+			<string>Ser padre es un trabajo duro, y es difícil de recordar para hacer todo , a veces , parece que es mejor y más fácil de saltar cepillarse los dientes, si eso significa que Eric será descansar más . Así que a veces , las encías de Eric y los nuevos dientes de leche no se les rozaron .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_03.png</string>
+			<key>text</key>
+			<string>Al igual que la mayoría de los bebés , Eric le encanta tomar leche ! Su madre sabe que la leche es ideal para bebés y les ayuda a obtener fuertes. Lo que muchos padres no se dan cuenta es que la leche contiene azúcares naturales - estos azúcares no son malos para los bebés , pero pueden acumularse en las encías bebés y los nuevos dientes y hacer que los dientes se pudran . Incluso los dientes que no han llegado todavía !</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_04.png</string>
+			<key>text</key>
+			<string>Eric y su mamá van al dentista para revisar sus dientes. El dentista le dice a la mamá de Eric que debe cepillarse los dientes y las encías de Eric todas las noches antes de dormir con un cepillo de dientes de cerdas suaves . La mamá de Eric le pregunta con qué frecuencia deben ver al dentista . Él le dice que deben ir al dentista al menos una vez cada seis meses , y la primera vez que un bebé debe visitar al dentista es cuando su primer diente de leche ha crecido en o antes de su primer cumpleaños.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_05.png</string>
+			<key>text</key>
+			<string>La mamá de Eric le pregunta por qué los dientes de leche son muy importantes si se va a caer finalmente a cabo . El dentista le dice que los dientes de leche ayudan a los permanentes a crecer de una manera sana y también ayudan a los bebés a aprender a hablar correctamente y comer bien.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_06.png</string>
+			<key>text</key>
+			<string>&quot; ¿Qué pasa si Eric tiene un dolor de muelas ? &quot; , Se pregunta . El dentista le dice que ayudará a que el dolor desaparezca , se debe enjuagar el área del dolor dentro de su boca con agua tibia con sal y colocar un paño frío en el lado de su boca lo que más duele . Si Eric todavía parece estar sufriendo, ella puede darle un poco de bebé Tylenol, y por supuesto, tan pronto como ella sabe que Eric tiene un dolor de muelas , debe hacer una cita para que vea al dentista tan pronto como sea posible!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_07.png</string>
+			<key>text</key>
+			<string>El dentista también le dice a la madre de Eric que chuparse el dedo y el uso de un chupete después de los tres años de edad puede dañar el crecimiento de los dientes de un niño. También dice que los bebés una vez que los seis meses de edad y mayores , dándoles agua antes de acostarse y después de cepillarse los dientes es la mejor idea , ya que el agua no tiene los azúcares de la leche que se hace. ( No es una buena idea para dar agua a los bebés que tengan menos de 6 meses. )</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_08.png</string>
+			<key>text</key>
+			<string>Los bebés que no tienen dientes deben tener sus encías limpias con agua y un bebé - cepillo dental suave o un paño suave. Porque Eric está empezando a conseguir sus dientes de leche , la madre debe limpiarlos con una mancha de pasta de dientes con flúor y un cepillo de dientes que se adapte a su grupo de edad. El dentista dice que cuando Eric tiene más de dos años de edad , se puede usar una cantidad pequeña de pasta de dientes para limpiar sus dientes. Cuando Eric se encuentra entre las edades de dos y cinco años, su madre puede ayudarle a limpiar ellos de la manera correcta , por lo que un día se puede limpiar sus dientes bien sin la ayuda de mamá. El dentista de Eric les dijo que los niños (y adultos ) siempre deben escupir y no tragar pasta dental al cepillarse los dientes.</string>
+			<key>title</key>
+			<string>Dental Hygiene Presentation</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>dental_09.png</string>
+			<key>text</key>
+			<string>Ser padre es un trabajo duro, y es difícil saber exactamente qué hacer todo el tiempo. Conseguir en el hábito de cepillarse las encías bebés , cepillarse los dientes de leche , y el hilo dental los dientes cuando los niños se hacen mayores ayudará a que sus hijos crezcan con bocas sanas , y los buenos hábitos de cepillado de por vida. Si usted tiene alguna pregunta , su médico y al dentista siempre están encantados de hablar con usted!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Qué tipo de pasta de dientes debe usar si su hijo tiene más de dos años de edad?</string>
+			<key>answers</key>
+			<array>
+				<string>No utilice crema dental</string>
+				<string>Pasta de dientes con fluoruro</string>
+				<string>pasta de dientes normal</string>
+				<string>Pasta de dientes con carbonato de calcio</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>El flúor es muy importante en la protección de la boca de su hijo de las caries. El flúor fortalece y protege los dientes. Así que con todos los alimentos diferentes que oído y bebidas que tenemos, el fluoruro puede proteger el esmalte contra el daño.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Con qué frecuencia se cepilla los dientes?</string>
+			<key>answers</key>
+			<array>
+				<string>Una vez por semana</string>
+				<string>Cada otro día</string>
+				<string>Una vez al día</string>
+				<string>Por lo menos dos veces al día</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Cepillarse por lo menos dos veces al día se asegura de que las bacterias no tienen la posibilidad de dañar los dientes de su hijo.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Por qué ir a un ortodoncista?</string>
+			<key>answers</key>
+			<array>
+				<string>Para un físico</string>
+				<string>Si su hijo tiene un resfriado</string>
+				<string>Para conseguir las gafas</string>
+				<string>Para comprobar cómo los dientes del niño están creciendo</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Un ortodoncista es un médico dental que se asegurará de que su hijo tiene una buena higiene dental.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Por qué debe enseñar a su hijo a practicar una buena higiene dental?</string>
+			<key>answers</key>
+			<array>
+				<string>Eliminará problemas como dolores de dientes y el mal aliento.</string>
+				<string>Asimismo, mantendrá los dientes de su hijo limpia y brillante</string>
+				<string>Esto ayudará a evitar que su hijo a perder sus dientes en el futuro.</string>
+				<string>Todo lo anterior.</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
+			<string>Todas las respuestas son correctas. Practicar una buena higiene dental es importante tener una boca sana.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>¿Por qué es importante usar el hilo dental?</string>
+			<key>answers</key>
+			<array>
+				<string>Se endereza los dientes</string>
+				<string>Elimina alimentos atorados entre los dientes y previene las caries</string>
+				<string>Mata a los gérmenes con fluoruro</string>
+				<string>Todo lo anterior</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
+			<string>El hilo dental ayuda a obtener en los alimentos que no se puede alcanzar con un cepillo de dientes.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Esto completa esta presentación sobre la higiene dental! Usted puede ir revisar las diapositivas que tenía problemas con o hablar con el médico cuando esté listo.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

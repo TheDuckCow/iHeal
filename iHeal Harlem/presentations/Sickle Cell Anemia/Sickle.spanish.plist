@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Español</string>
+		<key>conditionName</key>
+		<string>Sickle Cell Anemia</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Toque para Empiece presentación</string>
+			<string>Continuar desde la última diapositiva</string>
+			<string>Ir al Cuestionario</string>
+			<string>Verifique las banderas</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_01.png</string>
+			<key>text</key>
+			<string>Esta es Julie . Julie tiene siete años y vive en Nueva York, cerca del East River con su familia y su perro Murphy. Julie tiene un hermano pequeño , un padre y una madre , y una estantería con todos sus libros favoritos. Julie le encanta ver los barcos en el río con Murphy, y jugar al baloncesto con sus amigos.
+</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_02.png</string>
+			<key>text</key>
+			<string>Julie es como la mayoría de los niños , pero hay algunas cosas que la hacen sentir diferente. Julie tiene una marca de nacimiento que se parece a una mariposa, ella piensa que los plátanos son totalmente asqueroso , y ella tiene enfermedad de células falciformes .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_03.png</string>
+			<key>text</key>
+			<string>Tener la enfermedad de células falciformes es lo que hace que Julie se siente muy diferente de sus amigos. Al principio , trató de esconderse de todo el mundo , pero un día , su madre dijo: &quot; Julie , todo el mundo tiene algo que les hace sentir diferente. ¿Recuerdas el invierno pasado, cuando hicimos el 100 - pieza de rompecabezas ? Cada pieza se forma de manera diferente , pero cada pieza tenía hermosos colores , y cuando estaban todos juntos , hicieron una imagen brillante y encantador. Así es como la gente es demasiado , todo el mundo tiene una forma un poco diferente , pero todos estamos hechos de colores vivos y podemos trabajar juntos para hacer del mundo un lugar hermoso &quot; .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_04.png</string>
+			<key>text</key>
+			<string>Julie sintió un poco mejor después de hablar con su madre , y ella decidió contarle a sus dos mejores amigos , Anna y Alex , sobre su enfermedad de células falciformes. Julie les habló de que sólo la forma en que su médico le había explicado a ella:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_05.png</string>
+			<key>text</key>
+			<string>Cada cuerpo tiene sangre en su cuerpo que se compone de células diferentes que llevan alrededor de oxígeno y otras cosas importantes que el cuerpo necesita . Julie explicó que las células rojas de la sangre suelen ser redondos y lisos , y mirar un poco como un disco volador. En el cuerpo de Julie , sin embargo, algunos de sus glóbulos rojos son &quot; hoz &quot;, lo que significa que su semejanza con la letra &quot; C &quot; y son rígidos y puntiagudos .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_06.png</string>
+			<key>text</key>
+			<string>La sangre viaja a través del cuerpo a través de unos conductos llamados vasos sanguíneos. Julie explica a sus amigos que los vasos sanguíneos son los caminos y las células rojas de la sangre son los coches que circulan por las carreteras .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_07.png</string>
+			<key>text</key>
+			<string>Julie explica que se hacen los vasos sanguíneos para ajustarse a las células lisas de color rojo sangre y que en un día normal de las células rojas de la sangre son capaces de viajar sin chocar con los atascos de tráfico. Ella explica que a veces sus eritrocitos falciformes pueden quedar atrapados entre sí y causar una obstrucción o atasco de tráfico en sus vasos sanguíneos.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_08.png</string>
+			<key>text</key>
+			<string>Cuando esto sucede dentro de su cuerpo , Julie le dijo a sus amigos que se llama una &quot;crisis &quot;, y me duele mucho . Julie dijo que para ella le duele más que cuando se apagó la punta del pie en la bañera y más cuando se raspó las rodillas caigan los columpios.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_09.png</string>
+			<key>text</key>
+			<string>Para detener el terrible daño, Julie explica que su mamá le da la medicina y la gran cantidad de agua para beber en casa. Julie le dice a sus amigos que ella sólo va al hospital si los medicamentos en el país no funcionan o que lo hacen de una fiebre de más de 101 ○ F y su cuerpo se siente caliente.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_10.png</string>
+			<key>text</key>
+			<string>El hospital puede ser muy atemorizante , pero Julie dice que ayuda a tener a su mamá y oso de peluche preferido de ella. Julie no le gusta estar en el hospital, pero su médico , Katie , es muy agradable y amable . Julie consigue una medicina fuerte para detener su cuerpo se haga daño a través de una vía intravenosa ( un pequeño tubo en el brazo ) para líquidos , medicamentos, y, a veces , por una transfusión de sangre .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_11.png</string>
+			<key>text</key>
+			<string>Julie veces tiene que recibir transfusiones de sangre. Para Julie , las transfusiones de sangre son una manera de tratar de detener la crisis ocurra. Un montón de personas en todo el mundo donan sangre , lleno de glóbulos redondos de Julie y muchos otros enfermos . Esta sangre se le da a Julie a través de su línea de IV , y cuando está dentro de su cuerpo , se mezcla con la sangre de Julie . Luego están las células sanguíneas más redondos que pueden moverse con facilidad por el cuerpo de Julie .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_12.png</string>
+			<key>text</key>
+			<string>Anna y Alex escucharon atentamente a Julie - que es difícil de entender exactamente lo que se siente tener la enfermedad de células falciformes, pero saben que lo más importante que pueden hacer por Julie es ser su amigo, y su ayuda cuando ella está en dolor . Pueden hacer mamá o el papá de Julie , si tienen más preguntas sobre cómo ayudar , y pueden hablar con sus padres o un adulto que confían sobre cualquier pregunta o pensamientos que tienen. Anna y Alex sabe que no hay manera de coger la enfermedad de células falciformes de Julie- que no es como un resfriado o la gripe o la varicela .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_13.png</string>
+			<key>text</key>
+			<string>Es difícil para la familia de Julie y - su mamá y papá odian ver Julie daño, y su pequeño hermano Mike no entiende lo que está pasando cuando Julie está dañando o se va al hospital.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_14.png</string>
+			<key>text</key>
+			<string>El mes pasado, Julie tuvo una crisis - por la mañana, le dolía el estómago , por lo que su mamá le dio un montón de agua con un chorrito de jugo en ella para beber. Beber mucha agua y otros líquidos saludables es una manera de tratar de detener la crisis ocurra. No funcionó esta vez , sin embargo, y el dolor empeoró , por lo que la madre de Julie la llevó a la sala de emergencias .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_15.png</string>
+			<key>text</key>
+			<string>Los médicos pusieron en una línea IV , y dieron Julie medicina y más líquidos. Después de unos días , se sintió mejor y pudo volver a casa.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_16.png</string>
+			<key>text</key>
+			<string>Tener la enfermedad de células falciformes no es fácil, pero Julie sabe que tiene mucho amor y apoyo de su familia y amigos, y su médico Katie dice que este es el tratamiento más importante para cualquier paciente!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Transfusión de sangre</string>
+			<key>text</key>
+			<string>Las transfusiones de sangre son un procedimiento en el que se da sangre a una persona necesitada y por vía intravenosa ( IV). Las transfusiones se administran a personas con enfermedad de células falciformes cuando el suministro de sangre de su cuerpo está en la necesidad de apoyo debido a una enfermedad o tener un alto recuento de células falciformes.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Enfermedad de células falciformes</string>
+			<key>text</key>
+			<string>abreviado como SCD , es un grupo de trastornos hereditarios de la sangre , que se caracteriza por la hoz o media luna , la forma de algunas células de la sangre en las personas afectadas. Las personas con SCD tienen glóbulos rojos que se vuelven duros y pegajosos y se ven como una herramienta agrícola en forma de C se llama una &quot; hoz &quot; . Las células falciformes mueren pronto , lo que provoca una escasez constante de las células rojas de la sangre , anemia . Además, cuando las células falciformes viajan a través de los vasos sanguíneos pequeños , se quedan enganchados y obstruir el flujo sanguíneo. Esto puede causar dolor y otros problemas graves, infecciones, síndrome torácico agudo y accidente cerebrovascular. Pregunte a su profesional de la salud para obtener más información acerca de SCD y donde se puede obtener apoyo.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>El síndrome torácico agudo ( ACS )</string>
+			<key>text</key>
+			<string>Las personas con SCD puede experimentar un bloqueo del flujo sanguíneo a los pulmones que causa el síndrome torácico agudo . ACS es similar a la neumonía y puede ser mortal por lo que debe ser tratado en un hospital. Los síntomas de la ACS incluyen dolor de pecho , tos, dificultad para respirar y fiebre.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Carrera</string>
+			<key>text</key>
+			<string>Las células falciformes pueden crear bloqueos en cualquier parte del cuerpo . Cuando se bloquean el flujo de sangre al cerebro pueden causar lo que se conoce como un accidente cerebrovascular . Un derrame cerebral puede resultar en discapacidades para toda la vida o incluso la muerte y debe ser tratada en un hospital tan pronto como sea posible. Los signos de un derrame cerebral pueden ser dificultad para hablar , entumecimiento o debilidad en un lado del cuerpo o de la cara , dolor de cabeza y problemas con la coordinación o la visión.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Síndrome mano - pie</string>
+			<key>text</key>
+			<string>Inflamación de las manos y los pies , a veces acompañada de fiebre, que es un resultado de las células falciformes se queda pegada en los vasos sanguíneos y bloquea el flujo de sangre a las manos y los pies.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Strong Medicine </string>
+			<key>text</key>
+			<string>Los pacientes en crisis de células falciformes pueden estar en una enorme cantidad de dolor que a menudo requiere el uso de analgésicos fuertes . A menudo es difícil imaginar que este tipo de dolor , y los pacientes pueden confundirse con exagerando. Dolor de células falciformes es muy real, sin embargo, y no está bien hacer caso omiso de ella. Algunas personas a menudo se preocupan de que el uso de estos analgésicos fuertes puede llegar a ser adictivo para los niños y adultos con ECF . Sin embargo , los estudios nos muestran que la adicción a los analgésicos no es común en pacientes con SCD . Es importante tratar el dolor de la célula falciforme con la compasión , la comprensión y la cantidad correcta de medicina para el dolor.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Línea IV</string>
+			<key>text</key>
+			<string>IV significa &quot; intravenosa &quot;, o &quot; en su vena. &quot; Una línea IV se coloca con la ayuda de una aguja muy pequeña , que guía el pequeño tubo en una vena. La aguja se saca , y el pequeño tubo se conecta a otro tubo que puede entregar medicamentos y líquidos , a la derecha en la sangre del paciente . Esta es la forma más rápida para que los médicos y enfermeras para recibir tratamiento en el cuerpo de un paciente. Mucha gente no tiene gusto de conseguir agujas , y esto es totalmente normal. Su médico puede usar una crema llamada &quot; EMLA &quot; o &quot; LMX &quot;, que adormece la piel de 20 a 40 minutos , por lo que habrá menos dolor. La distracción , como mirar fotos de una fiesta de cumpleaños de la diversión , la lectura de un cuento, o cantar una canción, también puede ayudar a mantener a los niños tranquilos cuando conseguir una aguja.</string>
+			<key>link</key>
+			<string></string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>La donación de sangre</string>
+			<key>text</key>
+			<string>La donación de sangre de la Cruz Roja lleva a cabo cientos de sangre que impulsa cada año , así como otras organizaciones de su barrio. La sangre sana salva vidas. Hoy en día , nos enteramos de cómo ayudó a Julie y otros niños con anemia de células falciformes, pero salva los niños afectados por los coches , los bebés prematuros , las madres con partos difíciles , adultos en accidentes de tráfico , bomberos y policías heridos en acto de servicio , y muchos , muchas otras personas de todo el mundo . Nuestros cuerpos producen más de 2 millones de nuevos glóbulos rojos por segundo , y una donación de sangre sólo sería alrededor del 13 % de su cuerpo de sangre fácilmente reemplazado por su increíble cuerpo muy rápidamente. Si usted está interesado en aprender más sobre la donación de sangre, pídale a una enfermera oa un médico</string>
+			<key>link</key>
+			<string>http://www.redcross.org/cruz-roja</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Esto completa esta presentación sobre la anemia de células falciformes! Usted puede ir revisar las diapositivas que tenía problemas con o hablar con el médico cuando esté listo.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

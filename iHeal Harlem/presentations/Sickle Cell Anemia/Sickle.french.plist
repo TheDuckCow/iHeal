@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>attributes</key>
+	<dict>
+		<key>languageLocalized</key>
+		<string>Français</string>
+		<key>conditionName</key>
+		<string>Drépanocytose</string>
+		<key>menuTitles</key>
+		<array>
+			<string>startPresentation</string>
+			<string>continue</string>
+			<string>jumpQuiz</string>
+			<string>reviewFlags</string>
+		</array>
+		<key>menuLocalized</key>
+		<array>
+			<string>Appuyez sur Lancer Présentation</string>
+			<string>Continuer De Dernière diapositive</string>
+			<string>Première Quiz diaporama</string>
+			<string>Revoir signalées Diapositives</string>
+		</array>
+	</dict>
+	<key>slides</key>
+	<array>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_01.png</string>
+			<key>text</key>
+			<string>C&apos;est Julie . Julie a sept ans et vit à New York City , près de l&apos;East River avec sa famille et son chien Murphy. Julie a un petit frère , un père et une mère , et une bibliothèque avec tous ses livres préférés. Julie aime à regarder les bateaux sur le fleuve avec Murphy, et de jouer au basket avec ses amis.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_02.png</string>
+			<key>text</key>
+			<string>Julie est comme la plupart des enfants , mais il ya quelques choses qui font se sentir différent . Julie a une tache de naissance qui ressemble à un papillon, elle pense que les bananes sont totalement brute , et elle a la drépanocytose .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_03.png</string>
+			<key>text</key>
+			<string>Avoir la drépanocytose est ce qui rend Julie se sent très différente de ses amis. Dans un premier temps , elle a essayé de le cacher à tout le monde , mais un jour , sa mère dit: « Julie, tout le monde a quelque chose qui les fait se sentir différent . Vous souvenez-vous l&apos;hiver dernier, quand nous avons fait les 100 pièces du puzzle ? Chaque pièce a une forme différente , mais chaque pièce a eu de belles couleurs, et quand ils furent tous réunis , ils ont fait une image lumineuse et belle . C&apos;est comme ça que les gens sont trop , tout le monde est en forme un peu différente, mais nous sommes tous constitués de couleurs vives et nous pouvons travailler ensemble pour rendre le monde un endroit magnifique &quot; .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_04.png</string>
+			<key>text</key>
+			<string>Julie se sentait un peu mieux après avoir parlé avec sa mère , et elle a décidé de raconter ses deux meilleures amies , Anna et Alex , à propos de sa maladie drépanocytaire . Julie leur a parlé juste la manière que son médecin l&apos;avait expliqué à elle:</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_05.png</string>
+			<key>text</key>
+			<string>Le corps de chacun a du sang dans leur corps qui est constitué de cellules différentes qui portent autour de l&apos;oxygène et d&apos;autres choses importantes que le corps a besoin . Julie a expliqué que les globules rouges sont habituellement ronde et lisse , et ressemblent un peu à un Frisbee . Dans le corps de Julie , cependant, certains de ses globules rouges sont « sickled », ce qui signifie qu&apos;ils ressemblent à la lettre &quot;C&quot; et sont rigides et pointues .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_06.png</string>
+			<key>text</key>
+			<string>Le sang circule dans le corps à travers des tubes dits vaisseaux sanguins . Julie explique à ses amis que les vaisseaux sanguins sont les routes et les globules rouges sont les voitures circulant sur ​​les routes.
+</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_07.png</string>
+			<key>text</key>
+			<string>Julie explique que les vaisseaux sanguins sont faites pour s&apos;adapter en douceur les cellules rouges du sang et qu&apos;un jour régulièrement les globules rouges sont en mesure de se déplacer sans heurter les embouteillages. Elle explique que, parfois, ses globules rouges falciformes peuvent se coincer à l&apos;autre et provoquer un blocage ou embouteillage dans ses vaisseaux sanguins.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_08.png</string>
+			<key>text</key>
+			<string>Lorsque cela se produit à l&apos;intérieur de son corps , Julie dit à ses amis qu&apos;il a appelé une «crise», et il fait très mal . Julie dit que pour elle, il fait plus mal que quand elle écrasa son orteil sur la baignoire et plus quand elle a gratté ses genoux tomber les balançoires.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_09.png</string>
+			<key>text</key>
+			<string>Pour arrêter le terrible mal, Julie explique que sa mère donne ses médicaments et beaucoup d&apos;eau à boire à la maison. Julie dit à ses amis qu&apos;elle ne va à l&apos;hôpital si les médicaments à la maison ne fonctionnent pas ou qu&apos;elle obtient une fièvre supérieure à 101 ○ F et son corps est chaud .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_10.png</string>
+			<key>text</key>
+			<string>L&apos;hôpital peut être très effrayant, mais Julie dit qu&apos;il est utile d&apos;avoir sa maman et son nounours préféré avec elle. Julie n&apos;aime pas être à l&apos;hôpital , mais son médecin, Katie, est très agréable et doux. Julie reçoit un remède de cheval pour arrêter son corps de blesser par une ligne IV ( un petit tube dans son bras ) pour les fluides , la médecine, et parfois , pour une transfusion sanguine .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_11.png</string>
+			<key>text</key>
+			<string>Julie a parfois recevoir des transfusions sanguines. Pour Julie , les transfusions sanguines sont un moyen pour essayer d&apos;arrêter les crises de se produire. Beaucoup de gens à travers le monde donnent du sang , emballés avec des globules rondes, pour Julie et beaucoup d&apos; autres malades . Ce sang est donné à Julie à travers sa ligne IV , et quand il est à l&apos;intérieur de son corps, elle se mélange avec le sang de Julie . Ensuite, il ya plus de globules rondes qui peuvent se déplacer facilement autour du corps de Julie .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_12.png</string>
+			<key>text</key>
+			<string>Anna et Alex écouté attentivement Julie- il est difficile de comprendre exactement ce que c&apos;est que d&apos; avoir la drépanocytose , mais ils savent que la chose la plus importante qu&apos;ils peuvent faire pour Julie est d&apos;être son ami, et l&apos;aider quand elle est dans douleur. Ils peuvent demander à maman ou papa de Julie, s&apos;ils ont plus de questions sur la façon d&apos;aider , et ils peuvent parler à leurs parents ou à un adulte qui ils ont confiance sur des questions ou des pensées qu&apos;ils ont. Anna et Alex savent qu&apos;il n&apos;y a pas moyen d&apos;attraper la drépanocytose de Julie- ce n&apos;est pas comme un rhume ou la grippe ou la varicelle </string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_13.png</string>
+			<key>text</key>
+			<string>Il est difficile pour la famille de Julie comme bien sa maman et papa déteste voir Julie blesser, et son petit frère Mike ne comprend pas ce qui se passe quand Julie est mal ou s&apos;en va à l&apos;hôpital.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_14.png</string>
+			<key>text</key>
+			<string>Le mois dernier, Julie avait une crise dans la matinée , son mal au ventre , alors que sa mère lui a donné beaucoup d&apos;eau avec un peu de jus en elle pour boire. Boire beaucoup d&apos; eau et d&apos;autres fluides sain est une façon d&apos;essayer d&apos;arrêter les crises de se produire. Cela n&apos;a pas fonctionné cette fois-ci, et la douleur a empiré , donc la mère de Julie l&apos;a amenée à la salle d&apos;urgence .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_15.png</string>
+			<key>text</key>
+			<string>Les médecins ont mis dans une ligne IV , et donné des médicaments Julie et plus fluides. Après quelques jours , elle se sentait mieux et a pu rentrer à la maison .</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string>sickle_16.png</string>
+			<key>text</key>
+			<string>Avoir la drépanocytose n&apos;est pas facile, mais Julie sait qu&apos;elle a beaucoup d&apos;amour et le soutien de sa famille et ses amis, et son médecin Katie dit que c&apos;est le traitement le plus important pour n&apos;importe quel patient!</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Drépanocytose</string>
+			<key>text</key>
+			<string>en abrégé SCD ; est un groupe de maladies héréditaires du sang , caractérisé par la faucille ou croissant, forme de certaines cellules sanguines chez les personnes touchées. Les gens atteints de drépanocytose ont des globules rouges qui deviennent durs et collants et ressemblent à un outil de ferme en forme de C appelé « faucille ». Les cellules falciformes meurent tôt, ce qui provoque une pénurie constante de globules rouges , de l&apos;anémie . Aussi, lorsque les cellules falciformes voyager à travers les petits vaisseaux sanguins , ils restent coincés et obstruer la circulation sanguine . Cela peut causer de la douleur et d&apos;autres problèmes graves comme l&apos;infection, syndrome thoracique aigu et d&apos;AVC. Demandez à votre professionnel de soins de santé pour plus d&apos;informations au sujet de SCD et où vous pouvez obtenir de l&apos;aide .</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Transfusion sanguine </string>
+			<key>text</key>
+			<string>La transfusion sanguine est une procédure dans laquelle le sang est donné à une personne dans le besoin par voie intraveineuse et en ligne ( IV). Transfusions sont donnés aux personnes atteintes de drépanocytose lorsque l&apos;approvisionnement en sang de leur corps a besoin de soutien pour cause de maladie ou d&apos;avoir un nombre élevé de cellules de faucille .</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Syndrome thoracique aigu</string>
+			<key>text</key>
+			<string>Les personnes atteintes de drépanocytose peuvent éprouver un blocage de la circulation du sang vers les poumons qui provoque le syndrome thoracique aiguë . STA est semblable à la pneumonie et peut être mortelle si elle devrait être traitée dans un hôpital. Les symptômes d&apos; STA comprennent des douleurs à la poitrine , de la toux , des difficultés respiratoires et de la fièvre .</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Course</string>
+			<key>text</key>
+			<string>cellules falciformes peuvent créer des blocages dans tout le corps . Quand ils bloquent le flux sanguin vers le cerveau , ils peuvent provoquer ce qu&apos;on appelle un AVC . Un accident vasculaire cérébral peut entraîner des incapacités permanentes de la vie ou même la mort et doit être traité dans un hôpital dès que possible. Les signes d&apos;un AVC peuvent être troubles de l&apos;élocution , engourdissement ou une faiblesse d&apos;un côté du corps ou du visage , des maux de tête et des problèmes avec la coordination ou de la vision .</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Syndrome main-pied</string>
+			<key>text</key>
+			<string>gonflement des mains et des pieds , parfois accompagnée de fièvre , qui est une suite de cellules falciformes rester coincé dans les vaisseaux sanguins et bloquer le flux sanguin vers les mains et les pieds .</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Médecine forte</string>
+			<key>text</key>
+			<string> les patients en crise de drépanocytose peuvent être énormes quantités de douleur qui nécessite souvent l&apos;utilisation d&apos; analgésiques puissants . Il est souvent difficile d&apos;imaginer ce genre de douleur , et les patients peuvent être confondu avec une réaction excessive . Douleur drépanocytaire est très réel, cependant, et il n&apos;est pas OK pour l&apos;ignorer. Certaines personnes craignent souvent que l&apos;utilisation de ces analgésiques puissants peut devenir addictif pour les enfants et les adultes atteints de drépanocytose . Cependant, les études nous montrent que la dépendance aux analgésiques n&apos;est pas fréquente chez les patients atteints de drépanocytose . Il est important de traiter la douleur drépanocytaire avec compassion , la compréhension et la bonne quantité de médicament pour arrêter la douleur.</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>IV ligne</string>
+			<key>text</key>
+			<string>IV signifie « intraveineuse » ou « dans une veine . &quot; Une ligne IV est placé à l&apos;aide d&apos; une aiguille très fine , qui guide le petit tube dans une veine. L&apos;aiguille est retirée , et le petit tube est relié à un autre tube qui peut livrer des médicaments et de fluides , à droite dans le sang du patient. C&apos;est le moyen le plus rapide pour les médecins et les infirmières de se faire soigner dans le corps d&apos;un patient. Beaucoup de gens n&apos;ont pas vraiment envie de se faire des aiguilles , et c&apos;est tout à fait normal . Votre médecin peut utiliser une crème appelée « EMLA » ou « LMX », qui engourdit la peau en 20-40 minutes , de sorte qu&apos;il y aura moins de douleur. Distraction , comme regarder des photos d&apos;une fête d&apos;anniversaire d&apos;amusement , de lire une histoire ou chanter une chanson , peut aussi aider à garder les enfants calme lors de l&apos;obtention d&apos;une aiguille.</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>definition</string>
+			<key>toDefine</key>
+			<string>Le don de sang</string>
+			<key>text</key>
+			<string>la Croix-Rouge détient des centaines de collectes de sang chaque année, ainsi que d&apos;autres organismes de votre quartier . Sang sain sauve des vies. Aujourd&apos;hui , nous avons appris comment il a aidé Julie et d&apos;autres enfants atteints d&apos;anémie falciforme, mais il sauve les enfants touchés par les voitures , les bébés prématurés , les mères de travaux difficiles , les adultes dans les accidents de voiture , des pompiers et des policiers blessés dans l&apos; exercice de leurs fonctions , et de nombreux , beaucoup d&apos;autres personnes partout dans le monde . Notre corps produit plus de 2 millions de nouveaux globules rouges à chaque seconde, et un don de sang ne seraient environ 13% de votre corps le sang facilement remplacé par votre corps de rêve très rapidement. Si vous êtes intéressés à en apprendre davantage sur le don de sang, demander à une infirmière ou un médecin</string>
+			<key>title</key>
+			<string></string>
+			<key>link</key>
+			<string>http://www.redcross.org</string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>info</string>
+			<key>image</key>
+			<string></string>
+			<key>text</key>
+			<string>Voilà qui termine cette présentation sur l&apos;anémie falciforme! Vous pouvez aller revoir les diapositives que vous aviez des problèmes avec ou parler au médecin lorsque vous êtes prêt.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

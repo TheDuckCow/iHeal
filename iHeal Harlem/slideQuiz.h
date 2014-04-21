@@ -12,14 +12,15 @@
 
 @property NSString *question;
 @property NSMutableArray *answers;
-@property NSString *solution;
+@property int solution;
 @property NSString *explanation;
 @property NSString *title;
 @property BOOL didAnswerCorrect;
+@property BOOL flagSet;
+@property int slideRef;
 
--(void)didAnswer:(NSString *)choice;
 
 // less significant or can be missing
-@property NSString *pictureURL;
+@property NSString *image;
 
 @end
