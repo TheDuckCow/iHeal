@@ -106,6 +106,11 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self setSlide];
+    
+}
+
 - (void) setSlide{
     
     // set the name of the slide/navigation view number:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="YOI-8z-Nqs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="YOI-8z-Nqs">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -94,9 +94,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="hYy-LV-OYa" kind="push" id="poD-Qs-Yas"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -221,7 +218,7 @@
                                 <state key="normal" backgroundImage="UI_world.png"/>
                                 <connections>
                                     <action selector="languageButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="eLz-SV-Klt"/>
-                                    <segue destination="JQ0-Fe-ZX4" kind="unwind" unwindAction="unwindToLanguageSelect:" id="fCC-ba-Zl2"/>
+                                    <segue destination="EZf-pi-2cc" kind="modal" id="CHf-9j-HrN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-xu-1tN">
@@ -277,7 +274,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpA-RN-QN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="JQ0-Fe-ZX4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4925" y="-296"/>
         </scene>

@@ -34,6 +34,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -99,7 +100,11 @@
     // immediately set the new language title of slide in nav bar
     NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
     self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
-
+    
+    
+    // "pop" this view
+    //[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 
 }
 

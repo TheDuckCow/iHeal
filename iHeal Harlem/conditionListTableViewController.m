@@ -119,13 +119,13 @@
         NSString *presentation = self.conditionsList[indexPath.row];
         
         // reload the presentaiton based on this
-        NSLog(@"CondListContr> hard coded assuming english pres exists..  need to use existing plist at first!");
+        //NSLog(@"CondListContr> hard coded assuming english pres exists..  need to use existing plist at first!");
         [[getPresentationData dataShared] replacePresentation:[NSString stringWithFormat:@"%@.english",presentation]];
         
         [getPresentationData dataShared].activeConditionName = self.conditionsList[indexPath.row];
         
         // go to the next view
-        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"languageSelectID"];
+        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"menuID"];
         [self.navigationController pushViewController:nextView animated:YES];
     }
 }
