@@ -10,7 +10,6 @@
 
 @interface slideIntro : NSObject
 
-@property NSMutableArray *langOptions;
 @property NSString *welcome;
 @property BOOL flagSet;
 

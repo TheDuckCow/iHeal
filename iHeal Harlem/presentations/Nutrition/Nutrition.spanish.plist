@@ -27,6 +27,16 @@
 	<array>
 		<dict>
 			<key>slide</key>
+			<string>intro</string>
+			<key>welcome</key>
+			<string>En las diapositivas siguientes, usted aprenderá más sobre la importancia de una buena nutrición y lo que puedes hacer en casa.</string>
+			<key>imgGesture</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
 			<string>nutr 1.png</string>
@@ -171,7 +181,29 @@
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>info</string>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Eating healthy food means that you are:</string>
+			<key>answers</key>
+			<array>
+				<string>Less likely to catch a cold or develop serious diseases like heart disease in the future.</string>
+				<string>Losing valuable sources of fat cells that keep you warm.</string>
+				<string>Going to lose your sense of taste.</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
+			<string>If your child is not showing signs of any trouble breathing, they are in the Go zone and the only action needed is preventative treatment and medicine.</string>
+			<key>title</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>slide</key>
+			<string>outro</string>
 			<key>image</key>
 			<string></string>
 			<key>text</key>

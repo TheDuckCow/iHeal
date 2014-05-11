@@ -58,7 +58,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-2m-JXC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-2m-JXC">
                                 <rect key="frame" x="-12" y="0.0" width="787" height="1029"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -101,14 +101,24 @@
                                     <outlet property="delegate" destination="EZf-pi-2cc" id="imo-xr-sYX"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select_STATIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92u-vP-HfI">
+                                <rect key="frame" x="106" y="34" width="557" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95064618520751409" green="0.95635237495413417" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Language Selection" id="cw5-xB-xR0"/>
+                    <connections>
+                        <outlet property="selectionLabel" destination="92u-vP-HfI" id="PFU-8W-xpH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgO-GI-wdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="-296"/>
+            <point key="canvasLocation" x="4900" y="-279"/>
         </scene>
         <!--Condition Menu Table View Controller - Presentation Menu-->
         <scene sceneID="OuB-zL-sxW">
@@ -170,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jD-dZ-qsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4013" y="-296"/>
+            <point key="canvasLocation" x="3109" y="-284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PVi-MY-yVH">
@@ -215,26 +225,25 @@
                                 <rect key="frame" x="364" y="901" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" backgroundImage="UI_world.png"/>
+                                <state key="normal" backgroundImage="UI_world"/>
                                 <connections>
                                     <action selector="languageButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="eLz-SV-Klt"/>
-                                    <segue destination="EZf-pi-2cc" kind="modal" id="CHf-9j-HrN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-xu-1tN">
-                                <rect key="frame" x="287" y="900" width="42" height="42"/>
+                                <rect key="frame" x="264" y="901" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" backgroundImage="UI_infoCircle.png"/>
+                                <state key="normal" backgroundImage="UI_infoCircle"/>
                                 <connections>
                                     <action selector="infoButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="FfA-yW-1FM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzN-gx-8if">
-                                <rect key="frame" x="437" y="901" width="42" height="42"/>
+                                <rect key="frame" x="464" y="901" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" backgroundImage="UI_flagClear.png"/>
+                                <state key="normal" backgroundImage="UI_flagClear"/>
                                 <connections>
                                     <action selector="flagToggle:" destination="Gic-xW-YCb" eventType="touchUpInside" id="y33-o9-XiX"/>
                                 </connections>
@@ -263,6 +272,24 @@
                                     <action selector="previousSlideButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="h5L-Kz-9Yx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blinkHighlight_0005" translatesAutoresizingMaskIntoConstraints="NO" id="OXv-Pi-YQJ">
+                                <rect key="frame" x="580" y="804" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blinkHighlight_0005" translatesAutoresizingMaskIntoConstraints="NO" id="Ozm-1N-7aJ">
+                                <rect key="frame" x="641" y="-23" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6f-lB-6TT">
+                                <rect key="frame" x="684" y="20" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="UI_forward">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forward:" destination="Gic-xW-YCb" eventType="touchUpInside" id="7zz-RZ-eXG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -270,12 +297,16 @@
                     <connections>
                         <outlet property="UInextButton" destination="NLc-ee-fPL" id="x9I-h2-7Rn"/>
                         <outlet property="UIpreviousButton" destination="vhf-10-NA4" id="ves-NO-P5A"/>
+                        <outlet property="aboutButton" destination="Bim-xu-1tN" id="MZz-M6-tQT"/>
+                        <outlet property="blinkHighlightForward" destination="Ozm-1N-7aJ" id="Eej-eI-CKB"/>
+                        <outlet property="blinkHighlightNextImage" destination="OXv-Pi-YQJ" id="n2K-EY-9j9"/>
                         <outlet property="flagButton" destination="WzN-gx-8if" id="5nS-MU-yXI"/>
+                        <outlet property="forwardButton" destination="u6f-lB-6TT" id="Nvc-nB-QEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpA-RN-QN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4925" y="-296"/>
+            <point key="canvasLocation" x="4013" y="-272"/>
         </scene>
         <!--Review Slides Table View Controller-->
         <scene sceneID="OEd-P5-j53">
@@ -347,37 +378,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-Q2-jXJ">
-                                <rect key="frame" x="106" y="69" width="557" height="126"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-Q2-jXJ">
+                                <rect key="frame" x="106" y="69" width="557" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">This app was originally developed for Harlem Hospital, New York, as a means to engage waiting room patients before being seen by a doctor for parents and children of the conditions presented in this mobile app.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3H-60-2Ha">
-                                <rect key="frame" x="0.0" y="0.0" width="98" height="770"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96167490433673475" green="0.96167490433673475" blue="0.96167490433673475" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Td-3g-Sdh">
-                                <rect key="frame" x="95" y="203" width="578" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96167490430000002" green="0.96167490430000002" blue="0.96167490430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaC-Fp-PZ1">
-                                <rect key="frame" x="671" y="0.0" width="98" height="765"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96167490430000002" green="0.96167490430000002" blue="0.96167490430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8li-dg-veO">
-                                <rect key="frame" x="0.0" y="708" width="768" height="316"/>
+                                <rect key="frame" x="0.0" y="657" width="768" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30588235289999999" green="0.75686274509999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -386,7 +396,7 @@
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Developed by Global App Initiative" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-zR-zub">
-                                <rect key="frame" x="106" y="713" width="557" height="45"/>
+                                <rect key="frame" x="106" y="657" width="557" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -400,31 +410,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9B-11-Ytq">
-                                <rect key="frame" x="106" y="751" width="557" height="109"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9B-11-Ytq">
+                                <rect key="frame" x="106" y="694" width="557" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Team Leader: Katherine Nosal
 Programming: Patrick W. Crawford (lead iOS), Veronica Tverbakk, Justin Bernardo
 Design: Veronica Tverbakk, Justin Bernardo, Patrick W. Crawford, Katherine Nosal, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSu-Hr-NyZ">
-                                <rect key="frame" x="106" y="272" width="557" height="413"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">To navigate these slides, either tap the arrows at the bottom of the screen or swipe left/right. You can change the language with the world button and then continue the presentation at any time.
-
-At the end of most presentations there will be a quiz section, where you can only advance once you get the correct answer. If you answer incorrectly, you can either try again or go back to the content of the presentation. You can also navigate backwards and once you answer a question correctly, you don’t have to answer it again.
-
-You can flag slides by tapping the icon at the bottom if you have a question on that slide. When the doctor comes by, you can then go back to the presentation menu and check review slides to go through all slides that are flagged.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5z-5h-p0k">
-                                <rect key="frame" x="334" y="854" width="100" height="100"/>
+                                <rect key="frame" x="334" y="844" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="GAI_logo_white_trans">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,15 +431,54 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
                                     <action selector="gaiPress:" destination="VVn-zw-SGa" eventType="touchUpInside" id="bQz-cI-ldb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-aS-9ya">
+                                <rect key="frame" x="169" y="546" width="431" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Review Flagged Slides" backgroundImage="buttonImage">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reviewSlides:" destination="VVn-zw-SGa" eventType="touchUpInside" id="8qe-R8-Csv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-yi-dKe">
+                                <rect key="frame" x="169" y="451" width="431" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Jump to first Quiz Slide" backgroundImage="buttonImage">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpQuizSlide:" destination="VVn-zw-SGa" eventType="touchUpInside" id="9Lx-m7-eUc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X3-4Y-fal">
+                                <rect key="frame" x="169" y="357" width="431" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Jump to Beginning" backgroundImage="buttonImage">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpFirstSlide:" destination="VVn-zw-SGa" eventType="touchUpInside" id="heq-T8-FvT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="Fse-Ce-9FN">
+                                <rect key="frame" x="106" y="188" width="557" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="About and Usage" id="5gN-uL-yff"/>
                     <connections>
+                        <outlet property="jumpFirstSlideButton" destination="6X3-4Y-fal" id="3Rd-rU-cN5"/>
+                        <outlet property="jumpQuizSlideButton" destination="4La-yi-dKe" id="MjY-fJ-Bza"/>
+                        <outlet property="reviewSlidesButton" destination="Qfo-aS-9ya" id="AgS-Li-TMd"/>
                         <outlet property="textAbout" destination="qLx-Q2-jXJ" id="Jh2-u5-tok"/>
                         <outlet property="textCredits" destination="x9B-11-Ytq" id="o1x-io-53Y"/>
                         <outlet property="textGAI" destination="1Hq-zR-zub" id="t0N-TU-36h"/>
-                        <outlet property="textUsage" destination="aSu-Hr-NyZ" id="8yC-QA-C0I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbi-hV-PBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,10 +490,13 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
         <image name="GAI_logo_white_trans" width="100" height="100"/>
         <image name="UI_arrowLeft_full" width="101" height="65"/>
         <image name="UI_arrowRight_full" width="101" height="65"/>
-        <image name="UI_flagClear.png" width="64" height="65"/>
-        <image name="UI_infoCircle.png" width="64" height="65"/>
-        <image name="UI_world.png" width="64" height="65"/>
-        <image name="background_1.jpg" width="900" height="1200"/>
+        <image name="UI_flagClear" width="64" height="65"/>
+        <image name="UI_forward" width="65" height="65"/>
+        <image name="UI_infoCircle" width="64" height="65"/>
+        <image name="UI_world" width="64" height="65"/>
+        <image name="background_1" width="900" height="1200"/>
+        <image name="blinkHighlight_0005" width="340" height="340"/>
+        <image name="buttonImage" width="351" height="81"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

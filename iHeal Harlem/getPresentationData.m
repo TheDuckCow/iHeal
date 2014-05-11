@@ -70,7 +70,10 @@
         shared.activePlist = @"";
         //[shared replacePresentation: shared.activePlist];
         shared->currentSlideIndex = 0;
+        shared->jumpSlideIndex = 0;
+        shared->holdIndexForReview = -1;
         shared.presentationFlowMode = @"linear";
+        shared->reviewingFlags = NO;
         
     });
         
@@ -109,7 +112,7 @@
         [self.conditionsList addObject:conditionKey];
     }
     
-    [self.conditionsList addObject:@"aboutPageTitle"];
+    //[self.conditionsList addObject:@"aboutPageTitle"];
     
     return self.conditionsList;
     
@@ -137,6 +140,13 @@
 
 - (slideIntro *) getCurrentSlideIntro{
     slideIntro *currentSlide = [[slideIntro alloc] init];
+    currentSlide = self.slides[self->currentSlideIndex];
+    //NSLog(@"printing slide index: %i",self->currentSlideIndex);
+    return currentSlide;
+}
+
+- (slideOutro *) getCurrentSlideOutro{
+    slideOutro *currentSlide = [[slideOutro alloc] init];
     currentSlide = self.slides[self->currentSlideIndex];
     //NSLog(@"printing slide index: %i",self->currentSlideIndex);
     return currentSlide;
@@ -261,13 +271,27 @@
             [self.slides addObject:tempSlideQuiz];
         }
         else if([strTemp isEqual:@"intro"]){
-            // intro type slide, should always be the first one in a presentation
+            // intro type slide, -should- always be the first one in a presentation
             slideIntro *tempSlideIntro = [[slideIntro alloc]init];
             tempSlideIntro.welcome = temp[@"welcome"];
+            tempSlideIntro.imgGesture = temp[@"imgGesture"];
             
             [self.slides addObject:tempSlideIntro];
             [self.slidesType addObject:@"intro"];
             
+        }
+        else if([strTemp isEqual:@"outro"]){
+            // outro type slide, -should- always be the last one in a presentation
+            slideOutro *tempSlideOutro = [[slideOutro alloc]init];
+            tempSlideOutro.text = temp[@"text"];
+            tempSlideOutro.image = temp[@"image"];
+            
+            //BOOL thing is read in as NSNumber, must cast it
+            NSNumber *tempNS = temp[@"flagSet"];
+            tempSlideOutro.flagSet = tempNS.boolValue;
+            
+            [self.slides addObject:tempSlideOutro];
+            [self.slidesType addObject:@"slideOutro"];
         }
     }
     
@@ -283,10 +307,11 @@
     UIColor *pastalCyan =       [UIColor colorWithRed:179/255.0 green:226/255.0 blue:221/255.0 alpha:1];
     UIColor *pastalBlue =       [UIColor colorWithRed:191/255.0 green:213/255.0 blue:232/255.0 alpha:1];
     UIColor *pastalMagenta =    [UIColor colorWithRed:221/255.0 green:212/255.0 blue:232/255.0 alpha:1];
+    UIColor *skyeBlue =         [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:1];
     //UIColor *transparent =      [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0];
     //UIColor *skyeBlue =    [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:1];
     
-    NSArray *colorArray = @[pastalOrange,pastalYellow,pastalGreen,pastalCyan,pastalBlue,pastalMagenta];
+    NSArray *colorArray = @[pastalOrange,pastalYellow,pastalGreen,pastalCyan,pastalBlue,pastalMagenta,skyeBlue];
     //NSLog(@"colorObj: %@", colorArray);
     return colorArray;
 }
@@ -465,8 +490,7 @@
 }
 
 - (int) setNextSlide{
-    
-    // case for flagFlow
+    // case for flagFlow // TECHNICALLY should just delete this, since no flow for flags now
     if ([self.presentationFlowMode  isEqual: @"flagCheck"]){
         while (self->currentSlideIndex < [self.slides count]-1){
             self->currentSlideIndex+=1;
@@ -492,7 +516,7 @@
 
 - (int) setPreviousSlide{
     
-    // case for flagFlow
+    // case for flagFlow // TECHNICALLY should just delete this, since no flow for flags now
     if ([self.presentationFlowMode  isEqual: @"flagCheck"]){
         while (self->currentSlideIndex > 0){
             self->currentSlideIndex-=1;
@@ -585,6 +609,7 @@
         }
     }
     [self setPresentationSlide:savePast];
+    //self->currentSlideIndex = savePast; // the above does literally this, why? why exist this method??
     
     return flagedSlides;
 }
@@ -636,6 +661,25 @@
     conditionKey = [[presPlist objectForKey: @"attributes"] objectForKey: @"conditionName"];
     return conditionKey;
     
+}
+
+-(void) setHoldIndex{
+    self->holdIndexForReview = self->currentSlideIndex;
+}
+-(void) returnToHoldIndex{
+    self->currentSlideIndex = self->holdIndexForReview;
+}
+
+-(int) getHoldIndex{
+    return self->holdIndexForReview;
+}
+
+-(void) stateFlagReview: (BOOL) state{
+    self->reviewingFlags = state;
+}
+
+-(BOOL) getReviewFlagState{
+    return self->reviewingFlags;
 }
 
 

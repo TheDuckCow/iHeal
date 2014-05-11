@@ -27,6 +27,16 @@
 	<array>
 		<dict>
 			<key>slide</key>
+			<string>intro</string>
+			<key>welcome</key>
+			<string>In the following slides, you will learn more about managing Asthma on a regular basis.</string>
+			<key>imgGesture</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
 			<string>asthma_01.png</string>
@@ -361,7 +371,7 @@ In the Red Zone, my medicine does not seem to help me and my breathing is hard a
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>info</string>
+			<string>outro</string>
 			<key>image</key>
 			<string></string>
 			<key>text</key>

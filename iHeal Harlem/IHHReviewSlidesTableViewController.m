@@ -12,6 +12,7 @@
 
 @interface IHHReviewSlidesTableViewController ()
 @property NSMutableArray *flagList;
+@property int holdNum;
 @end
 
 @implementation IHHReviewSlidesTableViewController
@@ -31,9 +32,10 @@
     
     self.flagList = [[NSMutableArray alloc]init];
     self.title = @"Review Flagged Slides";
-    UIImage *image = [UIImage imageNamed:@"background_1.jpg"];
+    UIImage *image = [UIImage imageNamed:@"background_1"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
+    self.holdNum = -1;
     
     UITableView *tableView = (UITableView*)self.view;
     tableView.backgroundView = imageView;
@@ -44,12 +46,13 @@
     //self.flagList = [[getPresentationData dataShared] getFlagedSlides];
     //NSLog(@"THINGS: %@",self.flagList);
     
+}
+
+
+-(void) viewDidAppear:(BOOL)animated{
+    [[getPresentationData dataShared] stateFlagReview:NO];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [getPresentationData dataShared].presentationFlowMode = @"linear";
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +80,9 @@
     [self.flagList addObject:[NSNumber numberWithInt:-2]];
     
     // do the rest, check if empty
+    if (self.holdNum == -1){
+        self.holdNum = [[getPresentationData dataShared] getCurrentSlideIndex];
+    }
     NSMutableArray *tmp = [[getPresentationData dataShared] getFlagedSlides];
     for (int i=0; i< [tmp count]; i++){
         NSNumber *n=tmp[i];
@@ -102,6 +108,7 @@
     if (num.integerValue==-1){
         // empty list case
         label = @"No flagged slides!"; // never reached... but if did, need to localize it
+        
     }
     else if (num.integerValue == -2){
         
@@ -110,6 +117,8 @@
         CellIdentifier = @"reviewFlagCellStart";
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.backgroundColor = [UIColor colorWithRed:254/255.0 green:235/255.0 blue:201/255.0 alpha:0.25];
+        
+        //cell.imageView.image = [UIImage imageNamed:@"buttonImage"];
     }
     else{
         // typical case
@@ -139,6 +148,10 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
     NSNumber *num = self.flagList[indexPath.row];
     if (num.integerValue >= 0){
+        
+        //[[getPresentationData dataShared] setHoldIndex]; //??
+        [[getPresentationData dataShared] stateFlagReview:YES];
+        //self.holdNum = [[getPresentationData dataShared] getCurrentSlideIndex];
         [[getPresentationData dataShared] setPresentationSlide:(int)num.integerValue];
         
         // sets how the "next" and "previous" slides funciton
@@ -146,13 +159,37 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         
         slideController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"slideContID"];
         [self.navigationController pushViewController:nextView animated:YES];
+        //[self presentViewController:nextView animated:YES completion:nil];
     }
     else if (num.integerValue==-2){
+        
+        // go back to the presentation
         [[getPresentationData dataShared] clearFlaggedSlides];
         [self.navigationController popViewControllerAnimated:YES];
+        //[self dismissViewControllerAnimated:YES completion:nil];
+        
     }
     // else, no slides were flagged! do nothing...
 }
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    // read order: dismiss from nav stack or from modal dismiss
+    if (self.isMovingFromParentViewController || self.isBeingDismissed) {
+        // Do your stuff here
+        if (self.holdNum >= 0){
+            [[getPresentationData dataShared] setPresentationSlide:self.holdNum];
+        }
+        
+        //[[getPresentationData dataShared] returnToHoldIndex];
+        [[getPresentationData dataShared] stateFlagReview:NO];
+        
+        [getPresentationData dataShared].presentationFlowMode = @"linear";
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.

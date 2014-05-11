@@ -60,8 +60,6 @@
 }
 
 
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -106,7 +104,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == [self.conditionsList count]-1){
+    if (NO){//indexPath.row == [self.conditionsList count]-1){
 
         [[getPresentationData dataShared] setActiveLanguage: @"asthma.english"];
         UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"appInfoPageID"];
@@ -125,7 +123,7 @@
         [getPresentationData dataShared].activeConditionName = self.conditionsList[indexPath.row];
         
         // go to the next view
-        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"menuID"];
+        UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"slideContID"];
         [self.navigationController pushViewController:nextView animated:YES];
     }
 }

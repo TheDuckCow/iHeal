@@ -10,10 +10,14 @@
 #import "slideInfo.h"
 #import "slideQuiz.h"
 #import "slideIntro.h"
+#import "slideOutro.h"
 
 @interface getPresentationData : NSObject {
     
     int currentSlideIndex;
+    int jumpSlideIndex;
+    int holdIndexForReview;
+    BOOL reviewingFlags;
 }
 
 // wait... these.. these should not be in the interface...
@@ -53,6 +57,7 @@
 - (slideInfo *) getCurrentSlideInfo;
 - (slideQuiz *) getCurrentSlideQuiz;
 - (slideIntro *) getCurrentSlideIntro;
+- (slideOutro *) getCurrentSlideOutro;
 
 
 - (BOOL) toggleCurrentSlideFlag;
@@ -90,4 +95,13 @@
 
 - (void) setActiveLanguage:(NSString *) plist;
 - (NSString *) getTitleForPresentationKey: (NSString *) conditionKey;
+
+-(void) setHoldIndex;
+-(void) returnToHoldIndex;
+-(int) getHoldIndex;
+
+-(void) stateFlagReview: (BOOL) state;
+-(BOOL) getReviewFlagState;
+
+
 @end

@@ -27,6 +27,16 @@
 	<array>
 		<dict>
 			<key>slide</key>
+			<string>intro</string>
+			<key>welcome</key>
+			<string>En las diapositivas siguientes, usted aprenderá más sobre la anemia falciforme y la forma de mantener mejor que en casa.</string>
+			<key>imgGesture</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
 			<string>sickle_01.png</string>
@@ -332,7 +342,7 @@
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>info</string>
+			<string>outro</string>
 			<key>image</key>
 			<string></string>
 			<key>text</key>

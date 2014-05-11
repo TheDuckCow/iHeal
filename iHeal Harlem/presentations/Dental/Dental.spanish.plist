@@ -27,6 +27,16 @@
 	<array>
 		<dict>
 			<key>slide</key>
+			<string>intro</string>
+			<key>welcome</key>
+			<string>En las diapositivas siguientes, usted aprenderá más acerca de mantener una mejor higiene dental en forma regular.</string>
+			<key>imgGesture</key>
+			<string></string>
+			<key>flagSet</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>slide</key>
 			<string>info</string>
 			<key>image</key>
 			<string>dental_01.png</string>
@@ -250,7 +260,7 @@
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>info</string>
+			<string>outro</string>
 			<key>image</key>
 			<string></string>
 			<key>text</key>

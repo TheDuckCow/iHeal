@@ -13,6 +13,7 @@
 @interface languageSelectViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableOfLangs;
 @property NSArray *languageChoices;
+@property (strong, nonatomic) IBOutlet UILabel *selectionLabel;
 @end
 
 @implementation languageSelectViewController
@@ -45,7 +46,7 @@
     
     NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
     self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
-
+    self.selectionLabel.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
     
 }
 

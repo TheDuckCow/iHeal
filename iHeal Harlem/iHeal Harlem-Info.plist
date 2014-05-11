@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>LOCALIZATION</key>
 	<dict>
 		<key>english</key>
@@ -54,57 +54,101 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
 			<string>Clear all flagged slides</string>
 			<key>conditionSelection</key>
 			<string>Select Condition Presentation</string>
+			<key>introCenter</key>
+			<string>Change Language</string>
+			<key>introLeft</key>
+			<string>About &amp; More</string>
+			<key>introRight</key>
+			<string>Flag for review</string>
+			<key>introUsage</key>
+			<string>You can go to the next slide by swiping left/right or tapping the arrows. On quiz slides, you must answer the question correctly to continue, but you can always go backwards in the presentation. Tap the flag icon if you want to bring up or discuss the content of that slide with your doctor</string>
 			<key>languageSelection</key>
 			<string>Language Selection</string>
+			<key>outrLabel</key>
+			<string>Congratulations, you reached the end of the presentation!</string>
 			<key>presentationMenu</key>
 			<string>Presentation Menu</string>
+			<key>quizCorrectAnswer</key>
+			<string>Correct! You may advance to the next slide now</string>
 			<key>quizIncorrect</key>
 			<string>Sorry, but that answer is incorrect!</string>
 			<key>quizReturnToInfo</key>
 			<string>Go back to slides</string>
 			<key>quizTryAgain</key>
 			<string>Try Again</string>
+			<key>quizWrongAnswer</key>
+			<string>Sorry but that is incorrect, please try again</string>
+			<key>jumpFirstSlide</key>
+			<string>Jump to Beginning</string>
+			<key>jumpQuizSlide</key>
+			<string>Jump to first quiz slide</string>
+			<key>reviewSlides</key>
+			<string>Review flagged slides</string>
+			<key>goMenu</key>
+			<string>Return to menu</string>
 		</dict>
 		<key>french</key>
 		<dict>
 			<key>aboutCredits</key>
-			<string>Chef d'équipe: Katherine Nosal 
+			<string>Chef d&apos;équipe: Katherine Nosal 
 Programmation: Patrick W. Crawford (plomb iOS), Veronica Tverbakk, Justin Bernardo 
 Conception: Katherine Nosal, Natalie Nosal, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
 			<key>aboutDevGAI</key>
 			<string>Développé par Global App Initiative</string>
 			<key>aboutPageTitle</key>
-			<string>À propos et d'utilisation</string>
+			<string>À propos et d&apos;utilisation</string>
 			<key>aboutTextMain</key>
-			<string>Cette application a été initialement développé pour l'hôpital de Harlem, à New York, comme un moyen d'engager attente patients en salle avant d'être vu par un médecin pour les parents et les enfants des conditions présentées dans cette application mobile.</string>
+			<string>Cette application a été initialement développé pour l&apos;hôpital de Harlem, à New York, comme un moyen d&apos;engager attente patients en salle avant d&apos;être vu par un médecin pour les parents et les enfants des conditions présentées dans cette application mobile.</string>
 			<key>aboutTextUsage</key>
-			<string>Pour naviguer dans ces diapositives, soit appuyer sur les flèches en bas de l'écran ou balayez vers la gauche / droite. Vous pouvez changer la langue avec le bouton de monde et puis continuer la présentation à tout moment. 
+			<string>Pour naviguer dans ces diapositives, soit appuyer sur les flèches en bas de l&apos;écran ou balayez vers la gauche / droite. Vous pouvez changer la langue avec le bouton de monde et puis continuer la présentation à tout moment. 
 
-A la fin de la plupart des présentations, il y aura une section de test, où vous ne pouvez avancer une fois que vous obtenez la bonne réponse. Si vous répondez correctement, vous pouvez essayer de nouveau ou retourner sur le contenu de la présentation. Vous pouvez également naviguer vers l'arrière et une fois que vous répondez correctement à une question, vous n'avez pas à répondre à nouveau. 
+A la fin de la plupart des présentations, il y aura une section de test, où vous ne pouvez avancer une fois que vous obtenez la bonne réponse. Si vous répondez correctement, vous pouvez essayer de nouveau ou retourner sur le contenu de la présentation. Vous pouvez également naviguer vers l&apos;arrière et une fois que vous répondez correctement à une question, vous n&apos;avez pas à répondre à nouveau. 
 
-Vous pouvez diapositives de drapeau en appuyant sur ​​l'icône en bas si vous avez une question sur cette diapositive. Lorsque le médecin vient par, vous pouvez revenir au menu de présentation et de vérifier les diapositives de consultation de passer par toutes les diapositives qui sont marqués.</string>
+Vous pouvez diapositives de drapeau en appuyant sur ​​l&apos;icône en bas si vous avez une question sur cette diapositive. Lorsque le médecin vient par, vous pouvez revenir au menu de présentation et de vérifier les diapositives de consultation de passer par toutes les diapositives qui sont marqués.</string>
 			<key>alertNoQuiz</key>
 			<string>Pas Quiz Diapositives Trouvé</string>
 			<key>alertPleaseAnother</key>
-			<string>S'il vous plaît sélectionner une autre option</string>
+			<string>S&apos;il vous plaît sélectionner une autre option</string>
 			<key>alertStartPresBody</key>
-			<string>Le contenu de cette présentation est la recommandation que, toujours à l'écoute de ce que votre médecin vous dit.</string>
+			<string>Le contenu de cette présentation est la recommandation que, toujours à l&apos;écoute de ce que votre médecin vous dit.</string>
 			<key>alertStartPresTitle</key>
 			<string>Attention!</string>
 			<key>clearAllFlags</key>
 			<string>Effacer tout diapositives battant pavillon</string>
 			<key>conditionSelection</key>
 			<string>Sélectionnez Etat Présentation</string>
+			<key>introCenter</key>
+			<string>Changer de langue</string>
+			<key>introLeft</key>
+			<string>A propos &amp; plus</string>
+			<key>introRight</key>
+			<string>Signaler pour révision</string>
+			<key>introUsage</key>
+			<string>Vous pouvez aller à la diapositive suivante en faisant glisser gauche / droite ou en appuyant sur les flèches. Sur diapositives de quiz, vous devez répondre correctement à la question de continuer, mais vous pouvez toujours revenir en arrière dans la présentation. Appuyez sur l&apos;icône de drapeau si vous voulez faire apparaître ou discuter le contenu de cette diapositive avec votre médecin</string>
 			<key>languageSelection</key>
 			<string>Sélection de la langue</string>
+			<key>outrLabel</key>
+			<string>Félicitations, vous atteint la fin de la présentation!</string>
 			<key>presentationMenu</key>
 			<string>Présentation Menu</string>
+			<key>quizCorrectAnswer</key>
+			<string>Correct! Vous pouvez aller à la diapositive suivante</string>
 			<key>quizIncorrect</key>
-			<string>Désolé, mais c'est faux!</string>
+			<string>Désolé, mais c&apos;est faux!</string>
 			<key>quizReturnToInfo</key>
 			<string>Retour à diapositives</string>
 			<key>quizTryAgain</key>
 			<string>Essayez à nouveau</string>
+			<key>quizWrongAnswer</key>
+			<string>Désolé, mais c&apos;est faux, s&apos;il vous plaît essayer à nouveau</string>
+			<key>jumpFirstSlide</key>
+			<string>Aller au début</string>
+			<key>jumpQuizSlide</key>
+			<string>Aller au questionnaire</string>
+			<key>reviewSlides</key>
+			<string>Retour au menu</string>
+			<key>goMenu</key>
+			<string>Regresar al Menú</string>
 		</dict>
 		<key>spanish</key>
 		<dict>
@@ -136,16 +180,38 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<string>Borrar todos toboganes de pabellón</string>
 			<key>conditionSelection</key>
 			<string>Seleccione Condición Presentación</string>
+			<key>introCenter</key>
+			<string>Cambiar Idioma</string>
+			<key>introLeft</key>
+			<string>Sobre y más</string>
+			<key>introRight</key>
+			<string>Marcar para revisión</string>
+			<key>introUsage</key>
+			<string>Usted puede ir a la diapositiva siguiente al deslizar izquierda / derecha o tocando las flechas. En diapositivas de prueba, debe responder a la pregunta correctamente para continuar, pero siempre se puede ir hacia atrás en la presentación. Toque en el icono de la bandera si desea abrir o discutir el contenido de la diapositiva con su médico</string>
 			<key>languageSelection</key>
 			<string>Presentación Menu</string>
+			<key>outrLabel</key>
+			<string>Felicidades, ya llegaron al final de la presentación!</string>
 			<key>presentationMenu</key>
 			<string>Presentation Menu</string>
+			<key>quizCorrectAnswer</key>
+			<string>¡Correcto! Puede avanzar a la siguiente diapositiva ahora</string>
 			<key>quizIncorrect</key>
 			<string>Lo siento, pero esa respuesta es incorrecta!</string>
 			<key>quizReturnToInfo</key>
 			<string>Volver a las diapositivas</string>
 			<key>quizTryAgain</key>
 			<string>Intentar de nuevo</string>
+			<key>quizWrongAnswer</key>
+			<string>Sorry but that is incorrect, try again</string>
+			<key>jumpFirstSlide</key>
+			<string>Ir al comienzo</string>
+			<key>jumpQuizSlide</key>
+			<string>Ir al cuestionario</string>
+			<key>reviewSlides</key>
+			<string>Revisión marcado diapositivas</string>
+			<key>goMenu</key>
+			<string>Regresar al Menú</string>
 		</dict>
 	</dict>
 	<key>LSRequiresIPhoneOS</key>

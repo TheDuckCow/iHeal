@@ -38,6 +38,8 @@
 		14706EF818E69DAB008D5A17 /* Nutrition.english.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EF718E69DAB008D5A17 /* Nutrition.english.plist */; };
 		14706EFB18E69EBF008D5A17 /* Dental.french.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EF918E69EBF008D5A17 /* Dental.french.plist */; };
 		14706EFC18E69EBF008D5A17 /* Dental.spanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14706EFA18E69EBF008D5A17 /* Dental.spanish.plist */; };
+		1473B50F191DB49000324E91 /* slideOutro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473B50E191DB49000324E91 /* slideOutro.m */; };
+		1473B511191DB55800324E91 /* slideOutroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1473B510191DB55800324E91 /* slideOutroView.xib */; };
 		148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */; };
 		14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14969ED81885D09500CF79A6 /* conditionMenuTableViewController.m */; };
 		14D94F5118E713D20062D7AC /* Nutrition.french.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D94F4F18E713D20062D7AC /* Nutrition.french.plist */; };
@@ -99,6 +101,9 @@
 		14706EF718E69DAB008D5A17 /* Nutrition.english.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Nutrition.english.plist; path = "iHeal Harlem/presentations/Nutrition/Nutrition.english.plist"; sourceTree = "<group>"; };
 		14706EF918E69EBF008D5A17 /* Dental.french.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Dental.french.plist; path = "iHeal Harlem/presentations/Dental/Dental.french.plist"; sourceTree = "<group>"; };
 		14706EFA18E69EBF008D5A17 /* Dental.spanish.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Dental.spanish.plist; path = "iHeal Harlem/presentations/Dental/Dental.spanish.plist"; sourceTree = "<group>"; };
+		1473B50D191DB49000324E91 /* slideOutro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideOutro.h; sourceTree = "<group>"; };
+		1473B50E191DB49000324E91 /* slideOutro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideOutro.m; sourceTree = "<group>"; };
+		1473B510191DB55800324E91 /* slideOutroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = slideOutroView.xib; sourceTree = "<group>"; };
 		148AEDC91885C20C005B6CB7 /* conditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionListTableViewController.h; sourceTree = "<group>"; };
 		148AEDCA1885C20C005B6CB7 /* conditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionListTableViewController.m; sourceTree = "<group>"; };
 		14969ED41885CEC000CF79A6 /* languageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageSelectViewController.h; sourceTree = "<group>"; };
@@ -175,12 +180,15 @@
 				1403305E18DD139500CC9FEC /* slideInfoView.xib */,
 				1403306018DD156800CC9FEC /* slideQuizView.xib */,
 				1439EE0218FC3B0800203BE0 /* slideIntroView.xib */,
+				1473B510191DB55800324E91 /* slideOutroView.xib */,
 				140575061885E35B00AC7C2C /* slideQuiz.h */,
 				140575071885E35B00AC7C2C /* slideQuiz.m */,
 				140575031885E34700AC7C2C /* slideInfo.h */,
 				140575041885E34700AC7C2C /* slideInfo.m */,
 				1439EE0418FC72AE00203BE0 /* slideIntro.h */,
 				1439EE0518FC72AE00203BE0 /* slideIntro.m */,
+				1473B50D191DB49000324E91 /* slideOutro.h */,
+				1473B50E191DB49000324E91 /* slideOutro.m */,
 				14D94F5318E716A50062D7AC /* IHHaboutPage.h */,
 				14D94F5418E716A50062D7AC /* IHHaboutPage.m */,
 				1420EB8F1883DFCA00E19163 /* iHealAppDelegate.h */,
@@ -237,15 +245,15 @@
 				144E878618ECF3CA004935FD /* Sickle.english.plist */,
 				1441BBD4190469610044B61A /* Sickle.french.plist */,
 				1441BBD5190469610044B61A /* Sickle.spanish.plist */,
+				14706EF718E69DAB008D5A17 /* Nutrition.english.plist */,
 				14D94F4F18E713D20062D7AC /* Nutrition.french.plist */,
 				14D94F5018E713D20062D7AC /* Nutrition.spanish.plist */,
-				14706EF718E69DAB008D5A17 /* Nutrition.english.plist */,
 				1408E65A18E1C803001FFD3E /* Dental.english.plist */,
 				14706EF918E69EBF008D5A17 /* Dental.french.plist */,
 				14706EFA18E69EBF008D5A17 /* Dental.spanish.plist */,
+				146AD1B918D618710019DE39 /* Asthma.english.plist */,
 				14F0219C18D62FF1008A20BB /* Asthma.french.plist */,
 				14F0219D18D62FF1008A20BB /* Asthma.spanish.plist */,
-				146AD1B918D618710019DE39 /* Asthma.english.plist */,
 			);
 			name = "Presentation Data";
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				144E878718ECF3CA004935FD /* Sickle.english.plist in Resources */,
 				1420EB8B1883DFCA00E19163 /* InfoPlist.strings in Resources */,
 				1420EB941883DFCA00E19163 /* Main.storyboard in Resources */,
+				1473B511191DB55800324E91 /* slideOutroView.xib in Resources */,
 				1403305F18DD139500CC9FEC /* slideInfoView.xib in Resources */,
 				1403306118DD156800CC9FEC /* slideQuizView.xib in Resources */,
 			);
@@ -369,6 +378,7 @@
 				14969ED91885D09500CF79A6 /* conditionMenuTableViewController.m in Sources */,
 				140575051885E34700AC7C2C /* slideInfo.m in Sources */,
 				1420EB911883DFCA00E19163 /* iHealAppDelegate.m in Sources */,
+				1473B50F191DB49000324E91 /* slideOutro.m in Sources */,
 				1405750A1885E5F600AC7C2C /* languageSelectViewController.m in Sources */,
 				148AEDCB1885C20C005B6CB7 /* conditionListTableViewController.m in Sources */,
 				140575081885E35B00AC7C2C /* slideQuiz.m in Sources */,

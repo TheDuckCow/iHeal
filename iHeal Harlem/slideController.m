@@ -10,6 +10,7 @@
 #import "slideInfo.h"
 #import "slideQuiz.h"
 #import "slideIntro.h"
+#import "slideOutro.h"
 #import "getPresentationData.h"
 
 @interface slideController ()
@@ -23,8 +24,18 @@
 @property bool allowNext;
 
 // section for intro slide
-@property (strong, nonatomic) NSMutableArray *introLangOptions;
-@property (strong, nonatomic) IBOutlet UITableView *introTableLangs;
+@property (strong, nonatomic) IBOutlet UILabel *introWelcomeLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *introDemoAnimation;
+@property (strong, nonatomic) IBOutlet UITextView *introTextUsage;
+@property (strong, nonatomic) IBOutlet UIButton *introLanguageButton;
+@property (strong, nonatomic) IBOutlet UIImageView *introImgseqA;
+@property (strong, nonatomic) IBOutlet UIImageView *introImgseqB;
+@property (strong, nonatomic) IBOutlet UIImageView *introImgseqC;
+@property (strong, nonatomic) IBOutlet UILabel *introLabelLeft;
+@property (strong, nonatomic) IBOutlet UILabel *introLabelCenter;
+@property (strong, nonatomic) IBOutlet UILabel *introLabelRight;
+
+
 
 //section for info type slides
 @property (strong, nonatomic) IBOutlet UIImageView *infoImage;
@@ -36,27 +47,38 @@
 @property (strong, nonatomic) IBOutlet UITableView *quizAnswerTable;
 
 @property (strong, nonatomic) IBOutlet UITextView *quizExplanation;
-@property (strong, nonatomic) IBOutlet UILabel *quizIncorrectLabel;
-@property (strong, nonatomic) IBOutlet UILabel *whiteBox;
 
-@property (strong, nonatomic) IBOutlet UILabel *quizIncorrectResponse;
-@property (strong, nonatomic) IBOutlet UIButton *quizTryAgainOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *quizGotoInfoOutlet;
 @property (strong, nonatomic) NSMutableArray *answerArray;
 @property int quizCorrectSolutionIndex;
 @property int gotoInfo;
 @property (strong, nonatomic) NSMutableArray *quizTableLabelHeights;
 
-- (IBAction)quizTryAgain:(UIButton *)sender;
 - (IBAction)quizGotoInfo:(UIButton *)sender;
 // delete later once table is implemented
 - (IBAction)correctAnswerBypass:(UIButton *)sender;
 - (IBAction)wrongAnswerBypass:(UIButton *)sender;
 
 
+// for outro slide
+@property (strong, nonatomic) IBOutlet UILabel *outroCongratsLabel;
+@property (strong, nonatomic) IBOutlet UITextView *outroEndText;
+@property (strong, nonatomic) IBOutlet UIButton *outroFlagReviewButton;
+@property (strong, nonatomic) IBOutlet UIButton *returnToMenuButton;
+@property (strong, nonatomic) IBOutlet UIImageView *outroImage;
+- (IBAction)outroReviewFlags:(UIButton *)sender;
+- (IBAction)returnToMenu:(UIButton *)sender;
+
+
+
+
 // general slide/actions
 @property (strong, nonatomic) IBOutlet UIButton *flagButton;
+@property (strong, nonatomic) IBOutlet UIButton *aboutButton;
+@property (strong, nonatomic) IBOutlet UIImageView *blinkHighlightForward;
 @property (strong, nonatomic) IBOutlet UILabel *colorBox;
+@property (strong, nonatomic) IBOutlet UIButton *forwardButton;
+@property (strong, nonatomic) IBOutlet UIImageView *blinkHighlightNextImage;
 - (IBAction)nextSlideButton:(UIButton *)sender;
 - (IBAction)previousSlideButton:(UIButton *)sender;
 
@@ -66,6 +88,9 @@
 
 - (void) nextSlide;
 - (void) previousSlide;
+
+- (IBAction)forward:(UIButton *)sender;
+@property int jumpBackTo;
 
 @end
 
@@ -99,10 +124,13 @@
     UISwipeGestureRecognizer * swipeleft=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
     swipeleft.direction=UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:swipeleft];
-
     
     [self.quizAnswerTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
+    // initialize the correct "empty" highlight animation frames (random ones set in storybaord for ease)
+    self.blinkHighlightNextImage.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
+    self.blinkHighlightForward.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
+    self.jumpBackTo = -1;
 }
 
 
@@ -112,6 +140,31 @@
 }
 
 - (void) setSlide{
+    
+    if (self.jumpBackTo != -1){
+        self.forwardButton.alpha = 1;
+    }
+    else{
+        self.forwardButton.alpha = 0;
+    }
+    
+    // if the state is reviewFlag, then make invisible a few things!
+    if ([[getPresentationData dataShared] getReviewFlagState]){
+        self.aboutButton.alpha = 0;
+        self.UInextButton.alpha = 0;
+        self.UIpreviousButton.alpha = 0;
+    }
+    else{
+        
+        self.aboutButton.alpha = 1;
+        self.UInextButton.alpha = 1;
+        self.UIpreviousButton.alpha = 1;
+    }
+    
+    //NSLog(@"get state: %i",[[getPresentationData dataShared] getReviewFlagState]);
+
+    // by default, allow slide flagging
+    self.flagButton.alpha = 1;
     
     // set the name of the slide/navigation view number:
     self.title = [getPresentationData dataShared].getSlideTitle;
@@ -180,6 +233,7 @@
 
         
         self.infoText.text = infoSlide.text;
+        //self.infoText.font = 22;
         self.colorBox.backgroundColor = [UIColor colorWithRed:225/255.0 green:255/255.0 blue:255/255.0 alpha:0.5];
         
         
@@ -214,25 +268,16 @@
         self.quizCorrectSolutionIndex = quizSlide.solution;
         
         self.allowNext = quizSlide.didAnswerCorrect;    //false by initalization
-        // these two only show up iff user gave incorrect answer on, after interacting
-        self.quizTryAgainOutlet.alpha = 0;
-        self.quizGotoInfoOutlet.alpha = 0;
-        self.quizIncorrectResponse.alpha = 0;
-        self.whiteBox.alpha = 0;
+
         
         // set the try again/goto titles
         // set reandom strings that only need setting once
         NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
         NSString *str;
-        str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizTryAgain"];
-        [self.quizTryAgainOutlet setTitle: str forState:UIControlStateNormal];
-        [self.quizTryAgainOutlet setTitle: str forState:UIControlStateSelected];
+
         str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizReturnToInfo"];
         [self.quizGotoInfoOutlet setTitle: str forState:UIControlStateNormal];
         [self.quizGotoInfoOutlet setTitle: str forState:UIControlStateSelected];
-        str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizIncorrect"];
-        self.quizIncorrectResponse.text = str;
-        self.quizIncorrectResponse.text =str;
         
         
         
@@ -242,10 +287,17 @@
             self.quizExplanation.text = quizSlide.explanation;
             self.quizExplanation.alpha = 1;
             self.quizAnswerTable.alpha = 0;
+            self.quizGotoInfoOutlet.alpha = 0;
             
             // set color transparent backgorund of thing to pastel green
-            self.colorBox.backgroundColor = [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:0.5];
+            // starting point
+            self.colorBox.backgroundColor = [UIColor colorWithRed:225/255.0 green:255/255.0 blue:255/255.0 alpha:0.5];
             
+            UIColor *color = [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:0.5];
+            [UIView animateWithDuration:1.0
+                             animations:^{
+                                 self.colorBox.backgroundColor = color;
+                             }];
         }
         else{
             // did not answer correctly yet/not yet answered, set next arrow accordingly
@@ -260,9 +312,6 @@
             
             
         }
-        
-        // moar things..
-        // table reload...
 
     }
     else if ([slideType  isEqual: @"intro"]){
@@ -270,24 +319,53 @@
         // always allow to select next on info slide;
         self.allowNext=TRUE;
         
-        // get the view data
-        slideIntro *introSlide = [getPresentationData dataShared].getCurrentSlideIntro;
-        
         // set the background view
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideIntroView" owner:self options:nil][0];
         self.backgroundView = view;
         [self.view  insertSubview:view atIndex:0];
         
-        // do the setup stuff
-        [self.introLangOptions removeAllObjects];
-        for (int i=0; i< [introSlide.langOptions count]; i++){
-            [self.introLangOptions addObject: introSlide.langOptions[i]];
-            //NSLog(@"> ZN: %@, %@\nE:",quizSlide.answers[i],self.answerArray);
-        }
-        //reload table.. later move into else clause (when it would be visible)
-        [self.introTableLangs reloadData];
+        // get the view data
+        slideIntro *introSlide = [getPresentationData dataShared].getCurrentSlideIntro;
+        self.introWelcomeLabel.text = introSlide.welcome;
+        
+        NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+        self.introTextUsage.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introUsage"];
+        self.introLabelLeft.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introLeft"];
+        self.introLabelCenter.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introCenter"];
+        self.introLabelRight.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introRight"];
         
     }
+    else if ([slideType  isEqual: @"slideOutro"]){
+        // always allow to select next on info slide;
+        self.allowNext=TRUE;
+        
+        // set the background view
+        UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideOutroView" owner:self options:nil][0];
+        self.backgroundView = view;
+        [self.view  insertSubview:view atIndex:0];
+        
+        // get the view data
+        slideOutro *introOutro = [getPresentationData dataShared].getCurrentSlideOutro;
+        self.outroEndText.text = introOutro.text;
+        
+        NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+        self.outroCongratsLabel.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"outrLabel"];
+        
+        // set localized buttons...
+        NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"jumpFirstSlide"];
+        str = [[getPresentationData dataShared] getLocalName: lang forKey:@"reviewSlides"];
+        [self.outroFlagReviewButton setTitle: str forState:UIControlStateNormal];
+        [self.outroFlagReviewButton setTitle: str forState:UIControlStateSelected];
+        
+        str = [[getPresentationData dataShared] getLocalName: lang forKey:@"goMenu"];
+        [self.returnToMenuButton setTitle: str forState:UIControlStateNormal];
+        [self.returnToMenuButton setTitle: str forState:UIControlStateSelected];
+        
+        // don't let them flag this slide!
+        self.flagButton.alpha = 0;
+        
+    }
+    
     // else if another type of slide, add here..
     
     
@@ -310,14 +388,14 @@
     // push the info view controller
     UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"appInfoPageID"];
     [self.navigationController pushViewController:nextView animated:YES];
+    //[self presentViewController:nextView animated:YES completion:nil];
     
 }
 
 - (IBAction)languageButton:(UIButton *)sender {
-    //[self.navigationController popToViewController:@"languageSelectViewController" animated:YES];
-    // setup in storyboard to unwind to languages controller
-    // by control dragging button to green exit on self viewController,
-    // and then selecting which one to unwind to
+    
+    UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"languageSelectID"];
+    [self presentViewController:nextView animated:YES completion:nil];
     
 }
 
@@ -347,6 +425,43 @@
 }
 
 
+-(void) runBlinkAnimation: (NSString *) location{
+    
+    NSLog(@">> location: %@",location);
+    
+    [self.blinkHighlightNextImage stopAnimating];
+    
+    NSMutableArray *blinkAnimation = [[NSMutableArray alloc] init];
+    for (int i=0;i<23;i++){
+        UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"blinkHighlight_%04d.png",i]];
+        [blinkAnimation addObject:tmp];
+    }
+    
+    
+    self.blinkHighlightNextImage.animationImages = blinkAnimation;
+    self.blinkHighlightNextImage.animationRepeatCount = 1;
+    self.blinkHighlightNextImage.animationDuration = 1;
+    [self.blinkHighlightNextImage startAnimating];
+    
+}
+
+-(void) runBlinkForward{
+    
+    [self.blinkHighlightForward stopAnimating];
+    
+    NSMutableArray *blinkAnimation = [[NSMutableArray alloc] init];
+    for (int i=0;i<23;i++){
+        UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"blinkHighlight_%04d.png",i]];
+        [blinkAnimation addObject:tmp];
+    }
+    
+    
+    self.blinkHighlightForward.animationImages = blinkAnimation;
+    self.blinkHighlightForward.animationRepeatCount = 1;
+    self.blinkHighlightForward.animationDuration = 1;
+    [self.blinkHighlightForward startAnimating];
+    
+}
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -447,23 +562,114 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     // answered correctly, allow next to appear
     self.allowNext = [[getPresentationData dataShared] quizDidAnswerCorrect];
     [self setSlide];
+    
+    //toast
+    NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+    NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizCorrectAnswer"];
+    
+    UIColor *color = [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:0.8];
+    
+    [self toastMessage:str atPosition:@"top" withColor:color];
+    // do the animation, indicating one can continue
+    [self runBlinkAnimation:@"left"];
 }
 
 - (void) quizDidAnswerIncorrect{
     
     // answered incorrectly
-    self.colorBox.backgroundColor = [UIColor colorWithRed:254/255.0 green:235/255.0 blue:201/255.0 alpha:0.5];
+    
+    UIColor *color = [UIColor colorWithRed:255/255.0 green:235/255.0 blue:201/255.0 alpha:0.8];
+    
     self.quizExplanation.alpha = 0;
-    self.quizAnswerTable.alpha = 0;
-    self.whiteBox.alpha = 1;
-
-    self.quizTryAgainOutlet.alpha = 1;
-    self.quizGotoInfoOutlet.alpha = 1;
-    self.quizIncorrectResponse.alpha = 1;
     
+    // toast
+    NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+    NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizWrongAnswer"];
     
+    [self toastMessage:str atPosition:@"top" withColor:color];
+    
+    //set flag
     [self flagSet:YES];
 }
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// stuff for the TOAST like things
+
+- (void) toastMessage:(NSString *)message atPosition:(NSString *)position withColor:(UIColor *)color{
+    
+    
+    // remove existing ones
+    UILabel *tempLabel = (UILabel *)[self.view viewWithTag:142];
+    if(tempLabel)
+        [tempLabel removeFromSuperview];
+    
+    // get box/position parameters
+    
+    int selfHeight = [[UIScreen mainScreen] bounds].size.height;
+    int selfWidth = [[UIScreen mainScreen] bounds].size.width;
+    int width,height,x,y;
+    // defaults
+    x = 20;
+    y = selfHeight-150;
+    width = selfWidth-40; // or selfWidth*.8
+    height = 50;
+    
+    if ([position isEqual:@"top"]){
+        x = 20;
+        y = 80;
+        height = 100;
+        
+    }
+    else if ([position isEqual:@"bottom"]){
+        
+    }
+    else{
+        //NSLog(@"ELSE toast");
+    }
+    
+    UILabel  * toastLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    toastLabel.backgroundColor = color;
+    toastLabel.textAlignment = NSTextAlignmentCenter;
+    toastLabel.textColor=[UIColor blackColor];
+    toastLabel.text = message;
+    toastLabel.numberOfLines = 2;
+    toastLabel.font = [UIFont systemFontOfSize:26]; // make it bold??
+    [self.view addSubview:toastLabel];
+    toastLabel.tag = 142;
+    
+    
+    
+    
+    //[toastLabel setHidden:TRUE];
+    [toastLabel setAlpha:1.0];
+    CGPoint location;
+    location.x = selfWidth/2;
+    location.y = y;
+    toastLabel.center = location;
+    location.x = selfWidth/2;
+    location.y = y+20;
+    //[toastLabel setHidden:FALSE];
+    
+    
+    [UIView animateWithDuration:0.5
+                          delay: 2.0
+                        options: UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         toastLabel.alpha = 0.0;
+                         toastLabel.center = location;
+                     }
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:0.8 animations:^{
+                             toastLabel.alpha = 0.0;
+                             
+                         }];
+                     }];
+    
+}
+
 
 
 - (void)nextSlide{
@@ -501,15 +707,36 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     }
 }
 
+- (IBAction)forward:(UIButton *)sender {
+    
+    // method for when the forward button clicked, jumping back to previous jumped-from
+    // quiz slide
+    
+    [self runBlinkForward];
+    self.forwardButton.alpha = 0;
+    
+    // shouldn't ever happen, but just in case
+    if (self.jumpBackTo==-1){
+        self.jumpBackTo=0;
+    }
+    
+    // do the actual jump
+    [[getPresentationData dataShared] setPresentationSlide: self.jumpBackTo];
+    self.jumpBackTo = -1;
+    [self setSlide];
+}
+
 
 
 -(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer
 {
+    //[self runBlinkAnimation:@"right"];
     [self nextSlide];
 }
 
 -(void)swiperight:(UISwipeGestureRecognizer*)gestureRecognizer
 {
+    //[self runBlinkAnimation:@"left"];
     [self previousSlide];
 }
 
@@ -530,12 +757,24 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     [self quizDidAnswerIncorrect];
 }
 
-- (IBAction)quizTryAgain:(UIButton *)sender {
-    
-    [self setSlide];
-}
 - (IBAction)quizGotoInfo:(UIButton *)sender {
+    self.jumpBackTo = [[getPresentationData dataShared] getCurrentSlideIndex];
+    //run the animation blink, as it will appear with the new slide being set
+    [self runBlinkForward];
     [[getPresentationData dataShared] setPresentationSlide:self.gotoInfo];
     [self setSlide];
 }
+- (IBAction)outroReviewFlags:(UIButton *)sender {
+    
+    // push the info view controller
+    UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"reviewFlagsContID"];
+    //[self presentViewController:nextView animated:YES completion:nil];
+    [self.navigationController pushViewController:nextView animated:YES];
+    // WOULD BE BETTER IF MODAL bu whatev
+}
+
+- (IBAction)returnToMenu:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

@@ -11,11 +11,16 @@
 
 @interface IHHaboutPage ()
 @property (strong, nonatomic) IBOutlet UITextView *textAbout;
-@property (strong, nonatomic) IBOutlet UITextView *textUsage;
 
 @property (strong, nonatomic) IBOutlet UITextView *textGAI;
 @property (strong, nonatomic) IBOutlet UITextView *textCredits;
 - (IBAction)gaiPress:(UIButton *)sender;
+- (IBAction)jumpFirstSlide:(UIButton *)sender;
+- (IBAction)jumpQuizSlide:(UIButton *)sender;
+- (IBAction)reviewSlides:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *jumpFirstSlideButton;
+@property (strong, nonatomic) IBOutlet UIButton *jumpQuizSlideButton;
+@property (strong, nonatomic) IBOutlet UIButton *reviewSlidesButton;
 
 @end
 
@@ -35,22 +40,53 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // need to load in a random language presentation if one doesn't already exist!
-    // alt if none exists, was in menu, assume english.
-    
     // set localized strings
     NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
     self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"aboutPageTitle"];
     self.textAbout.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"aboutTextMain"];
-    self.textUsage.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"aboutTextUsage"];
     self.textGAI.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"aboutDevGAI"];
     self.textCredits.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"aboutCredits"];
+    
+    // set localized buttons...
+    NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"jumpFirstSlide"];
+    [self.jumpFirstSlideButton setTitle: str forState:UIControlStateNormal];
+    [self.jumpFirstSlideButton setTitle: str forState:UIControlStateSelected];
+    
+    str = [[getPresentationData dataShared] getLocalName: lang forKey:@"jumpQuizSlide"];
+    [self.jumpQuizSlideButton setTitle: str forState:UIControlStateNormal];
+    [self.jumpQuizSlideButton setTitle: str forState:UIControlStateSelected];
+    
+    str = [[getPresentationData dataShared] getLocalName: lang forKey:@"reviewSlides"];
+    [self.reviewSlidesButton setTitle: str forState:UIControlStateNormal];
+    [self.reviewSlidesButton setTitle: str forState:UIControlStateSelected];
+    
     
 }
 
 - (IBAction)gaiPress:(UIButton *)sender {
-    
+    // jump to web browser to show Global Apps Page
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://globalappinitiative.org/"]];
+}
+
+
+- (IBAction)jumpFirstSlide:(UIButton *)sender {
+    [[getPresentationData dataShared] setPresentationSlide: 0];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)jumpQuizSlide:(UIButton *)sender {
+    
+    [[getPresentationData dataShared] jumpToFirstQuizSlide];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+- (IBAction)reviewSlides:(UIButton *)sender {
+    UIViewController *nextView =[self.storyboard instantiateViewControllerWithIdentifier:@"reviewFlagsContID"];
+    //[self presentViewController:nextView animated:YES completion:nil];
+    [self.navigationController pushViewController:nextView animated:YES];
 }
 
 
