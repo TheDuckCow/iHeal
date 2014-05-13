@@ -27,7 +27,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *introWelcomeLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *introDemoAnimation;
 @property (strong, nonatomic) IBOutlet UITextView *introTextUsage;
-@property (strong, nonatomic) IBOutlet UIButton *introLanguageButton;
 @property (strong, nonatomic) IBOutlet UIImageView *introImgseqA;
 @property (strong, nonatomic) IBOutlet UIImageView *introImgseqB;
 @property (strong, nonatomic) IBOutlet UIImageView *introImgseqC;
@@ -45,9 +44,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *quizQuestion;
 @property (strong, nonatomic) IBOutlet UIImageView *quizImageBG;
 @property (strong, nonatomic) IBOutlet UITableView *quizAnswerTable;
-
 @property (strong, nonatomic) IBOutlet UITextView *quizExplanation;
-
 @property (strong, nonatomic) IBOutlet UIButton *quizGotoInfoOutlet;
 @property (strong, nonatomic) NSMutableArray *answerArray;
 @property int quizCorrectSolutionIndex;
@@ -70,26 +67,26 @@
 - (IBAction)returnToMenu:(UIButton *)sender;
 
 
-
-
 // general slide/actions
 @property (strong, nonatomic) IBOutlet UIButton *flagButton;
 @property (strong, nonatomic) IBOutlet UIButton *aboutButton;
 @property (strong, nonatomic) IBOutlet UIImageView *blinkHighlightForward;
+@property (strong, nonatomic) IBOutlet UIButton *UIworldButton;
 @property (strong, nonatomic) IBOutlet UILabel *colorBox;
 @property (strong, nonatomic) IBOutlet UIButton *forwardButton;
+@property (strong, nonatomic) IBOutlet UIButton *clearFlagBannerButton;
 @property (strong, nonatomic) IBOutlet UIImageView *blinkHighlightNextImage;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 - (IBAction)nextSlideButton:(UIButton *)sender;
 - (IBAction)previousSlideButton:(UIButton *)sender;
+- (void) nextSlide;
+- (void) previousSlide;
 
 - (IBAction)infoButton:(UIButton *)sender;
 - (IBAction)languageButton:(UIButton *)sender;
 - (IBAction)flagToggle:(UIButton *)sender;
-
-- (void) nextSlide;
-- (void) previousSlide;
-
 - (IBAction)forward:(UIButton *)sender;
+- (IBAction)clearFlagBanner:(UIButton *)sender;
 @property int jumpBackTo;
 
 @end
@@ -111,9 +108,6 @@
     
     self.answerArray = [[NSMutableArray alloc] init];
     
-    // set the current slide
-    [self setSlide];
-    
     
     // setup gestures
     // setup right
@@ -131,6 +125,10 @@
     self.blinkHighlightNextImage.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
     self.blinkHighlightForward.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
     self.jumpBackTo = -1;
+    
+    
+    // set the current slide
+    [self setSlide];
 }
 
 
@@ -140,6 +138,14 @@
 }
 
 - (void) setSlide{
+    //self.blinkHighlightNextImage.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
+    //self.blinkHighlightForward.image = [UIImage imageNamed: @"blinkHighlight_0000.png"];
+    
+    if (self.jumpBackTo == [[getPresentationData dataShared] getCurrentSlideIndex]){
+        [self runBlinkForward];
+        self.forwardButton.alpha = 0;
+        self.jumpBackTo = -1;
+    }
     
     if (self.jumpBackTo != -1){
         self.forwardButton.alpha = 1;
@@ -153,18 +159,26 @@
         self.aboutButton.alpha = 0;
         self.UInextButton.alpha = 0;
         self.UIpreviousButton.alpha = 0;
+        self.UIworldButton.alpha = 0;
+        self.flagButton.alpha = 0;
+        
+        NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+        NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey: @"clearFlag"];
+        [self.clearFlagBannerButton setTitle: str forState:UIControlStateNormal];
+        [self.clearFlagBannerButton setTitle: str forState:UIControlStateSelected];
+        self.clearFlagBannerButton.alpha = 1;
     }
     else{
         
         self.aboutButton.alpha = 1;
         self.UInextButton.alpha = 1;
         self.UIpreviousButton.alpha = 1;
+        self.UIworldButton.alpha = 1;
+        self.flagButton.alpha = 1;
+        self.clearFlagBannerButton.alpha = 0;
     }
     
     //NSLog(@"get state: %i",[[getPresentationData dataShared] getReviewFlagState]);
-
-    // by default, allow slide flagging
-    self.flagButton.alpha = 1;
     
     // set the name of the slide/navigation view number:
     self.title = [getPresentationData dataShared].getSlideTitle;
@@ -215,7 +229,8 @@
         //set the view
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideInfoView" owner:self options:nil][0];
         self.backgroundView = view;
-        [self.view  insertSubview:view atIndex:0];
+        self.backgroundView.backgroundColor = [UIColor clearColor];
+        [self.view  insertSubview:view atIndex:1];
         
         // get the infoSlide data
         slideInfo *infoSlide = [getPresentationData dataShared].getCurrentSlideInfo;
@@ -242,7 +257,8 @@
         
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideQuizView" owner:self options:nil][0];
         self.backgroundView = view;
-        [self.view  insertSubview:view atIndex:0];
+        self.backgroundView.backgroundColor = [UIColor clearColor];
+        [self.view  insertSubview:view atIndex:1];
         
         slideQuiz *quizSlide = [getPresentationData dataShared].getCurrentSlideQuiz;
         
@@ -322,7 +338,8 @@
         // set the background view
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideIntroView" owner:self options:nil][0];
         self.backgroundView = view;
-        [self.view  insertSubview:view atIndex:0];
+        self.backgroundView.backgroundColor = [UIColor clearColor];
+        [self.view  insertSubview:view atIndex:1];
         
         // get the view data
         slideIntro *introSlide = [getPresentationData dataShared].getCurrentSlideIntro;
@@ -334,6 +351,45 @@
         self.introLabelCenter.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introCenter"];
         self.introLabelRight.text = [[getPresentationData dataShared] getLocalName: lang forKey: @"introRight"];
         
+        // settup the repeating animations
+        
+        [self.introImgseqA stopAnimating];
+        [self.introImgseqB stopAnimating];
+        [self.introImgseqC stopAnimating];
+        
+        NSMutableArray *seqA = [[NSMutableArray alloc] init];
+        for (int i=0;i<79;i++){
+            UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"navSlides_%04d.png",i]];
+            [seqA addObject:tmp];
+        }
+        
+        NSMutableArray *seqB = [[NSMutableArray alloc] init];
+        for (int i=0;i<119;i++){
+            UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"navQuiz_%04d.png",i]];
+            [seqB addObject:tmp];
+        }
+        
+        NSMutableArray *seqC = [[NSMutableArray alloc] init];
+        for (int i=0;i<79;i++){
+            UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"flagButton_%04d.png",i]];
+            [seqC addObject:tmp];
+        }
+        
+        self.introImgseqA.animationImages = seqA;
+        self.introImgseqA.animationRepeatCount = 0;
+        self.introImgseqA.animationDuration = 80/24*1.0;
+        [self.introImgseqA startAnimating];
+        
+        self.introImgseqB.animationImages = seqB;
+        self.introImgseqB.animationRepeatCount = 0;
+        self.introImgseqB.animationDuration = 119/24*1.5;
+        [self.introImgseqB startAnimating];
+        
+        self.introImgseqC.animationImages = seqC;
+        self.introImgseqC.animationRepeatCount = 0;
+        self.introImgseqC.animationDuration = 78/24*1.0;
+        [self.introImgseqC startAnimating];
+
     }
     else if ([slideType  isEqual: @"slideOutro"]){
         // always allow to select next on info slide;
@@ -342,7 +398,8 @@
         // set the background view
         UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideOutroView" owner:self options:nil][0];
         self.backgroundView = view;
-        [self.view  insertSubview:view atIndex:0];
+        self.backgroundView.backgroundColor = [UIColor clearColor];
+        [self.view  insertSubview:view atIndex:1];
         
         // get the view data
         slideOutro *introOutro = [getPresentationData dataShared].getCurrentSlideOutro;
@@ -361,8 +418,26 @@
         [self.returnToMenuButton setTitle: str forState:UIControlStateNormal];
         [self.returnToMenuButton setTitle: str forState:UIControlStateSelected];
         
+        
+        //animation thumb
+        
+        [self.outroImage stopAnimating];
+        
+        NSMutableArray *thumb = [[NSMutableArray alloc] init];
+        for (int i=0;i<48;i++){
+            UIImage *tmp = [UIImage imageNamed: [NSString stringWithFormat:@"thumbs_%04d.png",i]];
+            [thumb addObject:tmp];
+        }
+        
+        self.outroImage.animationImages = thumb;
+        self.outroImage.animationRepeatCount = 0;
+        self.outroImage.animationDuration = 47/24*2;
+        [self.outroImage startAnimating];
+        
+        
         // don't let them flag this slide!
         self.flagButton.alpha = 0;
+        
         
     }
     
@@ -427,7 +502,7 @@
 
 -(void) runBlinkAnimation: (NSString *) location{
     
-    NSLog(@">> location: %@",location);
+    //NSLog(@">> location: %@",location);
     
     [self.blinkHighlightNextImage stopAnimating];
     
@@ -689,6 +764,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     // case that you CAN'T press for the next slide, show notificaiton
     else{
         //NSLog(@"ALTERTVIEW: you must attempt to answer quiz question first\n");
+        NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
+        NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"answerToAdvance"];
+        
+        //UIColor *color = [UIColor colorWithRed:255/255.0 green:235/255.0 blue:201/255.0 alpha:0.8];
+        UIColor *color = [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:0.8];
+        [self toastMessage:str atPosition:@"top" withColor:color];
     }
 }
 
@@ -722,8 +803,14 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
     // do the actual jump
     [[getPresentationData dataShared] setPresentationSlide: self.jumpBackTo];
-    self.jumpBackTo = -1;
+    //self.jumpBackTo = -1;
     [self setSlide];
+}
+
+- (IBAction)clearFlagBanner:(UIButton *)sender {
+    
+    [[getPresentationData dataShared] setCurrentSlideFlag:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

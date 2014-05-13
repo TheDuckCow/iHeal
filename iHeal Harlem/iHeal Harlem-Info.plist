@@ -29,7 +29,7 @@
 			<key>aboutCredits</key>
 			<string>Team Leader: Katherine Nosal
 Programming: Patrick W. Crawford (lead iOS), Veronica Tverbakk, Justin Bernardo
-Design: Katherine Nosal, Natalie Nosal, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
+Design: Katherine Nosal, Natalie Nosal, Celina Bertoncini, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
 			<key>aboutDevGAI</key>
 			<string>Developed by Global App Initiative</string>
 			<key>aboutPageTitle</key>
@@ -50,10 +50,16 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
 			<string>The contents of this presentation is for recommendation only, always listen to what your doctor tells you.</string>
 			<key>alertStartPresTitle</key>
 			<string>Attention!</string>
+			<key>answerToAdvance</key>
+			<string>You must answer to continue</string>
 			<key>clearAllFlags</key>
 			<string>Clear all flagged slides</string>
+			<key>clearFlag</key>
+			<string>Clear Flag</string>
 			<key>conditionSelection</key>
 			<string>Select Condition Presentation</string>
+			<key>goMenu</key>
+			<string>Return to menu</string>
 			<key>introCenter</key>
 			<string>Change Language</string>
 			<key>introLeft</key>
@@ -62,6 +68,10 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
 			<string>Flag for review</string>
 			<key>introUsage</key>
 			<string>You can go to the next slide by swiping left/right or tapping the arrows. On quiz slides, you must answer the question correctly to continue, but you can always go backwards in the presentation. Tap the flag icon if you want to bring up or discuss the content of that slide with your doctor</string>
+			<key>jumpFirstSlide</key>
+			<string>Jump to Beginning</string>
+			<key>jumpQuizSlide</key>
+			<string>Jump to first quiz slide</string>
 			<key>languageSelection</key>
 			<string>Language Selection</string>
 			<key>outrLabel</key>
@@ -78,21 +88,15 @@ You can flag slides by tapping the icon at the bottom if you have a question on 
 			<string>Try Again</string>
 			<key>quizWrongAnswer</key>
 			<string>Sorry but that is incorrect, please try again</string>
-			<key>jumpFirstSlide</key>
-			<string>Jump to Beginning</string>
-			<key>jumpQuizSlide</key>
-			<string>Jump to first quiz slide</string>
 			<key>reviewSlides</key>
 			<string>Review flagged slides</string>
-			<key>goMenu</key>
-			<string>Return to menu</string>
 		</dict>
 		<key>french</key>
 		<dict>
 			<key>aboutCredits</key>
 			<string>Chef d&apos;équipe: Katherine Nosal 
 Programmation: Patrick W. Crawford (plomb iOS), Veronica Tverbakk, Justin Bernardo 
-Conception: Katherine Nosal, Natalie Nosal, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
+Conception: Katherine Nosal, Natalie Nosal, Celina Bertoncini, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
 			<key>aboutDevGAI</key>
 			<string>Développé par Global App Initiative</string>
 			<key>aboutPageTitle</key>
@@ -113,10 +117,16 @@ Vous pouvez diapositives de drapeau en appuyant sur ​​l&apos;icône en bas s
 			<string>Le contenu de cette présentation est la recommandation que, toujours à l&apos;écoute de ce que votre médecin vous dit.</string>
 			<key>alertStartPresTitle</key>
 			<string>Attention!</string>
+			<key>answerToAdvance</key>
+			<string>Vous devez répondre à continuer</string>
 			<key>clearAllFlags</key>
 			<string>Effacer tout diapositives battant pavillon</string>
+			<key>clearFlag</key>
+			<string>Effacer l&apos;indicateur</string>
 			<key>conditionSelection</key>
 			<string>Sélectionnez Etat Présentation</string>
+			<key>goMenu</key>
+			<string>Retour au menu</string>
 			<key>introCenter</key>
 			<string>Changer de langue</string>
 			<key>introLeft</key>
@@ -125,6 +135,10 @@ Vous pouvez diapositives de drapeau en appuyant sur ​​l&apos;icône en bas s
 			<string>Signaler pour révision</string>
 			<key>introUsage</key>
 			<string>Vous pouvez aller à la diapositive suivante en faisant glisser gauche / droite ou en appuyant sur les flèches. Sur diapositives de quiz, vous devez répondre correctement à la question de continuer, mais vous pouvez toujours revenir en arrière dans la présentation. Appuyez sur l&apos;icône de drapeau si vous voulez faire apparaître ou discuter le contenu de cette diapositive avec votre médecin</string>
+			<key>jumpFirstSlide</key>
+			<string>Aller au début</string>
+			<key>jumpQuizSlide</key>
+			<string>Aller au questionnaire</string>
 			<key>languageSelection</key>
 			<string>Sélection de la langue</string>
 			<key>outrLabel</key>
@@ -141,21 +155,15 @@ Vous pouvez diapositives de drapeau en appuyant sur ​​l&apos;icône en bas s
 			<string>Essayez à nouveau</string>
 			<key>quizWrongAnswer</key>
 			<string>Désolé, mais c&apos;est faux, s&apos;il vous plaît essayer à nouveau</string>
-			<key>jumpFirstSlide</key>
-			<string>Aller au début</string>
-			<key>jumpQuizSlide</key>
-			<string>Aller au questionnaire</string>
 			<key>reviewSlides</key>
-			<string>Retour au menu</string>
-			<key>goMenu</key>
-			<string>Regresar al Menú</string>
+			<string>Revue marqué diapositives</string>
 		</dict>
 		<key>spanish</key>
 		<dict>
 			<key>aboutCredits</key>
 			<string>Jefe de Equipo: Katherine Nosal 
 Programación: Patrick W. Crawford (plomo iOS), Verónica Tverbakk, Justin Bernardo 
-Diseño: Katherine Nosal, Natalie Nosal, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
+Diseño: Katherine Nosal, Natalie Nosal, Celina Bertoncini, Veronica Tverbakk, Patrick W. Crawford, Justin Bernardo, Elias Fong, Ada Wong, Ally Damiano, Mikhail Andreev, Chris Kuech</string>
 			<key>aboutDevGAI</key>
 			<string>Desarrollado por Global App Initiative</string>
 			<key>aboutPageTitle</key>
@@ -176,10 +184,16 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<string>El contenido de esta presentación es para la recomendación solamente, siempre escucha lo que su médico le indique.</string>
 			<key>alertStartPresTitle</key>
 			<string>¡Atención!</string>
+			<key>answerToAdvance</key>
+			<string>Debe responder a continuar</string>
 			<key>clearAllFlags</key>
 			<string>Borrar todos toboganes de pabellón</string>
+			<key>clearFlag</key>
+			<string>Borrar indicador</string>
 			<key>conditionSelection</key>
 			<string>Seleccione Condición Presentación</string>
+			<key>goMenu</key>
+			<string>Regresar al Menú</string>
 			<key>introCenter</key>
 			<string>Cambiar Idioma</string>
 			<key>introLeft</key>
@@ -188,6 +202,10 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<string>Marcar para revisión</string>
 			<key>introUsage</key>
 			<string>Usted puede ir a la diapositiva siguiente al deslizar izquierda / derecha o tocando las flechas. En diapositivas de prueba, debe responder a la pregunta correctamente para continuar, pero siempre se puede ir hacia atrás en la presentación. Toque en el icono de la bandera si desea abrir o discutir el contenido de la diapositiva con su médico</string>
+			<key>jumpFirstSlide</key>
+			<string>Ir al comienzo</string>
+			<key>jumpQuizSlide</key>
+			<string>Ir al cuestionario</string>
 			<key>languageSelection</key>
 			<string>Presentación Menu</string>
 			<key>outrLabel</key>
@@ -204,19 +222,15 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<string>Intentar de nuevo</string>
 			<key>quizWrongAnswer</key>
 			<string>Sorry but that is incorrect, try again</string>
-			<key>jumpFirstSlide</key>
-			<string>Ir al comienzo</string>
-			<key>jumpQuizSlide</key>
-			<string>Ir al cuestionario</string>
 			<key>reviewSlides</key>
 			<string>Revisión marcado diapositivas</string>
-			<key>goMenu</key>
-			<string>Regresar al Menú</string>
 		</dict>
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
@@ -226,6 +240,10 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

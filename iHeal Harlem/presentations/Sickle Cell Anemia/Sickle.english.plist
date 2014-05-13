@@ -233,115 +233,118 @@ Julie loves to watch the boats on the river with Murphy, and to play basketball 
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Sickle Cell Disease</string>
-			<key>text</key>
-			<string>abbreviated as SCD; is a group of inherited disorders of the blood, characterized by the sickle, or crescent, shape of some blood cells in affected people. People with SCD have red blood cells that become hard and sticky and look like a C-shaped farm tool called a “sickle”. The sickle cells die early, which causing a constant shortage of red blood cells, anemia. Also, when sickled cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems such infection, acute chest syndrome and stroke. Ask your health care professional for more information about SCD and where you can get support.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Healthy red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A star</string>
+				<string>A rectangle</string>
+				<string>A “C” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Blood Transfusion</string>
-			<key>text</key>
-			<string>Blood transfusions are a procedure in which blood is given to a person in need through and intravenous (IV) line. Transfusions are given to people with sickle cell disease when their body’s blood supply is in need of support due to illness or having a high sickle cell count.  </string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Sickled red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A “C” shape</string>
+				<string>A triangle</string>
+				<string>A “T” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Acute Chest Syndrome (ACS)</string>
-			<key>text</key>
-			<string>People with SCD can experience a blockage of blood flow to the lungs that causes Acute Chest Syndrome. ACS is similar to pneumonia and can be life threatening so it should be treated in a hospital. Symptoms of ACS include chest pain, coughing, difficulty breathing, and fever.  </string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>If your child has sickle cell disease, and has a fever, what should you do?</string>
+			<key>answers</key>
+			<array>
+				<string>Give them Motrin and put them to bed</string>
+				<string>Make them drink plenty of fluids and watch TV quietly on the couch</string>
+				<string>Exercise</string>
+				<string>Give them plenty of water to drink and bring them to the Emergency Department
+
+immediately</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Stroke</string>
-			<key>text</key>
-			<string>Sickle Cells can create blockages anywhere in the body. When they block blood flow to the brain they can cause what is known as a Stroke. A stroke can result in life long disabilities or even death and should be treated in a hospital as soon as possible. Signs of a stroke can be slurred speech, numbness or weakness on one side of the body or face, headache and trouble with coordination or vision. </string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>In the hospital, your child might need to get an IV line. An IV line is:</string>
+			<key>answers</key>
+			<array>
+				<string>A tiny tube, placed in a vein, to give your child fluids and medicine</string>
+				<string>A shot</string>
+				<string>A blood test</string>
+				<string>A green plant</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Hand- Foot Syndrome</string>
-			<key>text</key>
-			<string>Swelling of the hands and feet, sometimes accompanied by fever, that is a result of sickle cells getting stuck in the blood vessels and blocking blood flow to the hands and feet. </string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Strong medicine</string>
-			<key>text</key>
-			<string>Patients in sickle cell crisis can be in enormous amounts of pain which often requires the use of strong pain killers. It is often hard to imagine this kind of pain, and patients can be mistaken as overreacting. Sickle cell pain is very real, though, and it is not OK to ignore it. Some people often worry that use of these strong pain killers can become addictive for children and adults with SCD. However, studies show us that addiction to painkillers is not common in patients with SCD. It is important to treat sickle cell pain with compassion, understanding, and the correct amount of medicine to stop the pain.</string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>IV line</string>
-			<key>text</key>
-			<string>IV stands for “intravenous,” or “in your vein.”  An IV line is placed with the help of a very small needle, which guides the tiny tube into a vein.  The needle is taken out, and the tiny tube is connected to another tube that can deliver medicine and fluids, right into the patient’s blood.  This is the fastest way for doctors and nurses to get treatment into a patient’s body.  A lot of people really don’t like getting needles, and this is totally normal. Your doctor can use a cream called “EMLA” or “LMX,” which numbs the skin in 20-40 minutes, so that there will be less pain.  Distraction, like looking at pictures of a fun birthday party, reading a story, or singing a song, can also help keep kids calm when getting a needle.</string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Donating blood</string>
-			<key>text</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Is it possible for someone to catch sickle cell disease, like someone would catch a cold?</string>
+			<key>answers</key>
+			<array>
+				<string>Yes</string>
+				<string>No</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
-			<key>link</key>
-			<string>http://www.redcross.org</string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
@@ -354,6 +357,81 @@ Julie loves to watch the boats on the river with Murphy, and to play basketball 
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+		</dict>
+	</array>
+	<key>definitions</key>
+	<array>
+		<dict>
+			<key>toDefine</key>
+			<string>Sickle Cell Disease</string>
+			<key>text</key>
+			<string>abbreviated as SCD; is a group of inherited disorders of the blood, characterized by the sickle, or crescent, shape of some blood cells in affected people. People with SCD have red blood cells that become hard and sticky and look like a C-shaped farm tool called a “sickle”. The sickle cells die early, which causing a constant shortage of red blood cells, anemia. Also, when sickled cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems such infection, acute chest syndrome and stroke. Ask your health care professional for more information about SCD and where you can get support.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Blood Transfusion</string>
+			<key>text</key>
+			<string>Blood transfusions are a procedure in which blood is given to a person in need through and intravenous (IV) line. Transfusions are given to people with sickle cell disease when their body’s blood supply is in need of support due to illness or having a high sickle cell count.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Acute Chest Syndrome (ACS)</string>
+			<key>text</key>
+			<string>People with SCD can experience a blockage of blood flow to the lungs that causes Acute Chest Syndrome. ACS is similar to pneumonia and can be life threatening so it should be treated in a hospital. Symptoms of ACS include chest pain, coughing, difficulty breathing, and fever.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Stroke</string>
+			<key>text</key>
+			<string>Sickle Cells can create blockages anywhere in the body. When they block blood flow to the brain they can cause what is known as a Stroke. A stroke can result in life long disabilities or even death and should be treated in a hospital as soon as possible. Signs of a stroke can be slurred speech, numbness or weakness on one side of the body or face, headache and trouble with coordination or vision. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Hand- Foot Syndrome</string>
+			<key>text</key>
+			<string>Swelling of the hands and feet, sometimes accompanied by fever, that is a result of sickle cells getting stuck in the blood vessels and blocking blood flow to the hands and feet. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>IV line</string>
+			<key>text</key>
+			<string>IV stands for “intravenous,” or “in your vein.”  An IV line is placed with the help of a very small needle, which guides the tiny tube into a vein.  The needle is taken out, and the tiny tube is connected to another tube that can deliver medicine and fluids, right into the patient’s blood.  This is the fastest way for doctors and nurses to get treatment into a patient’s body.  A lot of people really don’t like getting needles, and this is totally normal. Your doctor can use a cream called “EMLA” or “LMX,” which numbs the skin in 20-40 minutes, so that there will be less pain.  Distraction, like looking at pictures of a fun birthday party, reading a story, or singing a song, can also help keep kids calm when getting a needle.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Donating blood</string>
+			<key>text</key>
+			<string>People can donate blood for other people in need of it to use.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array>
+				<string>http://www.redcross.org</string>
+			</array>
 		</dict>
 	</array>
 </dict>

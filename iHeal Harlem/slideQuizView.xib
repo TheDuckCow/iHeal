@@ -19,10 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="kit-G0-791">
-                    <rect key="frame" x="-14" y="-14" width="797" height="1032"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-5Y-Upc">
                     <rect key="frame" x="0.0" y="412" width="773" height="616"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,7 +55,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIL-mE-F2F">
+                <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIL-mE-F2F">
                     <rect key="frame" x="111" y="459" width="556" height="327"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>

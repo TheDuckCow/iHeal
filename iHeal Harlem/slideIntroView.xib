@@ -20,12 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="rmN-c8-KmT">
-                    <rect key="frame" x="-14" y="-13" width="797" height="1032"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcJ-fb-TMM">
-                    <rect key="frame" x="-1" y="362" width="771" height="662"/>
+                    <rect key="frame" x="0.0" y="365" width="771" height="228"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -33,14 +29,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="static_welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="556" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-5S-3yx">
-                    <rect key="frame" x="101" y="20" width="556" height="144"/>
+                    <rect key="frame" x="97" y="20" width="556" height="144"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-pg-pj8">
-                    <rect key="frame" x="97" y="372" width="577" height="228"/>
+                <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-pg-pj8">
+                    <rect key="frame" x="97" y="372" width="577" height="221"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <string key="text">You can go to the next slide by swiping left/right or tapping the arrows. On quiz slides, you must answer the question correctly to continue, but you can always go backwards in the presentation. Tap the flag icon if you want to bring up or discuss the content of that slide with your doctor</string>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -56,16 +52,16 @@ Appuyez sur pour changer la langue</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_checkCircle" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-lg-rLY">
-                    <rect key="frame" x="101" y="181" width="128" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-lg-rLY">
+                    <rect key="frame" x="67" y="181" width="200" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GAI_logo_white_trans" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-lT-2CZ">
-                    <rect key="frame" x="320" y="181" width="128" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-lT-2CZ">
+                    <rect key="frame" x="275" y="181" width="200" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_gear" translatesAutoresizingMaskIntoConstraints="NO" id="juY-5d-flA">
-                    <rect key="frame" x="546" y="181" width="128" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="juY-5d-flA">
+                    <rect key="frame" x="483" y="181" width="200" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_return" translatesAutoresizingMaskIntoConstraints="NO" id="C1V-Uy-eKd">
@@ -98,10 +94,7 @@ Appuyez sur pour changer la langue</string>
         </view>
     </objects>
     <resources>
-        <image name="GAI_logo_white_trans" width="100" height="100"/>
-        <image name="UI_checkCircle" width="64" height="65"/>
-        <image name="UI_gear" width="65" height="65"/>
         <image name="UI_return" width="64" height="65"/>
-        <image name="background_1" width="900" height="1200"/>
+        <image name="navSlides_0000" width="200" height="160"/>
     </resources>
 </document>

@@ -212,6 +212,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="ye8-dT-cIP">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-q9-pLb">
                                 <rect key="frame" x="0.0" y="882" width="768" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -290,6 +294,16 @@
                                     <action selector="forward:" destination="Gic-xW-YCb" eventType="touchUpInside" id="7zz-RZ-eXG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNS-vT-pkd">
+                                <rect key="frame" x="264" y="890" width="242" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear Flag" backgroundImage="buttonImage">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFlagBanner:" destination="Gic-xW-YCb" eventType="touchUpInside" id="4ow-RK-EC3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -297,9 +311,12 @@
                     <connections>
                         <outlet property="UInextButton" destination="NLc-ee-fPL" id="x9I-h2-7Rn"/>
                         <outlet property="UIpreviousButton" destination="vhf-10-NA4" id="ves-NO-P5A"/>
+                        <outlet property="UIworldButton" destination="KpO-pK-s3x" id="GCy-41-wuv"/>
                         <outlet property="aboutButton" destination="Bim-xu-1tN" id="MZz-M6-tQT"/>
+                        <outlet property="backgroundImage" destination="ye8-dT-cIP" id="LGj-fe-P5u"/>
                         <outlet property="blinkHighlightForward" destination="Ozm-1N-7aJ" id="Eej-eI-CKB"/>
                         <outlet property="blinkHighlightNextImage" destination="OXv-Pi-YQJ" id="n2K-EY-9j9"/>
+                        <outlet property="clearFlagBannerButton" destination="wNS-vT-pkd" id="qlQ-aU-iVT"/>
                         <outlet property="flagButton" destination="WzN-gx-8if" id="5nS-MU-yXI"/>
                         <outlet property="forwardButton" destination="u6f-lB-6TT" id="Nvc-nB-QEL"/>
                     </connections>

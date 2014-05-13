@@ -230,115 +230,118 @@
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Transfusión de sangre</string>
-			<key>text</key>
-			<string>Las transfusiones de sangre son un procedimiento en el que se da sangre a una persona necesitada y por vía intravenosa ( IV). Las transfusiones se administran a personas con enfermedad de células falciformes cuando el suministro de sangre de su cuerpo está en la necesidad de apoyo debido a una enfermedad o tener un alto recuento de células falciformes.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Healthy red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A star</string>
+				<string>A rectangle</string>
+				<string>A “C” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Enfermedad de células falciformes</string>
-			<key>text</key>
-			<string>abreviado como SCD , es un grupo de trastornos hereditarios de la sangre , que se caracteriza por la hoz o media luna , la forma de algunas células de la sangre en las personas afectadas. Las personas con SCD tienen glóbulos rojos que se vuelven duros y pegajosos y se ven como una herramienta agrícola en forma de C se llama una &quot; hoz &quot; . Las células falciformes mueren pronto , lo que provoca una escasez constante de las células rojas de la sangre , anemia . Además, cuando las células falciformes viajan a través de los vasos sanguíneos pequeños , se quedan enganchados y obstruir el flujo sanguíneo. Esto puede causar dolor y otros problemas graves, infecciones, síndrome torácico agudo y accidente cerebrovascular. Pregunte a su profesional de la salud para obtener más información acerca de SCD y donde se puede obtener apoyo.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Sickled red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A “C” shape</string>
+				<string>A triangle</string>
+				<string>A “T” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>El síndrome torácico agudo ( ACS )</string>
-			<key>text</key>
-			<string>Las personas con SCD puede experimentar un bloqueo del flujo sanguíneo a los pulmones que causa el síndrome torácico agudo . ACS es similar a la neumonía y puede ser mortal por lo que debe ser tratado en un hospital. Los síntomas de la ACS incluyen dolor de pecho , tos, dificultad para respirar y fiebre.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>If your child has sickle cell disease, and has a fever, what should you do?</string>
+			<key>answers</key>
+			<array>
+				<string>Give them Motrin and put them to bed</string>
+				<string>Make them drink plenty of fluids and watch TV quietly on the couch</string>
+				<string>Exercise</string>
+				<string>Give them plenty of water to drink and bring them to the Emergency Department
+
+immediately</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Carrera</string>
-			<key>text</key>
-			<string>Las células falciformes pueden crear bloqueos en cualquier parte del cuerpo . Cuando se bloquean el flujo de sangre al cerebro pueden causar lo que se conoce como un accidente cerebrovascular . Un derrame cerebral puede resultar en discapacidades para toda la vida o incluso la muerte y debe ser tratada en un hospital tan pronto como sea posible. Los signos de un derrame cerebral pueden ser dificultad para hablar , entumecimiento o debilidad en un lado del cuerpo o de la cara , dolor de cabeza y problemas con la coordinación o la visión.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>In the hospital, your child might need to get an IV line. An IV line is:</string>
+			<key>answers</key>
+			<array>
+				<string>A tiny tube, placed in a vein, to give your child fluids and medicine</string>
+				<string>A shot</string>
+				<string>A blood test</string>
+				<string>A green plant</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Síndrome mano - pie</string>
-			<key>text</key>
-			<string>Inflamación de las manos y los pies , a veces acompañada de fiebre, que es un resultado de las células falciformes se queda pegada en los vasos sanguíneos y bloquea el flujo de sangre a las manos y los pies.</string>
-			<key>link</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Is it possible for someone to catch sickle cell disease, like someone would catch a cold?</string>
+			<key>answers</key>
+			<array>
+				<string>Yes</string>
+				<string>No</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Strong Medicine </string>
-			<key>text</key>
-			<string>Los pacientes en crisis de células falciformes pueden estar en una enorme cantidad de dolor que a menudo requiere el uso de analgésicos fuertes . A menudo es difícil imaginar que este tipo de dolor , y los pacientes pueden confundirse con exagerando. Dolor de células falciformes es muy real, sin embargo, y no está bien hacer caso omiso de ella. Algunas personas a menudo se preocupan de que el uso de estos analgésicos fuertes puede llegar a ser adictivo para los niños y adultos con ECF . Sin embargo , los estudios nos muestran que la adicción a los analgésicos no es común en pacientes con SCD . Es importante tratar el dolor de la célula falciforme con la compasión , la comprensión y la cantidad correcta de medicina para el dolor.</string>
-			<key>link</key>
-			<string></string>
-			<key>title</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Línea IV</string>
-			<key>text</key>
-			<string>IV significa &quot; intravenosa &quot;, o &quot; en su vena. &quot; Una línea IV se coloca con la ayuda de una aguja muy pequeña , que guía el pequeño tubo en una vena. La aguja se saca , y el pequeño tubo se conecta a otro tubo que puede entregar medicamentos y líquidos , a la derecha en la sangre del paciente . Esta es la forma más rápida para que los médicos y enfermeras para recibir tratamiento en el cuerpo de un paciente. Mucha gente no tiene gusto de conseguir agujas , y esto es totalmente normal. Su médico puede usar una crema llamada &quot; EMLA &quot; o &quot; LMX &quot;, que adormece la piel de 20 a 40 minutos , por lo que habrá menos dolor. La distracción , como mirar fotos de una fiesta de cumpleaños de la diversión , la lectura de un cuento, o cantar una canción, también puede ayudar a mantener a los niños tranquilos cuando conseguir una aguja.</string>
-			<key>link</key>
-			<string></string>
-			<key>title</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>La donación de sangre</string>
-			<key>text</key>
-			<string>La donación de sangre de la Cruz Roja lleva a cabo cientos de sangre que impulsa cada año , así como otras organizaciones de su barrio. La sangre sana salva vidas. Hoy en día , nos enteramos de cómo ayudó a Julie y otros niños con anemia de células falciformes, pero salva los niños afectados por los coches , los bebés prematuros , las madres con partos difíciles , adultos en accidentes de tráfico , bomberos y policías heridos en acto de servicio , y muchos , muchas otras personas de todo el mundo . Nuestros cuerpos producen más de 2 millones de nuevos glóbulos rojos por segundo , y una donación de sangre sólo sería alrededor del 13 % de su cuerpo de sangre fácilmente reemplazado por su increíble cuerpo muy rápidamente. Si usted está interesado en aprender más sobre la donación de sangre, pídale a una enfermera oa un médico</string>
-			<key>link</key>
-			<string>http://www.redcross.org/cruz-roja</string>
-			<key>title</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
@@ -351,6 +354,81 @@
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+		</dict>
+	</array>
+	<key>definitions</key>
+	<array>
+		<dict>
+			<key>toDefine</key>
+			<string>Sickle Cell Disease</string>
+			<key>text</key>
+			<string>abbreviated as SCD; is a group of inherited disorders of the blood, characterized by the sickle, or crescent, shape of some blood cells in affected people. People with SCD have red blood cells that become hard and sticky and look like a C-shaped farm tool called a “sickle”. The sickle cells die early, which causing a constant shortage of red blood cells, anemia. Also, when sickled cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems such infection, acute chest syndrome and stroke. Ask your health care professional for more information about SCD and where you can get support.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Blood Transfusion</string>
+			<key>text</key>
+			<string>Blood transfusions are a procedure in which blood is given to a person in need through and intravenous (IV) line. Transfusions are given to people with sickle cell disease when their body’s blood supply is in need of support due to illness or having a high sickle cell count.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Acute Chest Syndrome (ACS)</string>
+			<key>text</key>
+			<string>People with SCD can experience a blockage of blood flow to the lungs that causes Acute Chest Syndrome. ACS is similar to pneumonia and can be life threatening so it should be treated in a hospital. Symptoms of ACS include chest pain, coughing, difficulty breathing, and fever.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Stroke</string>
+			<key>text</key>
+			<string>Sickle Cells can create blockages anywhere in the body. When they block blood flow to the brain they can cause what is known as a Stroke. A stroke can result in life long disabilities or even death and should be treated in a hospital as soon as possible. Signs of a stroke can be slurred speech, numbness or weakness on one side of the body or face, headache and trouble with coordination or vision. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Hand- Foot Syndrome</string>
+			<key>text</key>
+			<string>Swelling of the hands and feet, sometimes accompanied by fever, that is a result of sickle cells getting stuck in the blood vessels and blocking blood flow to the hands and feet. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>IV line</string>
+			<key>text</key>
+			<string>IV stands for “intravenous,” or “in your vein.”  An IV line is placed with the help of a very small needle, which guides the tiny tube into a vein.  The needle is taken out, and the tiny tube is connected to another tube that can deliver medicine and fluids, right into the patient’s blood.  This is the fastest way for doctors and nurses to get treatment into a patient’s body.  A lot of people really don’t like getting needles, and this is totally normal. Your doctor can use a cream called “EMLA” or “LMX,” which numbs the skin in 20-40 minutes, so that there will be less pain.  Distraction, like looking at pictures of a fun birthday party, reading a story, or singing a song, can also help keep kids calm when getting a needle.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Donating blood</string>
+			<key>text</key>
+			<string>People can donate blood for other people in need of it to use.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array>
+				<string>http://www.redcross.org</string>
+			</array>
 		</dict>
 	</array>
 </dict>

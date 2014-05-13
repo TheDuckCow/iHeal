@@ -230,115 +230,118 @@
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Drépanocytose</string>
-			<key>text</key>
-			<string>en abrégé SCD ; est un groupe de maladies héréditaires du sang , caractérisé par la faucille ou croissant, forme de certaines cellules sanguines chez les personnes touchées. Les gens atteints de drépanocytose ont des globules rouges qui deviennent durs et collants et ressemblent à un outil de ferme en forme de C appelé « faucille ». Les cellules falciformes meurent tôt, ce qui provoque une pénurie constante de globules rouges , de l&apos;anémie . Aussi, lorsque les cellules falciformes voyager à travers les petits vaisseaux sanguins , ils restent coincés et obstruer la circulation sanguine . Cela peut causer de la douleur et d&apos;autres problèmes graves comme l&apos;infection, syndrome thoracique aigu et d&apos;AVC. Demandez à votre professionnel de soins de santé pour plus d&apos;informations au sujet de SCD et où vous pouvez obtenir de l&apos;aide .</string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Healthy red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A star</string>
+				<string>A rectangle</string>
+				<string>A “C” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Transfusion sanguine </string>
-			<key>text</key>
-			<string>La transfusion sanguine est une procédure dans laquelle le sang est donné à une personne dans le besoin par voie intraveineuse et en ligne ( IV). Transfusions sont donnés aux personnes atteintes de drépanocytose lorsque l&apos;approvisionnement en sang de leur corps a besoin de soutien pour cause de maladie ou d&apos;avoir un nombre élevé de cellules de faucille .</string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Sickled red blood cells are shaped like:</string>
+			<key>answers</key>
+			<array>
+				<string>A round, smooth circle</string>
+				<string>A “C” shape</string>
+				<string>A triangle</string>
+				<string>A “T” shape</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Syndrome thoracique aigu</string>
-			<key>text</key>
-			<string>Les personnes atteintes de drépanocytose peuvent éprouver un blocage de la circulation du sang vers les poumons qui provoque le syndrome thoracique aiguë . STA est semblable à la pneumonie et peut être mortelle si elle devrait être traitée dans un hôpital. Les symptômes d&apos; STA comprennent des douleurs à la poitrine , de la toux , des difficultés respiratoires et de la fièvre .</string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>If your child has sickle cell disease, and has a fever, what should you do?</string>
+			<key>answers</key>
+			<array>
+				<string>Give them Motrin and put them to bed</string>
+				<string>Make them drink plenty of fluids and watch TV quietly on the couch</string>
+				<string>Exercise</string>
+				<string>Give them plenty of water to drink and bring them to the Emergency Department
+
+immediately</string>
+			</array>
+			<key>solution</key>
+			<integer>3</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Course</string>
-			<key>text</key>
-			<string>cellules falciformes peuvent créer des blocages dans tout le corps . Quand ils bloquent le flux sanguin vers le cerveau , ils peuvent provoquer ce qu&apos;on appelle un AVC . Un accident vasculaire cérébral peut entraîner des incapacités permanentes de la vie ou même la mort et doit être traité dans un hôpital dès que possible. Les signes d&apos;un AVC peuvent être troubles de l&apos;élocution , engourdissement ou une faiblesse d&apos;un côté du corps ou du visage , des maux de tête et des problèmes avec la coordination ou de la vision .</string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>In the hospital, your child might need to get an IV line. An IV line is:</string>
+			<key>answers</key>
+			<array>
+				<string>A tiny tube, placed in a vein, to give your child fluids and medicine</string>
+				<string>A shot</string>
+				<string>A blood test</string>
+				<string>A green plant</string>
+			</array>
+			<key>solution</key>
+			<integer>0</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Syndrome main-pied</string>
-			<key>text</key>
-			<string>gonflement des mains et des pieds , parfois accompagnée de fièvre , qui est une suite de cellules falciformes rester coincé dans les vaisseaux sanguins et bloquer le flux sanguin vers les mains et les pieds .</string>
-			<key>title</key>
+			<string>quiz</string>
+			<key>question</key>
+			<string>Is it possible for someone to catch sickle cell disease, like someone would catch a cold?</string>
+			<key>answers</key>
+			<array>
+				<string>Yes</string>
+				<string>No</string>
+			</array>
+			<key>solution</key>
+			<integer>1</integer>
+			<key>explanation</key>
 			<string></string>
-			<key>link</key>
+			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
 			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Médecine forte</string>
-			<key>text</key>
-			<string> les patients en crise de drépanocytose peuvent être énormes quantités de douleur qui nécessite souvent l&apos;utilisation d&apos; analgésiques puissants . Il est souvent difficile d&apos;imaginer ce genre de douleur , et les patients peuvent être confondu avec une réaction excessive . Douleur drépanocytaire est très réel, cependant, et il n&apos;est pas OK pour l&apos;ignorer. Certaines personnes craignent souvent que l&apos;utilisation de ces analgésiques puissants peut devenir addictif pour les enfants et les adultes atteints de drépanocytose . Cependant, les études nous montrent que la dépendance aux analgésiques n&apos;est pas fréquente chez les patients atteints de drépanocytose . Il est important de traiter la douleur drépanocytaire avec compassion , la compréhension et la bonne quantité de médicament pour arrêter la douleur.</string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>IV ligne</string>
-			<key>text</key>
-			<string>IV signifie « intraveineuse » ou « dans une veine . &quot; Une ligne IV est placé à l&apos;aide d&apos; une aiguille très fine , qui guide le petit tube dans une veine. L&apos;aiguille est retirée , et le petit tube est relié à un autre tube qui peut livrer des médicaments et de fluides , à droite dans le sang du patient. C&apos;est le moyen le plus rapide pour les médecins et les infirmières de se faire soigner dans le corps d&apos;un patient. Beaucoup de gens n&apos;ont pas vraiment envie de se faire des aiguilles , et c&apos;est tout à fait normal . Votre médecin peut utiliser une crème appelée « EMLA » ou « LMX », qui engourdit la peau en 20-40 minutes , de sorte qu&apos;il y aura moins de douleur. Distraction , comme regarder des photos d&apos;une fête d&apos;anniversaire d&apos;amusement , de lire une histoire ou chanter une chanson , peut aussi aider à garder les enfants calme lors de l&apos;obtention d&apos;une aiguille.</string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string></string>
-			<key>flagSet</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>slide</key>
-			<string>definition</string>
-			<key>toDefine</key>
-			<string>Le don de sang</string>
-			<key>text</key>
-			<string>la Croix-Rouge détient des centaines de collectes de sang chaque année, ainsi que d&apos;autres organismes de votre quartier . Sang sain sauve des vies. Aujourd&apos;hui , nous avons appris comment il a aidé Julie et d&apos;autres enfants atteints d&apos;anémie falciforme, mais il sauve les enfants touchés par les voitures , les bébés prématurés , les mères de travaux difficiles , les adultes dans les accidents de voiture , des pompiers et des policiers blessés dans l&apos; exercice de leurs fonctions , et de nombreux , beaucoup d&apos;autres personnes partout dans le monde . Notre corps produit plus de 2 millions de nouveaux globules rouges à chaque seconde, et un don de sang ne seraient environ 13% de votre corps le sang facilement remplacé par votre corps de rêve très rapidement. Si vous êtes intéressés à en apprendre davantage sur le don de sang, demander à une infirmière ou un médecin</string>
-			<key>title</key>
-			<string></string>
-			<key>link</key>
-			<string>http://www.redcross.org</string>
-			<key>flagSet</key>
-			<false/>
+			<key>slideRef</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>slide</key>
@@ -351,6 +354,81 @@
 			<string></string>
 			<key>flagSet</key>
 			<false/>
+		</dict>
+	</array>
+	<key>definitions</key>
+	<array>
+		<dict>
+			<key>toDefine</key>
+			<string>Sickle Cell Disease</string>
+			<key>text</key>
+			<string>abbreviated as SCD; is a group of inherited disorders of the blood, characterized by the sickle, or crescent, shape of some blood cells in affected people. People with SCD have red blood cells that become hard and sticky and look like a C-shaped farm tool called a “sickle”. The sickle cells die early, which causing a constant shortage of red blood cells, anemia. Also, when sickled cells travel through small blood vessels, they get stuck and clog the blood flow. This can cause pain and other serious problems such infection, acute chest syndrome and stroke. Ask your health care professional for more information about SCD and where you can get support.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Blood Transfusion</string>
+			<key>text</key>
+			<string>Blood transfusions are a procedure in which blood is given to a person in need through and intravenous (IV) line. Transfusions are given to people with sickle cell disease when their body’s blood supply is in need of support due to illness or having a high sickle cell count.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Acute Chest Syndrome (ACS)</string>
+			<key>text</key>
+			<string>People with SCD can experience a blockage of blood flow to the lungs that causes Acute Chest Syndrome. ACS is similar to pneumonia and can be life threatening so it should be treated in a hospital. Symptoms of ACS include chest pain, coughing, difficulty breathing, and fever.  </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Stroke</string>
+			<key>text</key>
+			<string>Sickle Cells can create blockages anywhere in the body. When they block blood flow to the brain they can cause what is known as a Stroke. A stroke can result in life long disabilities or even death and should be treated in a hospital as soon as possible. Signs of a stroke can be slurred speech, numbness or weakness on one side of the body or face, headache and trouble with coordination or vision. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Hand- Foot Syndrome</string>
+			<key>text</key>
+			<string>Swelling of the hands and feet, sometimes accompanied by fever, that is a result of sickle cells getting stuck in the blood vessels and blocking blood flow to the hands and feet. </string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>IV line</string>
+			<key>text</key>
+			<string>IV stands for “intravenous,” or “in your vein.”  An IV line is placed with the help of a very small needle, which guides the tiny tube into a vein.  The needle is taken out, and the tiny tube is connected to another tube that can deliver medicine and fluids, right into the patient’s blood.  This is the fastest way for doctors and nurses to get treatment into a patient’s body.  A lot of people really don’t like getting needles, and this is totally normal. Your doctor can use a cream called “EMLA” or “LMX,” which numbs the skin in 20-40 minutes, so that there will be less pain.  Distraction, like looking at pictures of a fun birthday party, reading a story, or singing a song, can also help keep kids calm when getting a needle.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>toDefine</key>
+			<string>Donating blood</string>
+			<key>text</key>
+			<string>People can donate blood for other people in need of it to use.</string>
+			<key>image</key>
+			<string></string>
+			<key>links</key>
+			<array>
+				<string>http://www.redcross.org</string>
+			</array>
 		</dict>
 	</array>
 </dict>
