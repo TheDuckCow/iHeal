@@ -183,12 +183,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Eating healthy food means that you are:</string>
+			<string>La mantequilla y la manteca de cerdo</string>
 			<key>answers</key>
 			<array>
-				<string>Less likely to catch a cold or develop serious diseases like heart disease in the future</string>
-				<string>Losing valuable sources of fat cells that keep you warm</string>
-				<string>Going to lose your sense of taste</string>
+				<string>Menos propensos a contraer un resfriado o desarrollar enfermedades graves como la enfermedad cardíaca en el futuro</string>
+				<string>La pérdida de una valiosa fuente de células de grasa que le mantienen caliente</string>
+				<string>Va a perder su sentido del gusto</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -205,11 +205,11 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>True or false: the food we eat has no effect on the way our brain works.</string>
+			<string>Verdadero o falso: los alimentos que comemos no tiene ningún efecto sobre la forma en que funciona nuestro cerebro.</string>
 			<key>answers</key>
 			<array>
-				<string>True</string>
-				<string>False</string>
+				<string>Verdadero</string>
+				<string>Falseo</string>
 			</array>
 			<key>solution</key>
 			<integer>1</integer>
@@ -226,12 +226,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Examples of lean (good!) protein include:</string>
+			<string>Ejemplos de proteína magra (¡bien!) Incluyen:</string>
 			<key>answers</key>
 			<array>
-				<string>Chicken breast, turkey, fish, beans, and lentils</string>
-				<string>Steak, burgers, and cheese</string>
-				<string>Bananas, apples, and pears</string>
+				<string>Pechuga de pollo, pavo, pescado, frijoles y lentejas</string>
+				<string>Steak, hamburguesas y queso</string>
+				<string>Los plátanos, las manzanas y las peras</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -248,12 +248,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Examples of healthy sources of calcium and Vitamin D include:</string>
+			<string>Ejemplos de fuentes saludables de calcio y vitamina D incluyen:</string>
 			<key>answers</key>
 			<array>
-				<string>Ice cream, milkshakes, and chocolate syrup</string>
-				<string>Coffee and peanuts</string>
-				<string>Low-fat milk, yogurt, and kale</string>
+				<string>Helado, malteadas y jarabe de chocolate</string>
+				<string>El café y cacahuetes</string>
+				<string>La leche baja en grasa, yogur, y la col rizada</string>
 			</array>
 			<key>solution</key>
 			<integer>2</integer>
@@ -270,16 +270,16 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>True or false: fruit juice contains high amounts of sugar, and it is best to dilute juice with water.</string>
+			<string>Verdadero o falso: Un zumo de fruta contiene altas cantidades de azúcar, y lo mejor es diluir el jugo con agua.</string>
 			<key>answers</key>
 			<array>
-				<string>True</string>
-				<string>False</string>
+				<string>Verdadero</string>
+				<string>Falso</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
 			<key>explanation</key>
-			<string>If your child is not showing signs of any trouble breathing, they are in the Go zone and the only action needed is preventative treatment and medicine.</string>
+			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
@@ -291,12 +291,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Healthy, or good, oils include:</string>
+			<string>Saludables, o bien, aceites incluyen:</string>
 			<key>answers</key>
 			<array>
-				<string>Olive oil, salmon, and avocados</string>
-				<string>Corn syrup</string>
-				<string>Butter and lard</string>
+				<string>El aceite de oliva, salmón y aguacate</string>
+				<string>El jarabe de maíz</string>
+				<string>La mantequilla y la manteca de cerdo</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>

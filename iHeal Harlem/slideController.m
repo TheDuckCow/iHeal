@@ -227,7 +227,15 @@
         self.allowNext=TRUE;
         
         //set the view
-        UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideInfoView" owner:self options:nil][0];
+        UIView *view;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideInfoView" owner:self options:nil][0];
+        }
+        else{
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideInfoView_iP" owner:self options:nil][0];
+        }
+        
         self.backgroundView = view;
         self.backgroundView.backgroundColor = [UIColor clearColor];
         [self.view  insertSubview:view atIndex:1];
@@ -255,7 +263,19 @@
     }
     else if ([slideType  isEqual: @"quiz"]){
         
-        UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideQuizView" owner:self options:nil][0];
+        
+        
+        
+        //set the view
+        UIView *view;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideQuizView" owner:self options:nil][0];
+        }
+        else{
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideQuizView_iP" owner:self options:nil][0];
+        }
+        
         self.backgroundView = view;
         self.backgroundView.backgroundColor = [UIColor clearColor];
         [self.view  insertSubview:view atIndex:1];
@@ -336,7 +356,14 @@
         self.allowNext=TRUE;
         
         // set the background view
-        UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideIntroView" owner:self options:nil][0];
+        UIView *view;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideIntroView" owner:self options:nil][0];
+        }
+        else{
+             view = [[NSBundle mainBundle] loadNibNamed:@"slideIntroView_iP" owner:self options:nil][0];
+        }
         self.backgroundView = view;
         self.backgroundView.backgroundColor = [UIColor clearColor];
         [self.view  insertSubview:view atIndex:1];
@@ -396,7 +423,14 @@
         self.allowNext=TRUE;
         
         // set the background view
-        UIView *view = [[NSBundle mainBundle] loadNibNamed:@"slideOutroView" owner:self options:nil][0];
+        UIView *view;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideOutroView" owner:self options:nil][0];
+        }
+        else{
+            view = [[NSBundle mainBundle] loadNibNamed:@"slideOutroView_iP" owner:self options:nil][0];
+        }
         self.backgroundView = view;
         self.backgroundView.backgroundColor = [UIColor clearColor];
         [self.view  insertSubview:view atIndex:1];
@@ -451,6 +485,7 @@
     
     [self previousSlide];
 }
+
 
 - (IBAction)nextSlideButton:(UIButton *)sender {
     
@@ -571,7 +606,13 @@
     
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
-    cell.textLabel.font = [UIFont systemFontOfSize:25];
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        cell.textLabel.font = [UIFont systemFontOfSize:25];
+    }
+    else{
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
+    }
     
     
     
@@ -598,7 +639,13 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     // dynamic height stuff
     //tableView width - left border width - accessory indicator - right border width
     CGFloat width = tableView.frame.size.width - 15 - 30 - 15;
-    UIFont *font = [UIFont systemFontOfSize:26];
+    UIFont *font;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        font = [UIFont systemFontOfSize:26];
+    }
+    else{
+        font = [UIFont systemFontOfSize:16];
+    }
     NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self.answerArray[indexPath.row] attributes:@{NSFontAttributeName: font}];
     CGRect rect = [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX}
                                                options:NSStringDrawingUsesLineFragmentOrigin
@@ -606,7 +653,15 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     CGSize size = rect.size;
     size.height = ceilf(size.height);
     size.width  = ceilf(size.width);
-    return size.height + 24;
+    
+    int extraBuffer;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        extraBuffer = 24;
+    }
+    else{
+        extraBuffer = 12;
+    }
+    return size.height + extraBuffer;
     
 }
 
@@ -642,7 +697,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
     NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"quizCorrectAnswer"];
     
-    UIColor *color = [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:0.8];
+    UIColor *color = [UIColor colorWithRed:224/255.0 green:243/255.0 blue:176/255.0 alpha:0.9];
     
     [self toastMessage:str atPosition:@"top" withColor:color];
     // do the animation, indicating one can continue
@@ -653,7 +708,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
     // answered incorrectly
     
-    UIColor *color = [UIColor colorWithRed:255/255.0 green:235/255.0 blue:201/255.0 alpha:0.8];
+    UIColor *color = [UIColor colorWithRed:255/255.0 green:235/255.0 blue:201/255.0 alpha:0.9];
     
     self.quizExplanation.alpha = 0;
     
@@ -676,6 +731,21 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 - (void) toastMessage:(NSString *)message atPosition:(NSString *)position withColor:(UIColor *)color{
     
     
+    
+    //extra constraints based on iPhone vs iPad
+    int fontSize;
+    int topHeight;
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        fontSize = 26;
+        topHeight = 100;
+    }
+    else{
+        fontSize = 18;
+        topHeight = 80;
+        
+    }
+    
     // remove existing ones
     UILabel *tempLabel = (UILabel *)[self.view viewWithTag:142];
     if(tempLabel)
@@ -695,7 +765,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     if ([position isEqual:@"top"]){
         x = 20;
         y = 80;
-        height = 100;
+        height = topHeight;
         
     }
     else if ([position isEqual:@"bottom"]){
@@ -711,7 +781,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     toastLabel.textColor=[UIColor blackColor];
     toastLabel.text = message;
     toastLabel.numberOfLines = 2;
-    toastLabel.font = [UIFont systemFontOfSize:26]; // make it bold??
+    toastLabel.font = [UIFont systemFontOfSize:fontSize]; // make it bold??
     [self.view addSubview:toastLabel];
     toastLabel.tag = 142;
     
@@ -768,7 +838,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         NSString *str = [[getPresentationData dataShared] getLocalName: lang forKey:@"answerToAdvance"];
         
         //UIColor *color = [UIColor colorWithRed:255/255.0 green:235/255.0 blue:201/255.0 alpha:0.8];
-        UIColor *color = [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:0.8];
+        UIColor *color = [UIColor colorWithRed:78/255.0 green:193/255.0 blue:239/255.0 alpha:0.9];
         [self toastMessage:str atPosition:@"top" withColor:color];
     }
 }

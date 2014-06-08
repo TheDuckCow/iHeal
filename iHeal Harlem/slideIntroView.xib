@@ -64,15 +64,15 @@ Appuyez sur pour changer la langue</string>
                     <rect key="frame" x="483" y="181" width="200" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_return" translatesAutoresizingMaskIntoConstraints="NO" id="C1V-Uy-eKd">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1V-Uy-eKd">
                     <rect key="frame" x="142" y="734" width="149" height="138"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_return" translatesAutoresizingMaskIntoConstraints="NO" id="DyV-8c-OHE">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DyV-8c-OHE">
                     <rect key="frame" x="299" y="693" width="126" height="179"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UI_return" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-Ky-lXR">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-Ky-lXR">
                     <rect key="frame" x="433" y="768" width="228" height="104"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -94,7 +94,6 @@ Appuyez sur pour changer la langue</string>
         </view>
     </objects>
     <resources>
-        <image name="UI_return" width="64" height="65"/>
         <image name="navSlides_0000" width="200" height="160"/>
     </resources>
 </document>

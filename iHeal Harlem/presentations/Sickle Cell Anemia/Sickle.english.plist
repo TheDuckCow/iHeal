@@ -29,7 +29,7 @@
 			<key>slide</key>
 			<string>intro</string>
 			<key>welcome</key>
-			<string>En las diapositivas siguientes, usted aprenderá más sobre la anemia falciforme y la forma de mantener mejor que en casa.</string>
+			<string>In the following slides, you will learn more about Sickle Cell Anemia and how to better maintain it at home.</string>
 			<key>imgGesture</key>
 			<string></string>
 			<key>flagSet</key>
@@ -287,9 +287,7 @@ Julie loves to watch the boats on the river with Murphy, and to play basketball 
 				<string>Give them Motrin and put them to bed</string>
 				<string>Make them drink plenty of fluids and watch TV quietly on the couch</string>
 				<string>Exercise</string>
-				<string>Give them plenty of water to drink and bring them to the Emergency Department
-
-immediately</string>
+				<string>Give them plenty of water to drink and bring them to the Emergency Department immediately</string>
 			</array>
 			<key>solution</key>
 			<integer>3</integer>

@@ -120,68 +120,6 @@
             </objects>
             <point key="canvasLocation" x="4900" y="-279"/>
         </scene>
-        <!--Condition Menu Table View Controller - Presentation Menu-->
-        <scene sceneID="OuB-zL-sxW">
-            <objects>
-                <tableViewController storyboardIdentifier="menuID" clearsSelectionOnViewWillAppear="NO" id="hYy-LV-OYa" customClass="conditionMenuTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nQF-2X-Ru9">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell opaque="NO" alpha="0.0" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="startPresID" textLabel="n6a-Nm-LJq" rowHeight="200" style="IBUITableViewCellStyleDefault" id="Zzd-St-9aA">
-                                <rect key="frame" x="0.0" y="22" width="768" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zzd-St-9aA" id="sBC-Va-K8j">
-                                    <rect key="frame" x="0.0" y="0.0" width="735" height="199"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Start Presentation_static" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="718" id="n6a-Nm-LJq">
-                                            <rect key="frame" x="15" y="0.0" width="718" height="199"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.84660320715532278" green="0.86709596649804876" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </tableViewCell>
-                            <tableViewCell opaque="NO" alpha="0.0" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" textLabel="Mnq-Am-KJc" rowHeight="128" style="IBUITableViewCellStyleDefault" id="i1E-K8-jNw">
-                                <rect key="frame" x="0.0" y="222" width="768" height="128"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1E-K8-jNw" id="0MD-kw-tBy">
-                                    <rect key="frame" x="0.0" y="0.0" width="735" height="127"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Continue Presentation_static" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mnq-Am-KJc">
-                                            <rect key="frame" x="15" y="0.0" width="718" height="127"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.75985716292680761" green="1" blue="0.758934976019075" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="hYy-LV-OYa" id="Ieq-bQ-gM2"/>
-                            <outlet property="delegate" destination="hYy-LV-OYa" id="Yw7-bx-AMC"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Presentation Menu" id="HNy-Z5-f2p"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3jD-dZ-qsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3109" y="-284"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PVi-MY-yVH">
             <objects>
@@ -304,6 +242,26 @@
                                     <action selector="clearFlagBanner:" destination="Gic-xW-YCb" eventType="touchUpInside" id="4ow-RK-EC3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="687-OA-UXA">
+                                <rect key="frame" x="684" y="92" width="84" height="790"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextSlideButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="mOJ-LB-r6N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbW-Xj-6gR">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="882"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousSlideButton:" destination="Gic-xW-YCb" eventType="touchUpInside" id="mTI-6m-hsw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -396,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-Q2-jXJ">
-                                <rect key="frame" x="106" y="69" width="557" height="111"/>
+                                <rect key="frame" x="106" y="69" width="557" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">This app was originally developed for Harlem Hospital, New York, as a means to engage waiting room patients before being seen by a doctor for parents and children of the conditions presented in this mobile app.</string>
@@ -404,7 +362,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8li-dg-veO">
-                                <rect key="frame" x="0.0" y="657" width="768" height="367"/>
+                                <rect key="frame" x="0.0" y="618" width="768" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30588235289999999" green="0.75686274509999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -413,7 +371,7 @@
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Developed by Global App Initiative" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-zR-zub">
-                                <rect key="frame" x="106" y="657" width="557" height="45"/>
+                                <rect key="frame" x="106" y="641" width="557" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -449,7 +407,7 @@ Design: Veronica Tverbakk, Justin Bernardo, Patrick W. Crawford, Katherine Nosal
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-aS-9ya">
-                                <rect key="frame" x="169" y="546" width="431" height="60"/>
+                                <rect key="frame" x="169" y="438" width="431" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Review Flagged Slides" backgroundImage="buttonImage">
@@ -460,7 +418,7 @@ Design: Veronica Tverbakk, Justin Bernardo, Patrick W. Crawford, Katherine Nosal
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-yi-dKe">
-                                <rect key="frame" x="169" y="451" width="431" height="60"/>
+                                <rect key="frame" x="169" y="343" width="431" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Jump to first Quiz Slide" backgroundImage="buttonImage">
@@ -471,7 +429,7 @@ Design: Veronica Tverbakk, Justin Bernardo, Patrick W. Crawford, Katherine Nosal
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X3-4Y-fal">
-                                <rect key="frame" x="169" y="357" width="431" height="60"/>
+                                <rect key="frame" x="169" y="249" width="431" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Jump to Beginning" backgroundImage="buttonImage">
@@ -481,10 +439,6 @@ Design: Veronica Tverbakk, Justin Bernardo, Patrick W. Crawford, Katherine Nosal
                                     <action selector="jumpFirstSlide:" destination="VVn-zw-SGa" eventType="touchUpInside" id="heq-T8-FvT"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="Fse-Ce-9FN">
-                                <rect key="frame" x="106" y="188" width="557" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

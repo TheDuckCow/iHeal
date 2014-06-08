@@ -8,7 +8,6 @@
 
 #import "languageSelectViewController.h"
 #import "getPresentationData.h"
-#import "conditionMenuTableViewController.h"
 
 @interface languageSelectViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableOfLangs;

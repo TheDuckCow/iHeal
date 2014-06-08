@@ -221,7 +221,7 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<key>quizTryAgain</key>
 			<string>Intentar de nuevo</string>
 			<key>quizWrongAnswer</key>
-			<string>Sorry but that is incorrect, try again</string>
+			<string>Incorrecto, inténtelo de nuevo</string>
 			<key>reviewSlides</key>
 			<string>Revisión marcado diapositivas</string>
 		</dict>
@@ -229,7 +229,7 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Main_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

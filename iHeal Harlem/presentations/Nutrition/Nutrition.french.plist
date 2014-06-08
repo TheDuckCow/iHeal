@@ -183,12 +183,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Eating healthy food means that you are:</string>
+			<string>Manger des aliments sains signifie que vous êtes:</string>
 			<key>answers</key>
 			<array>
-				<string>Less likely to catch a cold or develop serious diseases like heart disease in the future</string>
-				<string>Losing valuable sources of fat cells that keep you warm</string>
-				<string>Going to lose your sense of taste</string>
+				<string>Moins susceptibles d&apos;attraper un rhume ou développer des maladies graves comme les maladies cardiaques à l&apos;avenir</string>
+				<string>Perdre de précieuses sources de cellules graisseuses qui vous gardent au chaud</string>
+				<string>Allez perdre votre sens du goût</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -205,11 +205,11 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>True or false: the food we eat has no effect on the way our brain works.</string>
+			<string>Vrai ou faux: la nourriture que nous mangeons est sans effet sur la façon dont notre cerveau fonctionne.</string>
 			<key>answers</key>
 			<array>
-				<string>True</string>
-				<string>False</string>
+				<string>Vrai</string>
+				<string>Faux</string>
 			</array>
 			<key>solution</key>
 			<integer>1</integer>
@@ -226,12 +226,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Examples of lean (good!) protein include:</string>
+			<string>Exemples de maigre (bien!) protéines incluent:</string>
 			<key>answers</key>
 			<array>
-				<string>Chicken breast, turkey, fish, beans, and lentils</string>
-				<string>Steak, burgers, and cheese</string>
-				<string>Bananas, apples, and pears</string>
+				<string>Poitrine de poulet, dinde, poisson, les haricots, les lentilles et</string>
+				<string>Steak, hamburgers, et le fromage</string>
+				<string>Bananes, pommes et les poires</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -248,12 +248,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Examples of healthy sources of calcium and Vitamin D include:</string>
+			<string>Des exemples de sources saines de calcium et de vitamine D comprennent:</string>
 			<key>answers</key>
 			<array>
-				<string>Ice cream, milkshakes, and chocolate syrup</string>
-				<string>Coffee and peanuts</string>
-				<string>Low-fat milk, yogurt, and kale</string>
+				<string>La crème glacée, laits frappés, et sirop de chocolat</string>
+				<string>Café et arachides</string>
+				<string>Lait faible en gras, le yogourt et le chou</string>
 			</array>
 			<key>solution</key>
 			<integer>2</integer>
@@ -270,16 +270,16 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>True or false: fruit juice contains high amounts of sugar, and it is best to dilute juice with water.</string>
+			<string>Vrai ou faux: jus de fruit contient de grandes quantités de sucre, et il est préférable de diluer le jus avec de l&apos;eau.</string>
 			<key>answers</key>
 			<array>
-				<string>True</string>
-				<string>False</string>
+				<string>Vrai</string>
+				<string>Faux</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
 			<key>explanation</key>
-			<string>If your child is not showing signs of any trouble breathing, they are in the Go zone and the only action needed is preventative treatment and medicine.</string>
+			<string></string>
 			<key>title</key>
 			<string></string>
 			<key>flagSet</key>
@@ -291,12 +291,12 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Healthy, or good, oils include:</string>
+			<string>Santé, ou bien, huiles comprennent:</string>
 			<key>answers</key>
 			<array>
-				<string>Olive oil, salmon, and avocados</string>
-				<string>Corn syrup</string>
-				<string>Butter and lard</string>
+				<string>L&apos;huile d&apos;olive, le saumon et les avocats</string>
+				<string>Le sirop de maïs</string>
+				<string>Beurre et le saindoux</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>

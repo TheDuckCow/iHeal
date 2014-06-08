@@ -7,7 +7,7 @@
 		<key>languageLocalized</key>
 		<string>Español</string>
 		<key>conditionName</key>
-		<string>Sickle Cell Anemia</string>
+		<string>La anemia de células falciformes</string>
 		<key>menuTitles</key>
 		<array>
 			<string>startPresentation</string>
@@ -232,13 +232,13 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Healthy red blood cells are shaped like:</string>
+			<string>Los glóbulos rojos saludables tienen forma de:</string>
 			<key>answers</key>
 			<array>
-				<string>A round, smooth circle</string>
-				<string>A star</string>
-				<string>A rectangle</string>
-				<string>A “C” shape</string>
+				<string>Un círculo redondo, suave</string>
+				<string>Una estrella</string>
+				<string>Un rectángulo</string>
+				<string>Una forma de &quot;C&quot;</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -255,13 +255,13 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Sickled red blood cells are shaped like:</string>
+			<string>Eritrocitos falciformes tienen la forma de:</string>
 			<key>answers</key>
 			<array>
-				<string>A round, smooth circle</string>
-				<string>A “C” shape</string>
-				<string>A triangle</string>
-				<string>A “T” shape</string>
+				<string>Un círculo redondo, suave</string>
+				<string>Una forma de &quot;C&quot;</string>
+				<string>Un triángulo</string>
+				<string>Una forma de &quot;T&quot;</string>
 			</array>
 			<key>solution</key>
 			<integer>1</integer>
@@ -278,15 +278,13 @@
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>If your child has sickle cell disease, and has a fever, what should you do?</string>
+			<string>Si su hijo tiene la enfermedad de células falciformes, y tiene fiebre, ¿qué debe hacer?</string>
 			<key>answers</key>
 			<array>
-				<string>Give them Motrin and put them to bed</string>
-				<string>Make them drink plenty of fluids and watch TV quietly on the couch</string>
-				<string>Exercise</string>
-				<string>Give them plenty of water to drink and bring them to the Emergency Department
-
-immediately</string>
+				<string>Darles Motrin y ponerlos a la cama</string>
+				<string>Les haré beber mucho líquido y ver la televisión tranquilamente en el sofá</string>
+				<string>Ejercicio</string>
+				<string>Darles mucha agua para beber y llevarlos al departamento de emergencias de inmediato</string>
 			</array>
 			<key>solution</key>
 			<integer>3</integer>
@@ -303,13 +301,13 @@ immediately</string>
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>In the hospital, your child might need to get an IV line. An IV line is:</string>
+			<string>En el hospital, su hijo podría necesitar para obtener una línea IV. Una línea IV es:</string>
 			<key>answers</key>
 			<array>
-				<string>A tiny tube, placed in a vein, to give your child fluids and medicine</string>
-				<string>A shot</string>
-				<string>A blood test</string>
-				<string>A green plant</string>
+				<string>Un pequeño tubo colocado en una vena, para administrarle líquidos y medicamentos</string>
+				<string>Un disparo</string>
+				<string>Un análisis de sangre</string>
+				<string>Una planta verde</string>
 			</array>
 			<key>solution</key>
 			<integer>0</integer>
@@ -326,10 +324,10 @@ immediately</string>
 			<key>slide</key>
 			<string>quiz</string>
 			<key>question</key>
-			<string>Is it possible for someone to catch sickle cell disease, like someone would catch a cold?</string>
+			<string>¿Es posible que alguien de coger la enfermedad de células falciformes, como si alguien hubiera coger un resfriado?</string>
 			<key>answers</key>
 			<array>
-				<string>Yes</string>
+				<string>Sí</string>
 				<string>No</string>
 			</array>
 			<key>solution</key>

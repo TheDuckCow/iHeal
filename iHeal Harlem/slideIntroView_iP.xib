@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="slideController">
+            <connections>
+                <outlet property="introImgseqA" destination="Ph0-lg-rLY" id="bwy-QM-E62"/>
+                <outlet property="introImgseqB" destination="UXi-lT-2CZ" id="Ez0-G7-rpr"/>
+                <outlet property="introImgseqC" destination="juY-5d-flA" id="8gw-IJ-Jzy"/>
+                <outlet property="introTextUsage" destination="zwN-pg-pj8" id="rrF-cD-FIl"/>
+                <outlet property="introWelcomeLabel" destination="zeN-5S-3yx" id="fgz-vm-Jhr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcJ-fb-TMM">
+                    <rect key="frame" x="0.0" y="188" width="318" height="129"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="static_welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-5S-3yx">
+                    <rect key="frame" x="18" y="0.0" width="285" height="93"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="vzP-IM-dNk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-pg-pj8">
+                    <rect key="frame" x="18" y="189" width="285" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <string key="text">You can go to the next slide by swiping left/right or tapping the arrows. On quiz slides, you must answer the question correctly to continue, but you can always go backwards in the presentation. Tap the flag icon if you want to bring up or discuss the content of that slide with your doctor</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-lg-rLY">
+                    <rect key="frame" x="2" y="101" width="100" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="V45-Nt-gJy"/>
+                        <constraint firstAttribute="height" constant="79" id="mDV-N8-VHN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-lT-2CZ">
+                    <rect key="frame" x="110" y="101" width="100" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="ves-SR-7rk"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navSlides_0000" translatesAutoresizingMaskIntoConstraints="NO" id="juY-5d-flA">
+                    <rect key="frame" x="218" y="101" width="100" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="90J-2T-aFp"/>
+                    </constraints>
+                </imageView>
+                <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2e-mz-y7U">
+                    <rect key="frame" x="8" y="312" width="302" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="dM3-JF-bSH"/>
+                    </constraints>
+                    <string key="text">Press to Change Language
+Pulse para cambiar el idioma
+Appuyez sur pour changer la langue</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options &amp; more" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGK-Hm-Ay5">
+                    <rect key="frame" x="20" y="393" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="1ac-Wn-lwK"/>
+                        <constraint firstAttribute="width" constant="151" id="h3S-l4-3hL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag slide for review" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-mq-IUc">
+                    <rect key="frame" x="150" y="389" width="143" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="143" id="p49-uJ-t9h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GcJ-fb-TMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2aM-IY-gQ8"/>
+                <constraint firstAttribute="bottom" secondItem="X2e-mz-y7U" secondAttribute="bottom" constant="104" id="6MY-77-BPA"/>
+                <constraint firstItem="Ph0-lg-rLY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="7IA-Gj-J7I"/>
+                <constraint firstAttribute="bottom" secondItem="GcJ-fb-TMM" secondAttribute="bottom" constant="163" id="7JF-Fv-WPJ"/>
+                <constraint firstAttribute="bottom" secondItem="zwN-pg-pj8" secondAttribute="bottom" constant="163" id="9Ax-vg-4MG"/>
+                <constraint firstItem="UXi-lT-2CZ" firstAttribute="leading" secondItem="Ph0-lg-rLY" secondAttribute="trailing" constant="8" symbolic="YES" id="Bx6-EW-Tc9"/>
+                <constraint firstAttribute="trailing" secondItem="juY-5d-flA" secondAttribute="trailing" constant="2" id="C5j-L5-RO1"/>
+                <constraint firstItem="zwN-pg-pj8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="189" id="Ccg-hv-zg5"/>
+                <constraint firstItem="X2e-mz-y7U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DoK-a1-ckk"/>
+                <constraint firstAttribute="trailing" secondItem="X2e-mz-y7U" secondAttribute="trailing" constant="10" id="G8B-fo-hjG"/>
+                <constraint firstItem="zeN-5S-3yx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Ped-a0-31O"/>
+                <constraint firstItem="zeN-5S-3yx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QBO-S5-Cfk"/>
+                <constraint firstAttribute="trailing" secondItem="GEk-mq-IUc" secondAttribute="trailing" constant="27" id="Qnl-l6-veT"/>
+                <constraint firstItem="zwN-pg-pj8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Ssk-JW-vhB"/>
+                <constraint firstItem="GcJ-fb-TMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="188" id="T2L-By-QUl"/>
+                <constraint firstAttribute="trailing" secondItem="zwN-pg-pj8" secondAttribute="trailing" constant="17" id="WSZ-hx-nlR"/>
+                <constraint firstItem="juY-5d-flA" firstAttribute="leading" secondItem="UXi-lT-2CZ" secondAttribute="trailing" constant="8" symbolic="YES" id="cQG-uf-nXG"/>
+                <constraint firstItem="UXi-lT-2CZ" firstAttribute="centerX" secondItem="zeN-5S-3yx" secondAttribute="centerX" id="djt-pU-rVh"/>
+                <constraint firstAttribute="trailing" secondItem="GcJ-fb-TMM" secondAttribute="trailing" constant="2" id="fO7-2l-Huv"/>
+                <constraint firstItem="QGK-Hm-Ay5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="hOJ-fY-Ng6"/>
+                <constraint firstItem="GEk-mq-IUc" firstAttribute="top" secondItem="X2e-mz-y7U" secondAttribute="bottom" constant="13" id="iJO-A0-eRU"/>
+                <constraint firstItem="zwN-pg-pj8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="j2E-OY-fMh"/>
+                <constraint firstItem="UXi-lT-2CZ" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="jNG-fn-x8V"/>
+                <constraint firstItem="juY-5d-flA" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="qIs-46-c9u"/>
+                <constraint firstItem="zeN-5S-3yx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sR0-J6-q6V"/>
+                <constraint firstAttribute="bottom" secondItem="GEk-mq-IUc" secondAttribute="bottom" constant="58" id="tGM-GG-4hk"/>
+                <constraint firstItem="Ph0-lg-rLY" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="tMh-Qv-xDR"/>
+                <constraint firstAttribute="bottom" secondItem="QGK-Hm-Ay5" secondAttribute="bottom" constant="61" id="y3X-oi-fxg"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navSlides_0000" width="200" height="160"/>
+    </resources>
+</document>

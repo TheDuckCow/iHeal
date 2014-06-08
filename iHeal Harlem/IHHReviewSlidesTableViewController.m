@@ -129,7 +129,7 @@
     
     
     cell.textLabel.text = label;
-    
+    cell.textLabel.numberOfLines = 2;
     
     return cell;
 }
@@ -138,9 +138,16 @@
 - (CGFloat)   tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 0)
-        return 140;
-    return 70;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        if(indexPath.row == 0)
+            return 140;
+        return 70;
+        }
+    else{
+        if(indexPath.row == 0)
+            return 90;
+        return 50;
+    }
 }
 
 
