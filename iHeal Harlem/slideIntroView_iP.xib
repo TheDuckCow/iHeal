@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -15,13 +15,13 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcJ-fb-TMM">
-                    <rect key="frame" x="0.0" y="188" width="318" height="129"/>
+                    <rect key="frame" x="0.0" y="188" width="318" height="165"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.83409380850557746" green="1" blue="0.79255336055482217" alpha="0.0" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-pg-pj8">
-                    <rect key="frame" x="18" y="189" width="285" height="128"/>
+                    <rect key="frame" x="18" y="189" width="285" height="164"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <string key="text">You can go to the next slide by swiping left/right or tapping the arrows. On quiz slides, you must answer the question correctly to continue, but you can always go backwards in the presentation. Tap the flag icon if you want to bring up or discuss the content of that slide with your doctor</string>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -66,7 +66,7 @@
                     </constraints>
                 </imageView>
                 <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2e-mz-y7U">
-                    <rect key="frame" x="8" y="312" width="302" height="64"/>
+                    <rect key="frame" x="8" y="356" width="302" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -79,7 +79,7 @@ Appuyez sur pour changer la langue</string>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options &amp; more" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGK-Hm-Ay5">
-                    <rect key="frame" x="20" y="393" width="151" height="26"/>
+                    <rect key="frame" x="20" y="437" width="151" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="1ac-Wn-lwK"/>
@@ -89,7 +89,7 @@ Appuyez sur pour changer la langue</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag slide for review" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-mq-IUc">
-                    <rect key="frame" x="150" y="389" width="143" height="33"/>
+                    <rect key="frame" x="150" y="433" width="143" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="143" id="p49-uJ-t9h"/>
@@ -101,10 +101,10 @@ Appuyez sur pour changer la langue</string>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="GcJ-fb-TMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2aM-IY-gQ8"/>
-                <constraint firstAttribute="bottom" secondItem="X2e-mz-y7U" secondAttribute="bottom" constant="104" id="6MY-77-BPA"/>
+                <constraint firstAttribute="bottom" secondItem="X2e-mz-y7U" secondAttribute="bottom" constant="148" id="6MY-77-BPA"/>
                 <constraint firstItem="Ph0-lg-rLY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="7IA-Gj-J7I"/>
-                <constraint firstAttribute="bottom" secondItem="GcJ-fb-TMM" secondAttribute="bottom" constant="163" id="7JF-Fv-WPJ"/>
-                <constraint firstAttribute="bottom" secondItem="zwN-pg-pj8" secondAttribute="bottom" constant="163" id="9Ax-vg-4MG"/>
+                <constraint firstAttribute="bottom" secondItem="GcJ-fb-TMM" secondAttribute="bottom" constant="215" id="7JF-Fv-WPJ"/>
+                <constraint firstAttribute="bottom" secondItem="zwN-pg-pj8" secondAttribute="bottom" constant="215" id="9Ax-vg-4MG"/>
                 <constraint firstItem="UXi-lT-2CZ" firstAttribute="leading" secondItem="Ph0-lg-rLY" secondAttribute="trailing" constant="8" symbolic="YES" id="Bx6-EW-Tc9"/>
                 <constraint firstAttribute="trailing" secondItem="juY-5d-flA" secondAttribute="trailing" constant="2" id="C5j-L5-RO1"/>
                 <constraint firstItem="zwN-pg-pj8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="189" id="Ccg-hv-zg5"/>
@@ -125,11 +125,12 @@ Appuyez sur pour changer la langue</string>
                 <constraint firstItem="UXi-lT-2CZ" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="jNG-fn-x8V"/>
                 <constraint firstItem="juY-5d-flA" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="qIs-46-c9u"/>
                 <constraint firstItem="zeN-5S-3yx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sR0-J6-q6V"/>
-                <constraint firstAttribute="bottom" secondItem="GEk-mq-IUc" secondAttribute="bottom" constant="58" id="tGM-GG-4hk"/>
+                <constraint firstAttribute="bottom" secondItem="GEk-mq-IUc" secondAttribute="bottom" constant="102" id="tGM-GG-4hk"/>
                 <constraint firstItem="Ph0-lg-rLY" firstAttribute="top" secondItem="zeN-5S-3yx" secondAttribute="bottom" constant="8" symbolic="YES" id="tMh-Qv-xDR"/>
-                <constraint firstAttribute="bottom" secondItem="QGK-Hm-Ay5" secondAttribute="bottom" constant="61" id="y3X-oi-fxg"/>
+                <constraint firstAttribute="bottom" secondItem="QGK-Hm-Ay5" secondAttribute="bottom" constant="105" id="y3X-oi-fxg"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>

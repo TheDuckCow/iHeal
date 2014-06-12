@@ -222,6 +222,7 @@
     // get the slide type
     NSString *slideType = [getPresentationData dataShared].getSlideType;
     
+    
     // set the information of the slide accordingly
     if ([slideType  isEqual: @"info"]){
         // always allow to select next on info slide;
@@ -489,6 +490,12 @@
     }
     
     // else if another type of slide, add here..
+    
+    
+    
+    
+    // stuff to make the views ACTUALLY fit the screen. Because xibs are stupid, apparently.
+    [[self.view.subviews objectAtIndex:1] setFrame: [[UIScreen mainScreen] applicationFrame]];
     
     
 }
