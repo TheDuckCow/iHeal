@@ -117,14 +117,13 @@
         [self.navigationController pushViewController:nextView animated:YES];
     }
     else{
-        // load the according languages
+        // load the presentation
         self.conditionsList = [getPresentationData dataShared].getPresentationsList;
-        // Load the presentation with an according language
         NSString *presentation = self.conditionsList[indexPath.row];
         
         // reload the presentaiton based on this
         //NSLog(@"CondListContr> hard coded assuming english pres exists..  need to use existing plist at first!");
-        [[getPresentationData dataShared] replacePresentation:[NSString stringWithFormat:@"%@.english",presentation]];
+        [[getPresentationData dataShared] replacePresentation:[NSString stringWithFormat:@"%@.english",presentation] flags: NO];
         
         [getPresentationData dataShared].activeConditionName = self.conditionsList[indexPath.row];
         

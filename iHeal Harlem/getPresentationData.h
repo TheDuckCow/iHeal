@@ -42,7 +42,7 @@
 
 - (NSMutableArray *) getPresentationsList;
 
-- (void) replacePresentation:(NSString*) plist;
+- (void) replacePresentation:(NSString*) plist flags: (BOOL) keepFlags;
 
 - (NSArray *) getPastalColorArray;
 

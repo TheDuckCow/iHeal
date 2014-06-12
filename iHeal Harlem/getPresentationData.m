@@ -152,7 +152,7 @@
     return currentSlide;
 }
 
-- (void) replacePresentation:(NSString*) plist{
+- (void) replacePresentation:(NSString*) plist flags: (BOOL) keepFlags{
     
     // this method takes a presentation list read-in plist
     // and replaces the currently loaded presentation with
@@ -180,8 +180,51 @@
     self.activePlist = plist;
     int i=0;
     
+    
+    // next, grab all of the flag states and store them if keepFlags is true
+    NSMutableArray *flagList = [[NSMutableArray alloc] init];
+    NSMutableArray *correctQuizes = [[NSMutableArray alloc] init];
+    if (keepFlags){
+        for (i=0;i<[self.slides count];i++){
+            
+            // for preserving quiz correct answers, intially add false
+            NSNumber *tmpQUizNo = [[NSNumber alloc] initWithBool:NO];
+            [correctQuizes addObject: tmpQUizNo];
+            
+            if ([self.slidesType[i]  isEqual: @"info"]){
+                slideInfo *tmp = self.slides[i];
+                NSNumber *tmpNm = [[NSNumber alloc] initWithBool:tmp.flagSet];
+                [flagList addObject: tmpNm];
+            }
+            else if ([self.slidesType[i]  isEqual: @"quiz"]){
+                slideQuiz *tmp = self.slides[i];
+                NSNumber *tmpNm = [[NSNumber alloc] initWithBool:tmp.flagSet];
+                [flagList addObject: tmpNm];
+                
+                if (tmp.didAnswerCorrect){
+                    correctQuizes[i] = [[NSNumber alloc] initWithBool:YES];
+                }
+            }
+            else if ([self.slidesType[i]  isEqual: @"intro"]){
+                slideIntro *tmp = self.slides[i];
+                NSNumber *tmpNm = [[NSNumber alloc] initWithBool:tmp.flagSet];
+                [flagList addObject: tmpNm];
+            }
+            else if ([self.slidesType[i]  isEqual: @"outro"]){
+                slideOutro *tmp = self.slides[i];
+                NSNumber *tmpNm = [[NSNumber alloc] initWithBool:tmp.flagSet];
+                [flagList addObject: tmpNm];
+            }
+            else{
+                NSNumber *tmpNm = [[NSNumber alloc] initWithBool:NO];
+                [flagList addObject: tmpNm];
+            }
+        }
+    }
+    
     // thing to parse for PREVIOUS condition name
     NSString *previousName;
+    i = 0;
     while (i<previousPlist.length){
         if ([previousPlist characterAtIndex:i]=='.'){
             previousName = [previousPlist substringToIndex:i];
@@ -193,18 +236,12 @@
     // thing to parse for NEW condition name
     NSString *newName = [[NSString alloc]init];
     newName = [plist componentsSeparatedByString:@"."][0];
-    /*
-    while (i<previousPlist.length){
-        if ([previousPlist characterAtIndex:i]=='.'){
-            newName = [plist substringToIndex:i];
-            break;
-        }
-        i++;
-    }*/
 
     
     // only change the current slide index if the base presentation name changed
-    if (![newName isEqual: previousName]){
+        // technically now with keepFlags, we don't need the first comparison
+    //if (![newName isEqual: previousName] || keepFlags==NO){
+    if (keepFlags==NO){
         self->currentSlideIndex = 0;
     }
     else{
@@ -235,8 +272,14 @@
             
             
             //BOOL thing is read in as NSNumber, must cast it
-            NSNumber *tempNS = temp[@"flagSet"];
-            tempSlideInfo.flagSet = tempNS.boolValue;
+            if (keepFlags){
+                NSNumber *tempNS = flagList[i];
+                tempSlideInfo.flagSet = tempNS.boolValue;
+            }
+            else{
+                NSNumber *tempNS = temp[@"flagSet"];
+                tempSlideInfo.flagSet = tempNS.boolValue;
+            }
             
             //NSLog(@"getPresDat: read flag %i, %i",t,tempSlideInfo.flagSet);
             [self.slides addObject:tempSlideInfo];
@@ -253,9 +296,26 @@
             tempSlideQuiz.explanation = temp[@"explanation"];
             
             //BOOL thing is read in as NSNumber, must cast it
-            NSNumber *tempNS = temp[@"flagSet"];
-            tempSlideQuiz.flagSet = tempNS.boolValue;
+            if (keepFlags){
+                NSNumber *tempNS = flagList[i];
+                tempSlideQuiz.flagSet = tempNS.boolValue;
+            }
+            else{
+                NSNumber *tempNS = temp[@"flagSet"];
+                tempSlideQuiz.flagSet = tempNS.boolValue;
+            }
+            
+            
             tempSlideQuiz.didAnswerCorrect = FALSE;
+            if (keepFlags){
+                NSNumber *tmpCheck = correctQuizes[i];
+                if (tmpCheck.boolValue){
+                    tempSlideQuiz.didAnswerCorrect = TRUE;
+                }
+                else{
+                    tempSlideQuiz.didAnswerCorrect = FALSE;
+                }
+            }
             tempSlideQuiz.answers = temp[@"answers"];
             ubertmp = temp[@"slideRef"];
             if (ubertmp==nil){
@@ -275,6 +335,8 @@
             slideIntro *tempSlideIntro = [[slideIntro alloc]init];
             tempSlideIntro.welcome = temp[@"welcome"];
             tempSlideIntro.imgGesture = temp[@"imgGesture"];
+            
+            
             
             [self.slides addObject:tempSlideIntro];
             [self.slidesType addObject:@"intro"];

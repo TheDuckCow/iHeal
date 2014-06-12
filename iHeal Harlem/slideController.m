@@ -48,6 +48,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *quizGotoInfoOutlet;
 @property (strong, nonatomic) NSMutableArray *answerArray;
 @property int quizCorrectSolutionIndex;
+@property (strong, nonatomic) IBOutlet UITextView *showCorrectLabel;
 @property int gotoInfo;
 @property (strong, nonatomic) NSMutableArray *quizTableLabelHeights;
 
@@ -243,28 +244,21 @@
         // get the infoSlide data
         slideInfo *infoSlide = [getPresentationData dataShared].getCurrentSlideInfo;
         
-        
-        //
         // only set image if one is supplied (non nill read-in)
         if (infoSlide.image != nil){
             self.infoImage.image = [UIImage imageNamed:infoSlide.image];
             self.infoImage.alpha = 1;
         }
         else{
-            self.quizImageBG.alpha = 0;
+            self.quizImageBG.alpha = 0; // wait.. why quiz BG here..?
         }
-
         
         self.infoText.text = infoSlide.text;
         //self.infoText.font = 22;
         self.colorBox.backgroundColor = [UIColor colorWithRed:225/255.0 green:255/255.0 blue:255/255.0 alpha:0.5];
         
-        
     }
     else if ([slideType  isEqual: @"quiz"]){
-        
-        
-        
         
         //set the view
         UIView *view;
@@ -289,6 +283,10 @@
         }
         //reload table.. later move into else clause (when it would be visible)
         [self.quizAnswerTable reloadData];
+        
+        // set the correct answer label (shown on selecting correctly)
+        NSString *correctString = [NSString stringWithFormat:@"'' %@ ''",self.answerArray[quizSlide.solution]];
+        self.showCorrectLabel.text = correctString;
         
         self.gotoInfo = quizSlide.slideRef;
         self.quizQuestion.text = quizSlide.question;
@@ -317,13 +315,14 @@
         
         
         
-        if (self.allowNext==TRUE){
+        if (self.allowNext==TRUE && ![[getPresentationData dataShared] getReviewFlagState]){
              //NSLog(@"past correct answer");
             // already answered correctly once
             self.quizExplanation.text = quizSlide.explanation;
             self.quizExplanation.alpha = 1;
             self.quizAnswerTable.alpha = 0;
             self.quizGotoInfoOutlet.alpha = 0;
+            self.showCorrectLabel.alpha = 1;
             
             // set color transparent backgorund of thing to pastel green
             // starting point
@@ -335,12 +334,26 @@
                                  self.colorBox.backgroundColor = color;
                              }];
         }
+        else if ([[getPresentationData dataShared] getReviewFlagState]){
+            
+            self.quizExplanation.alpha = 0;
+            self.quizAnswerTable.alpha = 1;
+            self.showCorrectLabel.alpha = 0;
+            
+            self.quizGotoInfoOutlet.alpha = 0;
+            
+            
+            //fill table with info...
+            // set color of transparent background thing to neutral
+            self.colorBox.backgroundColor = [UIColor colorWithRed:225/255.0 green:255/255.0 blue:255/255.0 alpha:0.5];
+        }
         else{
             // did not answer correctly yet/not yet answered, set next arrow accordingly
             [self.UInextButton setBackgroundImage:[UIImage imageNamed:@"UI_arrowRight_empty"] forState:UIControlStateNormal];
             
             self.quizExplanation.alpha = 0;
             self.quizAnswerTable.alpha = 1;
+            self.showCorrectLabel.alpha = 0;
             
             //fill table with info...
             // set color of transparent background thing to neutral
@@ -538,6 +551,10 @@
 -(void) runBlinkAnimation: (NSString *) location{
     
     //NSLog(@">> location: %@",location);
+    // don't run blink animation if in flag review, they can't move to new slides anyways!!
+    if ([[getPresentationData dataShared] getReviewFlagState]){
+        return;
+    }
     
     [self.blinkHighlightNextImage stopAnimating];
     
@@ -888,13 +905,17 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 -(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer
 {
     //[self runBlinkAnimation:@"right"];
-    [self nextSlide];
+    if (![[getPresentationData dataShared] getReviewFlagState]){
+        [self nextSlide];
+    }
 }
 
 -(void)swiperight:(UISwipeGestureRecognizer*)gestureRecognizer
 {
     //[self runBlinkAnimation:@"left"];
-    [self previousSlide];
+    if (![[getPresentationData dataShared] getReviewFlagState]){
+        [self previousSlide];
+    }
 }
 
 

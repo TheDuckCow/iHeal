@@ -92,18 +92,17 @@
                                //stringByAppendingFormat:@" (#%d)", currentIndex+1];
     
     NSString *conditionPlist = [NSString stringWithFormat:@"%@.%@", PresentationKeyname,choices[indexPath.row]];
-    //NSLog(@"PLIST: %@",conditionPlist);
+
+    // more efficient, DON'T reload if it happens to be the same one as before
     if (![[[getPresentationData dataShared] activePlist] isEqual: conditionPlist]){
-        [[getPresentationData dataShared] replacePresentation: conditionPlist];
+        [[getPresentationData dataShared] replacePresentation: conditionPlist flags:YES];
     }
     
     // immediately set the new language title of slide in nav bar
     NSString *lang = [[getPresentationData dataShared] getCurrentLanguage];
     self.title = [[getPresentationData dataShared] getLocalName: lang forKey: @"languageSelection"];
     
-    
     // "pop" this view
-    //[self dismissModalViewControllerAnimated:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 
 }
