@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>LOCALIZATION</key>
 	<dict>
 		<key>english</key>
@@ -210,7 +210,7 @@ Puede diapositivas bandera punteando en el icono situado en la parte inferior si
 			<key>jumpQuizSlide</key>
 			<string>Ir al cuestionario</string>
 			<key>languageSelection</key>
-			<string>Presentación Menu</string>
+			<string>Selecciona Idioma</string>
 			<key>outrLabel</key>
 			<string>Felicidades, ya llegaron al final de la presentación!</string>
 			<key>presentationMenu</key>

@@ -191,6 +191,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="previousSlideButton:" destination="Ov2-h0-6tD" eventType="touchUpInside" id="VYR-9r-erA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-gR-yaF">
                                 <rect key="frame" x="-1" y="522" width="321" height="46"/>
@@ -315,6 +318,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextSlideButton:" destination="Ov2-h0-6tD" eventType="touchUpInside" id="D5q-Tl-cws"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -366,8 +372,8 @@
                     <navigationItem key="navigationItem" title="slide x/y" id="1bV-t1-G3V"/>
                     <size key="freeformSize" width="820" height="1568"/>
                     <connections>
-                        <outlet property="UInextButton" destination="kOo-0J-0Le" id="SZD-JZ-3FP"/>
-                        <outlet property="UIpreviousButton" destination="o6A-8R-KIY" id="3TL-VJ-3iu"/>
+                        <outlet property="UInextButton" destination="kOo-0J-0Le" id="68g-hz-a3U"/>
+                        <outlet property="UIpreviousButton" destination="o6A-8R-KIY" id="WF6-jB-1bD"/>
                         <outlet property="UIworldButton" destination="m5R-Ka-m4n" id="E5d-WC-vF9"/>
                         <outlet property="aboutButton" destination="yRJ-nZ-wy2" id="bfk-FZ-erq"/>
                         <outlet property="backgroundImage" destination="8fh-bX-VBU" id="QkG-qj-gHm"/>

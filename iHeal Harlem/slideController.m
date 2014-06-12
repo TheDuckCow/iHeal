@@ -668,7 +668,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         font = [UIFont systemFontOfSize:26];
     }
     else{
-        font = [UIFont systemFontOfSize:16];
+        font = [UIFont systemFontOfSize:15];
     }
     NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self.answerArray[indexPath.row] attributes:@{NSFontAttributeName: font}];
     CGRect rect = [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX}
@@ -683,7 +683,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         extraBuffer = 24;
     }
     else{
-        extraBuffer = 12;
+        extraBuffer = 14;
     }
     return size.height + extraBuffer;
     

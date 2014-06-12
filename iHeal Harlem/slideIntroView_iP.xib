@@ -36,6 +36,17 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQA-MK-ijo">
+                    <rect key="frame" x="20" y="356" width="273" height="69"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.75686274509999996" blue="0.93725490199999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="buttonImage">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="languageButton:" destination="-1" eventType="touchUpInside" id="Iv5-xq-zFY"/>
+                    </connections>
+                </button>
                 <textView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" maximumZoomScale="2" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-pg-pj8">
                     <rect key="frame" x="18" y="189" width="285" height="164"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +120,16 @@ Appuyez sur pour changer la langue</string>
                 <constraint firstAttribute="trailing" secondItem="juY-5d-flA" secondAttribute="trailing" constant="2" id="C5j-L5-RO1"/>
                 <constraint firstItem="zwN-pg-pj8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="189" id="Ccg-hv-zg5"/>
                 <constraint firstItem="X2e-mz-y7U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DoK-a1-ckk"/>
+                <constraint firstItem="GEk-mq-IUc" firstAttribute="top" secondItem="ZQA-MK-ijo" secondAttribute="bottom" constant="8" symbolic="YES" id="F06-Kd-tZK"/>
                 <constraint firstAttribute="trailing" secondItem="X2e-mz-y7U" secondAttribute="trailing" constant="10" id="G8B-fo-hjG"/>
+                <constraint firstItem="ZQA-MK-ijo" firstAttribute="leading" secondItem="QGK-Hm-Ay5" secondAttribute="leading" id="J6P-0N-dQ7"/>
+                <constraint firstItem="ZQA-MK-ijo" firstAttribute="top" secondItem="X2e-mz-y7U" secondAttribute="top" id="M2C-nU-VYf"/>
                 <constraint firstItem="zeN-5S-3yx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Ped-a0-31O"/>
                 <constraint firstItem="zeN-5S-3yx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QBO-S5-Cfk"/>
                 <constraint firstAttribute="trailing" secondItem="GEk-mq-IUc" secondAttribute="trailing" constant="27" id="Qnl-l6-veT"/>
                 <constraint firstItem="zwN-pg-pj8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Ssk-JW-vhB"/>
                 <constraint firstItem="GcJ-fb-TMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="188" id="T2L-By-QUl"/>
+                <constraint firstItem="ZQA-MK-ijo" firstAttribute="trailing" secondItem="GEk-mq-IUc" secondAttribute="trailing" id="TSU-J9-cJV"/>
                 <constraint firstAttribute="trailing" secondItem="zwN-pg-pj8" secondAttribute="trailing" constant="17" id="WSZ-hx-nlR"/>
                 <constraint firstItem="juY-5d-flA" firstAttribute="leading" secondItem="UXi-lT-2CZ" secondAttribute="trailing" constant="8" symbolic="YES" id="cQG-uf-nXG"/>
                 <constraint firstItem="UXi-lT-2CZ" firstAttribute="centerX" secondItem="zeN-5S-3yx" secondAttribute="centerX" id="djt-pU-rVh"/>
@@ -134,6 +149,7 @@ Appuyez sur pour changer la langue</string>
         </view>
     </objects>
     <resources>
+        <image name="buttonImage" width="351" height="81"/>
         <image name="navSlides_0000" width="200" height="160"/>
     </resources>
 </document>
